@@ -22,7 +22,14 @@ import { Badge } from "@/components/ui/badge";
 export function BentoGrid() {
   const t = useTranslations("Bento");
 
-  const flagshipStack = ["Next.js 15", "Go (Golang)", "PostgreSQL", "Redis", "Kafka", "Docker"];
+  const flagshipStack = [
+    "OCPP 1.6J / 2.0.1",
+    "WebSockets",
+    "Java 17 / Spring Boot",
+    "PostgreSQL & Redis",
+    "KECO Roaming",
+    "Smartro PG",
+  ];
   const aiStack = ["Vercel AI SDK", "pgvector", "LangChain", "Tool Calling"];
   const infraStack = ["Cloudflare Edge", "Kubernetes", "AWS", "Terraform"];
 
@@ -96,22 +103,22 @@ export function BentoGrid() {
                   <div className="flex items-center justify-between pb-2 border-b border-zinc-200 dark:border-white/[0.06] text-[11px] text-zinc-500 dark:text-zinc-400">
                     <span className="flex items-center gap-1.5">
                       <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                      Live Telemetry Stream
+                      EV CSMS · OCPP 1.6J / 2.0.1 WebSocket Mesh
                     </span>
-                    <span className="text-brand-600 dark:text-brand-400 font-semibold">10M+ Events / Day</span>
+                    <span className="text-brand-600 dark:text-brand-400 font-semibold">1,600+ Chargers Online</span>
                   </div>
                   <div className="grid grid-cols-3 gap-2 mt-2.5 text-center">
                     <div className="p-2 rounded-lg bg-white dark:bg-zinc-900/80 border border-zinc-200/60 dark:border-white/[0.06]">
-                      <div className="text-[10px] text-zinc-500 dark:text-zinc-400">EDGE INGRESS</div>
-                      <div className="text-emerald-600 dark:text-emerald-400 font-bold mt-0.5">12ms P95</div>
+                      <div className="text-[10px] text-zinc-500 dark:text-zinc-400">WS INGRESS</div>
+                      <div className="text-emerald-600 dark:text-emerald-400 font-bold mt-0.5">&lt;15ms Latency</div>
                     </div>
                     <div className="p-2 rounded-lg bg-white dark:bg-zinc-900/80 border border-zinc-200/60 dark:border-white/[0.06]">
-                      <div className="text-[10px] text-zinc-500 dark:text-zinc-400">EVENT QUEUE</div>
-                      <div className="text-indigo-600 dark:text-indigo-400 font-bold mt-0.5">Kafka / Redis</div>
+                      <div className="text-[10px] text-zinc-500 dark:text-zinc-400">OCPP ENGINE</div>
+                      <div className="text-indigo-600 dark:text-indigo-400 font-bold mt-0.5">MeterValues / OTA</div>
                     </div>
                     <div className="p-2 rounded-lg bg-white dark:bg-zinc-900/80 border border-zinc-200/60 dark:border-white/[0.06]">
-                      <div className="text-[10px] text-zinc-500 dark:text-zinc-400">MULTI-REGION DB</div>
-                      <div className="text-cyan-600 dark:text-cyan-400 font-bold mt-0.5">&lt;45ms Sync</div>
+                      <div className="text-[10px] text-zinc-500 dark:text-zinc-400">ROAMING & PG</div>
+                      <div className="text-cyan-600 dark:text-cyan-400 font-bold mt-0.5">KECO / Smartro</div>
                     </div>
                   </div>
                 </div>

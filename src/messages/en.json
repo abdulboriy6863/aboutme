@@ -39,7 +39,7 @@
   "About": {
     "title": "About me",
     "p1": "Senior AI and Full-Stack engineer residing in South Korea — from Uzbekistan, living and working in Korea since 2023; fluent in Korean, English, and Russian.",
-    "p2": "Engineered full-featured platforms utilizing Java 17, Spring Boot, MyBatis, and sharded MySQL/PostgreSQL clusters for backend, paired with Next.js and TypeScript for modern frontends.",
+    "p2": "Engineered core architecture for Blue Networks' E-Chae-Um EV Charging Station Management System (CSMS) using Java 17, Spring Boot, MyBatis, and sharded MySQL/PostgreSQL — implementing OCPP 1.6J/2.0.1 protocol, real-time WebSocket telemetry pipelines, bulk OTA firmware distribution, and KECO/Smartro PG settlement synchronization.",
     "p3": "Built custom enterprise LLM platforms: fine-tuned LoRA Qwen/Llama classifiers outperforming gpt-4o on proprietary benchmarks with zero query inference cost, featuring multi-lingual streaming copilot capabilities.",
     "p4": "Integrates premier LLM foundation models (OpenAI, Anthropic Claude, Google Gemini), TypeScript ecosystem (Node.js, NestJS, React, Next.js) streaming AI assistants, voice-to-text (STT/TTS), and containerized deployments across Docker, NGINX, Linux, AWS, and GCP.",
     "metrics": {
@@ -66,13 +66,13 @@
     "cards": {
       "flagship": {
         "tag": "Flagship Case Study",
-        "title": "High-Throughput Distributed Telemetry & Streaming Platform",
+        "title": "Blue Networks EV CSMS: Real-Time OCPP & WebSocket Telemetry Platform",
         "problemLabel": "Architectural Challenge",
-        "problem": "Handling 10M+ daily telemetry events with legacy monolithic bottlenecks and unpredictable spike latency.",
+        "problem": "Achieving zero-downtime bidirectional telemetry, remote OTA firmware dispatch, and live status sync across 1,600+ fast/slow EV charging stations across 500+ locations in Korea.",
         "solutionLabel": "Engineering Solution",
-        "solution": "Designed event-driven streaming microservices in Go and Next.js 15 edge routing with multi-tier Redis caching and connection-pooled PostgreSQL.",
-        "metricHighlight": "68% Latency Drop",
-        "metricDetail": "<45ms Global P99"
+        "solution": "Architected high-concurrency WebSocket gateways handling OCPP 1.6-J / 2.0.1 protocols with Spring Boot, MyBatis, Redis caching, and automated KECO/ME roaming & Smartro PG settlement pipelines.",
+        "metricHighlight": "1,600+ Chargers / <50ms",
+        "metricDetail": "OCPP 1.6J & 2.0.1 Live Mesh"
       },
       "aiRag": {
         "tag": "AI & RAG Engine",
