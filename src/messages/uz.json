@@ -45,18 +45,18 @@
     "metrics": {
       "years": "5+",
       "yearsLabel": "ishlab chiqarish tizimlarini yaratish bo'yicha yillar",
-      "scale": "10M+",
-      "scaleLabel": "qayta ishlangan oylik hodisalar & so'rovlar",
+      "scale": "1,600+",
+      "scaleLabel": "boshqarilgan EV zaryadlash stansiyalari",
       "sla": "99.99%",
-      "slaLabel": "arxitektura ishonchliligi va ishlab chiqarish SLA",
-      "langs": "EN · KO · UZ · RU",
-      "langsLabel": "ishchi tillar"
+      "slaLabel": "ishlab chiqarish arxitekturasi SLA & Uptime",
+      "latency": "<15ms",
+      "latencyLabel": "P99 real-vaqt WebSocket kechikishi"
     },
     "languages": {
-      "en": "Ingliz tili: Erkin so'zlashuvchi",
-      "ko": "Koreys tili: Erkin so'zlashuvchi",
-      "uz": "O'zbek tili: Ona tili",
-      "ru": "Rus tili: Erkin so'zlashuvchi"
+      "uz": "🇺🇿 O'zbekcha · Ona tili",
+      "ko": "🇰🇷 한국어 · Erkin muloqot (Fluent)",
+      "en": "🇺🇸 English · Fluent",
+      "ru": "🇷🇺 Русский · Свободный (Fluent)"
     }
   },
   "Bento": {

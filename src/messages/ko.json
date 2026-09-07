@@ -45,18 +45,18 @@
     "metrics": {
       "years": "5+",
       "yearsLabel": "프로덕션 시스템 개발 경력",
-      "scale": "1,000만+",
-      "scaleLabel": "월간 처리된 이벤트 및 트랜잭션",
+      "scale": "1,600+",
+      "scaleLabel": "관제 중인 전기차 충전기",
       "sla": "99.99%",
       "slaLabel": "아키텍처 신뢰성 및 프로덕션 SLA",
-      "langs": "EN · KO · UZ · RU",
-      "langsLabel": "업무 가능 언어"
+      "latency": "<15ms",
+      "latencyLabel": "P99 실시간 WebSocket 지연 시간"
     },
     "languages": {
-      "en": "영어: 능통",
-      "ko": "한국어: 능통",
-      "uz": "우즈베크어: 모국어",
-      "ru": "러시아어: 능통"
+      "uz": "🇺🇿 우즈베크어 · 모국어",
+      "ko": "🇰🇷 한국어 · 능통 (Fluent)",
+      "en": "🇺🇸 영어 · 능통 (Fluent)",
+      "ru": "🇷🇺 러시아어 · 능통 (Fluent)"
     }
   },
   "Bento": {

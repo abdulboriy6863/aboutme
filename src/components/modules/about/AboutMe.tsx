@@ -22,15 +22,15 @@ export function AboutMe() {
       label: t("metrics.slaLabel"),
     },
     {
-      value: t("metrics.langs"),
-      label: t("metrics.langsLabel"),
+      value: t("metrics.latency"),
+      label: t("metrics.latencyLabel"),
     },
   ];
 
   const languages = [
-    t("languages.en"),
-    t("languages.ko"),
     t("languages.uz"),
+    t("languages.ko"),
+    t("languages.en"),
     t("languages.ru"),
   ];
 
@@ -80,14 +80,17 @@ export function AboutMe() {
               <p>{t("p4")}</p>
             </div>
 
-            {/* Metrics Row (2x2 Grid) */}
-            <div className="grid grid-cols-2 gap-6 pt-4 border-t border-zinc-200/80 dark:border-zinc-800/80">
+            {/* Metrics Row (2x2 Micro-Cards Grid) */}
+            <div className="grid grid-cols-2 gap-3 sm:gap-3.5 pt-4 border-t border-zinc-200/80 dark:border-zinc-800/80">
               {metrics.map((metric, i) => (
-                <div key={i} className="space-y-1">
+                <div
+                  key={i}
+                  className="p-3.5 sm:p-4 rounded-2xl border border-zinc-200/80 dark:border-white/[0.06] bg-zinc-50/70 dark:bg-white/[0.02] hover:border-[#79a7a7]/40 dark:hover:border-[#79a7a7]/40 transition-all duration-300 shadow-2xs"
+                >
                   <div className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-white font-mono">
                     {metric.value}
                   </div>
-                  <div className="text-[11px] sm:text-xs text-zinc-500 dark:text-zinc-400 leading-snug">
+                  <div className="text-[11px] sm:text-xs text-zinc-500 dark:text-zinc-400 leading-snug mt-1">
                     {metric.label}
                   </div>
                 </div>
@@ -95,11 +98,11 @@ export function AboutMe() {
             </div>
 
             {/* Language Proficiency Badges */}
-            <div className="flex flex-wrap gap-2 pt-2">
+            <div className="flex flex-wrap gap-2 pt-1">
               {languages.map((lang, i) => (
                 <span
                   key={i}
-                  className="px-3 py-1.5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/80 text-[11px] sm:text-xs font-medium text-zinc-700 dark:text-zinc-300 shadow-2xs"
+                  className="px-3 py-1.5 rounded-xl border border-zinc-200/80 dark:border-white/[0.08] bg-white dark:bg-zinc-900/80 text-xs font-medium text-zinc-700 dark:text-zinc-300 shadow-2xs hover:border-[#79a7a7]/50 transition-colors"
                 >
                   {lang}
                 </span>

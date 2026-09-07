@@ -45,18 +45,18 @@
     "metrics": {
       "years": "5+",
       "yearsLabel": "years building production systems",
-      "scale": "10M+",
-      "scaleLabel": "monthly events & transactions processed",
+      "scale": "1,600+",
+      "scaleLabel": "connected EV chargers managed",
       "sla": "99.99%",
       "slaLabel": "architectural reliability & production SLA",
-      "langs": "EN · KO · UZ · RU",
-      "langsLabel": "working languages"
+      "latency": "<15ms",
+      "latencyLabel": "P99 real-time WebSocket latency"
     },
     "languages": {
-      "en": "English: Fluent",
-      "ko": "Korean: Fluent",
-      "uz": "Uzbek: Native",
-      "ru": "Russian: Fluent"
+      "uz": "🇺🇿 Uzbek · Native",
+      "ko": "🇰🇷 Korean · Fluent",
+      "en": "🇺🇸 English · Fluent",
+      "ru": "🇷🇺 Russian · Fluent"
     }
   },
   "Bento": {
