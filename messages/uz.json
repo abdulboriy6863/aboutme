@@ -1,0 +1,89 @@
+{
+  "Metadata": {
+    "title": "Abdulboriy | Bosh Full-Stack & Tizimlar Arxitektori",
+    "description": "Taqsimlangan tizimlar, yuqori yuklamali veb-arxitektura va sun'iy intellekt ilovalariga bag'ishlangan professional portfolio."
+  },
+  "Nav": {
+    "about": "Haqida",
+    "architecture": "Arxitektura",
+    "projects": "Keyslar",
+    "stack": "Texnologiyalar",
+    "aiAssistant": "AI Yordamchi",
+    "contact": "Bog'lanish",
+    "available": "Yangi loyihalar uchun ochiq",
+    "talk": "Suhbatlashamiz"
+  },
+  "Hero": {
+    "badge": "Bosh Full-Stack & AI Tizimlar Arxitektori",
+    "headlineStart": "Global miqyosdagi ishonchli va",
+    "headlineGradient": "tezkor korporativ platformalar",
+    "headlineEnd": "va AI tizimlarini yaratish.",
+    "subtext": "Yuqori o'tkazuvchanlikka ega taqsimlangan ilovalar, barqaror bulut infratuzilmasi va millisekundlik aniqlikdagi yangi avlod AI agentlarini loyihalash.",
+    "ctaPrimary": "Arxitekturani ko'rish",
+    "ctaSecondary": "AI bilan maslahat",
+    "stats": {
+      "scale": "10M+ Kunlik Hodisalar",
+      "scaleLabel": "Qayta ishlangan yuklama",
+      "latency": "< 45ms",
+      "latencyLabel": "P99 Global Kechikish",
+      "uptime": "99.99%",
+      "uptimeLabel": "Ishonchlilik SLA",
+      "experience": "7+ Yil",
+      "experienceLabel": "Muhandislik Yetakchiligi"
+    }
+  },
+  "Bento": {
+    "badge": "Asosiy Ko'nikmalar & Arxitektura",
+    "title": "Yuqori Masshtab va Zamonaviy Veb Standartlari Uchun Yaratilgan",
+    "description": "Tizim arxitekturasi, asosiy texnologiyalar va amaliy keyslar haqida to'liq tahlil.",
+    "cards": {
+      "systems": {
+        "tag": "Taqsimlangan Arxitektura",
+        "title": "Yuqori Yuklamali Event-Driven Tizimlar",
+        "desc": "To'xtovsiz ishlovchi mikro-frontendlarni loyihalash, hodisalar oqimi va multi-region Kubernetes klasterlari bo'yicha holat sinxronizatsiyasi.",
+        "metric": "50ms dan kam Global P99"
+      },
+      "stack": {
+        "tag": "Zamonaviy Stack",
+        "title": "Full-Stack va Bulut Mutaxassisligi",
+        "desc": "TypeScript, Next.js 15, React 19, Go, Node.js, PostgreSQL, Redis, Docker va AWS / Cloudflare Edge infratuzilmasi."
+      },
+      "ai": {
+        "tag": "AI-Native Dasturlash",
+        "title": "Vercel AI SDK & LLM Agentlar Tizimi",
+        "desc": "Avtonom multi-agent konveyerlari, vektor ma'lumotlar bazalari (Pinecone / pgvector) bilan RAG va real vaqtda streaming yordamchilari."
+      },
+      "performance": {
+        "tag": "Maksimal Tezlik",
+        "title": "100/100 Lighthouse & Core Web Vitals",
+        "desc": "Haddan tashqari optimallashtirish, paket hajmini nazorat qilish, edge renderlash va daraxtsimon silkitish (tree-shaking)."
+      },
+      "security": {
+        "tag": "Korporativ Daraja",
+        "title": "SOC2 & Zero-Trust Xavfsizlik",
+        "desc": "To'liq statik tiplash, OAuth2/OIDC, mTLS ichki xizmat tarmoqlari va ko'p qatlamli himoya tamoyillari."
+      }
+    }
+  },
+  "AiAgent": {
+    "triggerButton": "AI Yordamchidan So'rang",
+    "modalTitle": "Portfolio Sun'iy Intellekt Yordamchisi",
+    "modalSubtitle": "Abdulboriyning tizim arxitekturasi, tajribasi va loyihalari haqida xohlagan savolingizni bering.",
+    "placeholder": "Masalan: 'Ko'p hududli ma'lumotlar bazasi replikatsiyasini qanday tashkil qilasiz?'...",
+    "send": "Yuborish",
+    "clear": "Tozalash",
+    "greeting": "Assalomu alaykum! Men Abdulboriyning AI raqamli egizagiman. Uning arxitektura tajribasi, texnologik steki yoki yetakchilik imkoniyatlari haqida savollaringizga javob bera olaman.",
+    "quickPrompts": [
+      "Sizning asosiy arxitektura tajribangiz qanday?",
+      "50ms dan past kechikishga qanday erishasiz?",
+      "Next.js va AI agentlar bo'yicha tajribangiz haqida so'zlab bering."
+    ],
+    "disclaimer": "Vercel AI SDK va Next.js streaming arxitekturasi asosida ishlaydi."
+  },
+  "Footer": {
+    "status": "Tizimlar Barqaror",
+    "role": "Bosh Full-Stack & AI Arxitektori",
+    "rights": "Barcha huquqlar himoyalangan.",
+    "builtWith": "Next.js 15, Tailwind CSS, Framer Motion va next-intl asosida yaratilgan."
+  }
+}

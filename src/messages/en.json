@@ -1,0 +1,89 @@
+{
+  "Metadata": {
+    "title": "Abdulboriy | Principal Full-Stack & Systems Architect",
+    "description": "Production-grade enterprise portfolio showcasing distributed systems, high-scale web architecture, and AI-native applications."
+  },
+  "Nav": {
+    "about": "About",
+    "architecture": "Architecture",
+    "projects": "Case Studies",
+    "stack": "Tech Matrix",
+    "aiAssistant": "AI Copilot",
+    "contact": "Contact",
+    "available": "Available for Leadership",
+    "talk": "Let's Talk"
+  },
+  "Hero": {
+    "badge": "Principal Full-Stack & AI Systems Architect",
+    "headlineStart": "Architecting resilient, ultra-fast",
+    "headlineGradient": "enterprise platforms & AI systems",
+    "headlineEnd": "at global scale.",
+    "subtext": "Engineering high-throughput distributed applications, resilient cloud architectures, and next-generation AI agents with sub-millisecond precision and developer-first craftsmanship.",
+    "ctaPrimary": "Explore Architecture",
+    "ctaSecondary": "Consult AI Copilot",
+    "stats": {
+      "scale": "10M+ Daily Events",
+      "scaleLabel": "Throughput Processed",
+      "latency": "< 45ms",
+      "latencyLabel": "P99 Global Latency",
+      "uptime": "99.99%",
+      "uptimeLabel": "Production SLA",
+      "experience": "7+ Years",
+      "experienceLabel": "Engineering Leadership"
+    }
+  },
+  "Bento": {
+    "badge": "Core Competencies & Architecture",
+    "title": "Engineered for Extreme Scalability & Modern Web Standards",
+    "description": "A comprehensive deep dive into system designs, core tech proficiencies, and production case studies.",
+    "cards": {
+      "systems": {
+        "tag": "Distributed Architecture",
+        "title": "High-Throughput Event-Driven Systems",
+        "desc": "Designing zero-downtime micro-frontends, event streaming pipelines, and distributed state coordination across multi-region Kubernetes clusters.",
+        "metric": "Sub-50ms Global P99"
+      },
+      "stack": {
+        "tag": "Modern Stack",
+        "title": "Full-Stack & Cloud Mastery",
+        "desc": "TypeScript, Next.js 15, React 19, Go, Node.js, PostgreSQL, Redis, Docker, and AWS / Cloudflare Edge infrastructure."
+      },
+      "ai": {
+        "tag": "AI-Native Engineering",
+        "title": "Vercel AI SDK & LLM Agent Orchestration",
+        "desc": "Building autonomous multi-agent pipelines, RAG with vector databases (Pinecone / pgvector), and streaming enterprise copilots."
+      },
+      "performance": {
+        "tag": "Zero Bloat",
+        "title": "100/100 Lighthouse & Core Web Vitals",
+        "desc": "Extreme performance optimization, bundle budget enforcement, edge rendering, and optimal tree-shaking."
+      },
+      "security": {
+        "tag": "Enterprise Grade",
+        "title": "SOC2 & Zero-Trust Security",
+        "desc": "End-to-end type safety, OAuth2/OIDC, mTLS internal service meshes, and defense-in-depth security postures."
+      }
+    }
+  },
+  "AiAgent": {
+    "triggerButton": "Ask AI Copilot",
+    "modalTitle": "Portfolio Intelligence Copilot",
+    "modalSubtitle": "Ask me anything about Abdulboriy's architecture experience, past projects, or system designs.",
+    "placeholder": "Ask e.g. 'How do you handle multi-region database replication?'...",
+    "send": "Send",
+    "clear": "Clear Chat",
+    "greeting": "Hello! I am Abdulboriy's AI Digital Twin. I can answer questions regarding his full-stack architectural experience, tech stack, scalability milestones, or availability for leadership roles.",
+    "quickPrompts": [
+      "What is your primary architectural expertise?",
+      "How do you design for sub-50ms latency?",
+      "Tell me about your experience with Next.js and AI agents."
+    ],
+    "disclaimer": "Powered by Vercel AI SDK & Next.js streaming architecture."
+  },
+  "Footer": {
+    "status": "Systems Operational",
+    "role": "Principal Full-Stack & AI Architect",
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js 15, Tailwind CSS, Framer Motion & next-intl."
+  }
+}

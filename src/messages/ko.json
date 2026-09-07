@@ -1,0 +1,89 @@
+{
+  "Metadata": {
+    "title": "Abdulboriy | 수석 풀스택 & 시스템 아키텍트",
+    "description": "분산 시스템, 대규모 웹 아키텍처 및 AI 네이티브 엔지니어링을 위한 엔터프라이즈 포트폴리오."
+  },
+  "Nav": {
+    "about": "소개",
+    "architecture": "아키텍처",
+    "projects": "사례 연구",
+    "stack": "기술 스택",
+    "aiAssistant": "AI 코파일럿",
+    "contact": "연락처",
+    "available": "리더십 포지션 협의 가능",
+    "talk": "대화 시작하기"
+  },
+  "Hero": {
+    "badge": "수석 풀스택 & AI 시스템 아키텍트",
+    "headlineStart": "글로벌 규모의 복원력 높은 초고속",
+    "headlineGradient": "엔터프라이즈 플랫폼 및 AI 시스템",
+    "headlineEnd": "을 설계합니다.",
+    "subtext": "밀리초 단위의 정밀도와 개발자 중심 장인 정신으로 고처리량 분산 애플리케이션, 복원력 있는 클라우드 아키텍처 및 차세대 AI 에이전트를 구축합니다.",
+    "ctaPrimary": "아키텍처 탐색",
+    "ctaSecondary": "AI 코파일럿 상담",
+    "stats": {
+      "scale": "1,000만+ 일일 이벤트",
+      "scaleLabel": "처리된 트래픽",
+      "latency": "< 45ms",
+      "latencyLabel": "P99 글로벌 지연 시간",
+      "uptime": "99.99%",
+      "uptimeLabel": "프로덕션 SLA",
+      "experience": "7년+",
+      "experienceLabel": "엔지니어링 리더십"
+    }
+  },
+  "Bento": {
+    "badge": "핵심 역량 및 아키텍처",
+    "title": "극한의 확장성과 최신 웹 표준을 위해 설계됨",
+    "description": "시스템 설계, 핵심 기술 역량 및 실제 프로덕션 사례 연구에 대한 심층 분석.",
+    "cards": {
+      "systems": {
+        "tag": "분산 아키텍처",
+        "title": "고처리량 이벤트 기반 시스템",
+        "desc": "무중단 마이크로 프론트엔드, 이벤트 스트리밍 파이프라인 및 멀티 리전 Kubernetes 클러스터 전반의 분산 상태 조율을 설계합니다.",
+        "metric": "글로벌 P99 50ms 미만"
+      },
+      "stack": {
+        "tag": "모던 스택",
+        "title": "풀스택 및 클라우드 마스터리",
+        "desc": "TypeScript, Next.js 15, React 19, Go, Node.js, PostgreSQL, Redis, Docker 및 AWS / Cloudflare Edge 인프라."
+      },
+      "ai": {
+        "tag": "AI 네이티브 엔지니어링",
+        "title": "Vercel AI SDK & LLM 에이전트 오케스트레이션",
+        "desc": "자율 멀티 에이전트 파이프라인, 벡터 데이터베이스(Pinecone/pgvector)를 사용한 RAG 및 실시간 스트리밍 엔터프라이즈 코파일럿 구축."
+      },
+      "performance": {
+        "tag": "제로 블로트",
+        "title": "100/100 Lighthouse & Core Web Vitals",
+        "desc": "극한의 성능 최적화, 번들 예산 관리, 에지 렌더링 및 효율적인 트리 셰이킹."
+      },
+      "security": {
+        "tag": "엔터프라이즈 등급",
+        "title": "SOC2 및 제로 트러스트 보안",
+        "desc": "엔드투엔드 타입 안전성, OAuth2/OIDC, mTLS 내부 서비스 메시 및 심층 방어 보안 체계."
+      }
+    }
+  },
+  "AiAgent": {
+    "triggerButton": "AI 코파일럿에게 문의",
+    "modalTitle": "포트폴리오 인텔리전스 코파일럿",
+    "modalSubtitle": "Abdulboriy의 아키텍처 경험, 프로젝트 또는 시스템 설계에 대해 질문해 보세요.",
+    "placeholder": "예: '멀티 리전 데이터베이스 복제는 어떻게 처리하시나요?'...",
+    "send": "전송",
+    "clear": "대화 초기화",
+    "greeting": "안녕하세요! 저는 Abdulboriy의 AI 디지털 트윈입니다. 풀스택 아키텍처 경험, 기술 스택, 확장성 달성 사례 또는 협업 가능 여부에 대해 답변해 드릴 수 있습니다.",
+    "quickPrompts": [
+      "주요 아키텍처 전문 분야는 무엇인가요?",
+      "50ms 미만의 지연 시간은 어떻게 달성하나요?",
+      "Next.js와 AI 에이전트에 대한 경험을 알려주세요."
+    ],
+    "disclaimer": "Vercel AI SDK 및 Next.js 스트리밍 아키텍처 기반으로 구동됩니다."
+  },
+  "Footer": {
+    "status": "시스템 정상 운영 중",
+    "role": "수석 풀스택 & AI 아키텍트",
+    "rights": "모든 권리 보유.",
+    "builtWith": "Next.js 15, Tailwind CSS, Framer Motion 및 next-intl로 구축되었습니다."
+  }
+}
