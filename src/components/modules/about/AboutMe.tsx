@@ -52,9 +52,11 @@ export function AboutMe() {
                 alt="Abdulboriy"
                 fill
                 priority
-                className="object-cover object-center"
+                className="object-cover object-center transition-all duration-300 dark:brightness-[0.91] dark:contrast-[1.03]"
                 sizes="(max-w-768px) 100vw, 400px"
               />
+              {/* Dark mode ambient tint to keep the exact sage-grey tone as day mode */}
+              <div className="absolute inset-0 bg-[#527c73]/10 mix-blend-multiply dark:block hidden pointer-events-none" />
             </div>
           </motion.div>
 
