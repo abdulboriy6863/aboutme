@@ -8,15 +8,15 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-white text-zinc-950 hover:bg-zinc-200 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200 shadow-sm font-semibold",
+          "bg-zinc-900 text-white hover:bg-zinc-800 dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-200 shadow-sm font-semibold",
         destructive:
-          "bg-red-500/10 text-red-400 border border-red-500/20 hover:bg-red-500/20",
+          "bg-red-500/10 text-red-600 dark:text-red-400 border border-red-500/20 hover:bg-red-500/20",
         outline:
-          "border border-white/10 bg-zinc-900/60 backdrop-blur-md hover:bg-white/10 text-zinc-100 hover:border-white/20",
+          "border border-zinc-200 dark:border-white/10 bg-white/80 dark:bg-zinc-900/60 backdrop-blur-md hover:bg-zinc-100 dark:hover:bg-white/10 text-zinc-900 dark:text-zinc-100 hover:border-zinc-300 dark:hover:border-white/20",
         secondary:
-          "bg-zinc-800 text-zinc-100 hover:bg-zinc-700/80 border border-zinc-700/50",
-        ghost: "hover:bg-white/10 text-zinc-300 hover:text-white",
-        link: "text-brand-400 underline-offset-4 hover:underline",
+          "bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 hover:bg-zinc-200 dark:hover:bg-zinc-700/80 border border-zinc-200/80 dark:border-zinc-700/50",
+        ghost: "hover:bg-zinc-100 dark:hover:bg-white/10 text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white",
+        link: "text-brand-600 dark:text-brand-400 underline-offset-4 hover:underline",
         glow: "relative bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 text-white shadow-[0_0_20px_rgba(79,117,243,0.35)] hover:shadow-[0_0_30px_rgba(79,117,243,0.5)] border border-white/20 hover:brightness-110",
       },
       size: {

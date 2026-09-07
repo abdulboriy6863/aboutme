@@ -40,10 +40,10 @@ export function LanguageSwitcher() {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-white/10 bg-white/[0.04] text-xs font-medium text-zinc-300 hover:bg-white/[0.08] hover:text-white transition-all backdrop-blur-md"
+        className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-zinc-200/80 dark:border-white/10 bg-zinc-100/80 dark:bg-white/[0.04] text-xs font-medium text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200/60 dark:hover:bg-white/[0.08] hover:text-zinc-950 dark:hover:text-white transition-all backdrop-blur-md"
         aria-label="Switch language"
       >
-        <Globe className="w-3.5 h-3.5 text-zinc-400" />
+        <Globe className="w-3.5 h-3.5 text-zinc-500 dark:text-zinc-400" />
         <span>{activeLang.flag} {activeLang.code.toUpperCase()}</span>
       </button>
 
@@ -54,7 +54,7 @@ export function LanguageSwitcher() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 4 }}
             transition={{ duration: 0.15 }}
-            className="absolute right-0 mt-2 w-36 rounded-xl border border-white/10 bg-zinc-950/95 p-1.5 shadow-2xl backdrop-blur-xl z-50"
+            className="absolute right-0 mt-2 w-36 rounded-xl border border-zinc-200 dark:border-white/10 bg-white/95 dark:bg-zinc-950/95 p-1.5 shadow-2xl backdrop-blur-xl z-50"
           >
             {languages.map((lang) => (
               <button
@@ -62,15 +62,15 @@ export function LanguageSwitcher() {
                 onClick={() => handleSelect(lang.code as any)}
                 className={`flex w-full items-center justify-between px-2.5 py-1.5 rounded-lg text-xs font-medium transition ${
                   lang.code === currentLocale
-                    ? "bg-brand-500/20 text-brand-300 font-semibold"
-                    : "text-zinc-300 hover:bg-white/10 hover:text-white"
+                    ? "bg-brand-500/15 dark:bg-brand-500/20 text-brand-600 dark:text-brand-300 font-semibold"
+                    : "text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-white/10 hover:text-zinc-950 dark:hover:text-white"
                 }`}
               >
                 <span className="flex items-center gap-2">
                   <span>{lang.flag}</span>
                   <span>{lang.label}</span>
                 </span>
-                {lang.code === currentLocale && <Check className="w-3.5 h-3.5 text-brand-400" />}
+                {lang.code === currentLocale && <Check className="w-3.5 h-3.5 text-brand-500 dark:text-brand-400" />}
               </button>
             ))}
           </motion.div>

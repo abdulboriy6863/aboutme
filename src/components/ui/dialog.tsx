@@ -32,7 +32,7 @@ export function Dialog({ open, onOpenChange, children }: DialogProps) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => onOpenChange(false)}
-            className="fixed inset-0 bg-black/75 backdrop-blur-md"
+            className="fixed inset-0 bg-black/60 dark:bg-black/75 backdrop-blur-md"
           />
 
           {/* Dialog content wrapper */}
@@ -61,14 +61,14 @@ export function DialogContent({
       exit={{ opacity: 0, scale: 0.96, y: 10 }}
       transition={{ type: "spring", duration: 0.35, bounce: 0.1 }}
       className={cn(
-        "relative w-full max-w-2xl rounded-2xl border border-white/[0.12] bg-[#0c0c0e]/95 p-6 shadow-2xl backdrop-blur-2xl text-zinc-100",
+        "relative w-full max-w-2xl rounded-2xl border border-zinc-200 dark:border-white/[0.12] bg-white/95 dark:bg-[#0c0c0e]/95 p-6 shadow-2xl backdrop-blur-2xl text-zinc-900 dark:text-zinc-100",
         className
       )}
     >
       {onClose && (
         <button
           onClick={onClose}
-          className="absolute right-4 top-4 rounded-lg p-1.5 text-zinc-400 transition hover:bg-white/10 hover:text-white"
+          className="absolute right-4 top-4 rounded-lg p-1.5 text-zinc-400 hover:bg-zinc-100 dark:hover:bg-white/10 hover:text-zinc-900 dark:hover:text-white transition"
           aria-label="Close"
         >
           <X className="h-5 w-5" />

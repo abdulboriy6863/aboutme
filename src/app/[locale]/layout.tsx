@@ -56,13 +56,17 @@ export default async function LocaleLayout({
     notFound();
   }
 
-  // Providing all messages to the client side is the easiest way to get started
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className="dark" suppressHydrationWarning>
-      <body className="font-sans bg-[#09090b] text-zinc-100 min-h-screen flex flex-col antialiased">
-        <ThemeProvider attribute="class" defaultTheme="dark" forcedTheme="dark">
+    <html lang={locale} suppressHydrationWarning>
+      <body className="font-sans bg-background text-foreground min-h-screen flex flex-col antialiased transition-colors duration-300">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={true}
+          disableTransitionOnChange={false}
+        >
           <NextIntlClientProvider messages={messages}>
             {children}
           </NextIntlClientProvider>
