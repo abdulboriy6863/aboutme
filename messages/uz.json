@@ -4,12 +4,10 @@
     "description": "Taqsimlangan tizimlar, yuqori yuklamali veb-arxitektura va sun'iy intellekt ilovalariga bag'ishlangan professional portfolio."
   },
   "Nav": {
-    "about": "Haqida",
-    "architecture": "Arxitektura",
-    "projects": "Keyslar",
-    "stack": "Texnologiyalar",
-    "aiAssistant": "AI Yordamchi",
-    "contact": "Bog'lanish",
+    "about": "Men haqimda",
+    "projects": "Loyihalar",
+    "experience": "Tajriba",
+    "contact": "Aloqa",
     "available": "Open to High-Impact Projects",
     "talk": "Suhbatlashamiz"
   },

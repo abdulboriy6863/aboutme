@@ -5,10 +5,8 @@
   },
   "Nav": {
     "about": "소개",
-    "architecture": "아키텍처",
-    "projects": "사례 연구",
-    "stack": "기술 스택",
-    "aiAssistant": "AI 코파일럿",
+    "projects": "프로젝트",
+    "experience": "경력",
     "contact": "연락처",
     "available": "Open to High-Impact Projects",
     "talk": "대화 시작하기"
@@ -81,6 +79,6 @@
     "status": "시스템 정상 운영 중",
     "role": "수석 풀스택 & AI 아키텍트",
     "rights": "모든 권리 보유.",
-    "builtWith": "Next.js 15, Tailwind CSS, Framer Motion 및 next-intl로 구축되었습니다."
+    "builtWith": "Next.js 15, Tailwind CSS, Framer Motion 및 next-intl asosida yaratilgan."
   }
 }

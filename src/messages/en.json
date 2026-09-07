@@ -4,11 +4,9 @@
     "description": "Enterprise portfolio showcasing distributed systems, high-scale web architecture, and AI-native applications."
   },
   "Nav": {
-    "about": "About",
-    "architecture": "Architecture",
-    "projects": "Case Studies",
-    "stack": "Tech Matrix",
-    "aiAssistant": "AI Copilot",
+    "about": "About me",
+    "projects": "Projects",
+    "experience": "Experience",
     "contact": "Contact",
     "available": "Open to High-Impact Projects",
     "talk": "Let's Talk"

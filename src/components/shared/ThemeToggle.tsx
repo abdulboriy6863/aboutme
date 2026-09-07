@@ -1,12 +1,12 @@
 "use client";
 
 import * as React from "react";
-import { Moon, Sun } from "lucide-react";
+import { Sun, Monitor, Moon } from "lucide-react";
 import { useTheme } from "next-themes";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 export function ThemeToggle() {
-  const { theme, resolvedTheme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
 
   React.useEffect(() => {
@@ -15,51 +15,43 @@ export function ThemeToggle() {
 
   if (!mounted) {
     return (
-      <div className="w-9 h-9 rounded-lg border border-zinc-200 dark:border-white/10 bg-zinc-100/80 dark:bg-white/[0.04]" />
+      <div className="flex items-center h-8 px-1 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/80 gap-1 w-[88px]" />
     );
   }
 
-  const currentTheme = resolvedTheme || theme || "dark";
-  const isDark = currentTheme === "dark";
-
-  const toggleTheme = (e: React.MouseEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    const nextTheme = isDark ? "light" : "dark";
-    setTheme(nextTheme);
-  };
+  const options = [
+    { value: "light", icon: Sun, label: "Light" },
+    { value: "system", icon: Monitor, label: "System" },
+    { value: "dark", icon: Moon, label: "Dark" },
+  ] as const;
 
   return (
-    <button
-      onClick={toggleTheme}
-      type="button"
-      className="relative flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-200/80 dark:border-white/10 bg-zinc-100/80 dark:bg-white/[0.04] text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-200/60 dark:hover:bg-white/[0.08] transition-all backdrop-blur-md cursor-pointer z-10"
-      aria-label={isDark ? "Switch to Light mode" : "Switch to Dark mode"}
-      title={isDark ? "Switch to Light mode" : "Switch to Dark mode"}
-    >
-      <AnimatePresence mode="wait" initial={false}>
-        {isDark ? (
-          <motion.div
-            key="moon"
-            initial={{ opacity: 0, rotate: -90, scale: 0.8 }}
-            animate={{ opacity: 1, rotate: 0, scale: 1 }}
-            exit={{ opacity: 0, rotate: 90, scale: 0.8 }}
-            transition={{ duration: 0.2 }}
+    <div className="flex items-center p-0.5 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/80 shadow-xs backdrop-blur-md">
+      {options.map((option) => {
+        const Icon = option.icon;
+        const isActive = theme === option.value;
+
+        return (
+          <button
+            key={option.value}
+            type="button"
+            onClick={() => setTheme(option.value)}
+            className={`relative flex items-center justify-center w-6 h-6 rounded-full transition-all duration-200 cursor-pointer ${
+              isActive
+                ? option.value === "light"
+                  ? "bg-[#ff5722] text-white shadow-sm"
+                  : option.value === "dark"
+                  ? "bg-[#ff5722] dark:bg-[#ff5722] text-white shadow-sm"
+                  : "bg-zinc-200 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100"
+                : "text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-200"
+            }`}
+            aria-label={`Switch to ${option.label} theme`}
+            title={`${option.label} theme`}
           >
-            <Moon className="h-4 w-4 text-brand-400" />
-          </motion.div>
-        ) : (
-          <motion.div
-            key="sun"
-            initial={{ opacity: 0, rotate: 90, scale: 0.8 }}
-            animate={{ opacity: 1, rotate: 0, scale: 1 }}
-            exit={{ opacity: 0, rotate: -90, scale: 0.8 }}
-            transition={{ duration: 0.2 }}
-          >
-            <Sun className="h-4 w-4 text-amber-500" />
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </button>
+            <Icon className="w-3.5 h-3.5" />
+          </button>
+        );
+      })}
+    </div>
   );
 }
