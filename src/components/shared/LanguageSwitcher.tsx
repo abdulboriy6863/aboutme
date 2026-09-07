@@ -40,7 +40,7 @@ export function LanguageSwitcher() {
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center justify-center min-w-[42px] px-3 py-1 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/80 text-xs font-medium text-zinc-800 dark:text-zinc-200 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all backdrop-blur-md cursor-pointer shadow-xs"
+        className="flex items-center justify-center min-w-[52px] h-9 sm:h-10 px-3.5 py-1.5 rounded-full border border-zinc-200/90 dark:border-zinc-800 bg-white/90 dark:bg-zinc-900/90 text-sm font-semibold text-zinc-800 dark:text-zinc-200 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all backdrop-blur-md cursor-pointer shadow-xs"
         aria-label="Switch language"
       >
         <span>{activeLang.short}</span>
@@ -53,13 +53,13 @@ export function LanguageSwitcher() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 4 }}
             transition={{ duration: 0.15 }}
-            className="absolute right-0 mt-2 w-32 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white/95 dark:bg-zinc-950/95 p-1.5 shadow-xl backdrop-blur-xl z-50"
+            className="absolute right-0 mt-2 w-36 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white/95 dark:bg-zinc-950/95 p-1.5 shadow-xl backdrop-blur-xl z-50"
           >
             {languages.map((lang) => (
               <button
                 key={lang.code}
                 onClick={() => handleSelect(lang.code as any)}
-                className={`flex w-full items-center justify-between px-2.5 py-1.5 rounded-xl text-xs font-medium transition cursor-pointer ${
+                className={`flex w-full items-center justify-between px-3 py-2 rounded-xl text-sm font-medium transition cursor-pointer ${
                   lang.code === currentLocale
                     ? "bg-orange-500/10 text-orange-600 dark:text-orange-400 font-semibold"
                     : "text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-white/10 hover:text-zinc-950 dark:hover:text-white"

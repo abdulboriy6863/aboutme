@@ -3,7 +3,6 @@
 import * as React from "react";
 import { Sun, Monitor, Moon } from "lucide-react";
 import { useTheme } from "next-themes";
-import { motion } from "framer-motion";
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
@@ -15,7 +14,7 @@ export function ThemeToggle() {
 
   if (!mounted) {
     return (
-      <div className="flex items-center h-8 px-1 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/80 gap-1 w-[88px]" />
+      <div className="flex items-center h-10 px-1 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/80 gap-1 w-[106px]" />
     );
   }
 
@@ -26,7 +25,7 @@ export function ThemeToggle() {
   ] as const;
 
   return (
-    <div className="flex items-center p-0.5 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/80 shadow-xs backdrop-blur-md">
+    <div className="flex items-center p-1 rounded-full border border-zinc-200/90 dark:border-zinc-800 bg-white/90 dark:bg-zinc-900/90 shadow-xs backdrop-blur-md gap-0.5">
       {options.map((option) => {
         const Icon = option.icon;
         const isActive = theme === option.value;
@@ -36,19 +35,19 @@ export function ThemeToggle() {
             key={option.value}
             type="button"
             onClick={() => setTheme(option.value)}
-            className={`relative flex items-center justify-center w-6 h-6 rounded-full transition-all duration-200 cursor-pointer ${
+            className={`relative flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full transition-all duration-200 cursor-pointer ${
               isActive
                 ? option.value === "light"
                   ? "bg-[#ff5722] text-white shadow-sm"
                   : option.value === "dark"
-                  ? "bg-[#ff5722] dark:bg-[#ff5722] text-white shadow-sm"
-                  : "bg-zinc-200 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100"
-                : "text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-200"
+                  ? "bg-[#ff5722] text-white shadow-sm"
+                  : "bg-zinc-200 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 font-semibold"
+                : "text-zinc-500 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-100"
             }`}
             aria-label={`Switch to ${option.label} theme`}
             title={`${option.label} theme`}
           >
-            <Icon className="w-3.5 h-3.5" />
+            <Icon className="w-4 h-4" />
           </button>
         );
       })}
