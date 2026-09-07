@@ -29,7 +29,7 @@ export function ThemeToggle() {
         onClick={() => setTheme("light")}
         className={`relative flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full transition-all duration-200 cursor-pointer ${
           isLight
-            ? "bg-[#2563eb] text-white shadow-sm"
+            ? "bg-gradient-to-br from-[#79a7a7] to-[#527c73] text-white shadow-sm"
             : "text-zinc-500 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-100"
         }`}
         aria-label="Day mode (Light)"
@@ -44,7 +44,7 @@ export function ThemeToggle() {
         onClick={() => setTheme("dark")}
         className={`relative flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full transition-all duration-200 cursor-pointer ${
           isDark
-            ? "bg-[#2563eb] text-white shadow-sm"
+            ? "bg-gradient-to-br from-[#79a7a7] to-[#527c73] text-white shadow-sm"
             : "text-zinc-500 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-100"
         }`}
         aria-label="Dark mode"

@@ -146,14 +146,14 @@ export function AiAssistant({
       <div className="fixed bottom-6 right-6 z-40">
         <button
           onClick={() => onOpenChange(true)}
-          className="group relative flex items-center gap-2.5 rounded-full border border-blue-500/40 bg-white/90 dark:bg-zinc-950/90 px-4 py-3 text-sm font-semibold text-zinc-900 dark:text-white shadow-[0_4px_25px_rgba(37,99,235,0.2)] dark:shadow-[0_0_25px_rgba(37,99,235,0.3)] backdrop-blur-xl transition-all duration-300 hover:scale-105 hover:border-blue-500/80 hover:shadow-[0_0_35px_rgba(37,99,235,0.4)]"
+          className="group relative flex items-center gap-2.5 rounded-full border border-[#79a7a7]/50 bg-white/90 dark:bg-zinc-950/90 px-4 py-3 text-sm font-semibold text-zinc-900 dark:text-white shadow-[0_4px_25px_rgba(82,124,115,0.25)] dark:shadow-[0_0_25px_rgba(121,167,167,0.3)] backdrop-blur-xl transition-all duration-300 hover:scale-105 hover:border-[#79a7a7] hover:shadow-[0_0_35px_rgba(82,124,115,0.4)]"
           aria-label={t("triggerButton")}
         >
           <span className="relative flex h-3 w-3">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75" />
-            <span className="relative inline-flex h-3 w-3 rounded-full bg-blue-600" />
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#79a7a7] opacity-75" />
+            <span className="relative inline-flex h-3 w-3 rounded-full bg-[#527c73]" />
           </span>
-          <Sparkles className="h-4 w-4 text-blue-600 dark:text-blue-400 transition-transform group-hover:rotate-12" />
+          <Sparkles className="h-4 w-4 text-[#527c73] dark:text-[#79a7a7] transition-transform group-hover:rotate-12" />
           <span className="hidden sm:inline font-medium tracking-tight">
             {t("triggerButton")}
           </span>
@@ -169,8 +169,8 @@ export function AiAssistant({
           {/* Header */}
           <div className="px-6 py-4 border-b border-zinc-200 dark:border-white/[0.08] bg-zinc-50 dark:bg-zinc-950/80 flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="h-9 w-9 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center">
-                <Bot className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+              <div className="h-9 w-9 rounded-xl bg-[#79a7a7]/15 border border-[#79a7a7]/30 flex items-center justify-center">
+                <Bot className="h-5 w-5 text-[#527c73] dark:text-[#79a7a7]" />
               </div>
               <div>
                 <h3 className="text-sm font-semibold text-zinc-900 dark:text-white flex items-center gap-2">
@@ -202,14 +202,14 @@ export function AiAssistant({
                 }`}
               >
                 {msg.role === "assistant" && (
-                  <div className="h-7 w-7 rounded-lg bg-blue-500/10 border border-blue-500/25 flex items-center justify-center shrink-0 mt-0.5">
-                    <Bot className="h-3.5 w-3.5 text-blue-600 dark:text-blue-400" />
+                  <div className="h-7 w-7 rounded-lg bg-[#79a7a7]/15 border border-[#79a7a7]/30 flex items-center justify-center shrink-0 mt-0.5">
+                    <Bot className="h-3.5 w-3.5 text-[#527c73] dark:text-[#79a7a7]" />
                   </div>
                 )}
                 <div
                   className={`max-w-[80%] rounded-2xl px-4 py-3 text-xs sm:text-sm leading-relaxed ${
                     msg.role === "user"
-                      ? "bg-[#2563eb] text-white rounded-br-none shadow-[0_0_15px_rgba(37,99,235,0.25)]"
+                      ? "bg-gradient-to-r from-[#527c73] to-[#79a7a7] text-white rounded-br-none shadow-[0_0_15px_rgba(82,124,115,0.25)]"
                       : "bg-white dark:bg-zinc-900/90 text-zinc-800 dark:text-zinc-200 border border-zinc-200/80 dark:border-white/[0.08] rounded-bl-none shadow-sm dark:shadow-none"
                   }`}
                 >
@@ -225,8 +225,8 @@ export function AiAssistant({
 
             {loading && (
               <div className="flex gap-3 justify-start items-center text-xs text-zinc-500 dark:text-zinc-400 font-mono">
-                <div className="h-7 w-7 rounded-lg bg-blue-500/10 border border-blue-500/25 flex items-center justify-center shrink-0">
-                  <Bot className="h-3.5 w-3.5 text-blue-600 dark:text-blue-400 animate-spin" />
+                <div className="h-7 w-7 rounded-lg bg-[#79a7a7]/15 border border-[#79a7a7]/30 flex items-center justify-center shrink-0">
+                  <Bot className="h-3.5 w-3.5 text-[#527c73] dark:text-[#79a7a7] animate-spin" />
                 </div>
                 <span className="flex items-center gap-1">
                   Synthesizing architectural knowledge
@@ -244,7 +244,7 @@ export function AiAssistant({
                 key={i}
                 onClick={() => handleSend(prompt)}
                 disabled={loading}
-                className="whitespace-nowrap px-3 py-1 rounded-full border border-zinc-200 dark:border-white/[0.08] bg-white dark:bg-white/[0.03] text-[11px] text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white hover:border-blue-500/40 hover:bg-blue-500/10 transition shrink-0 shadow-sm dark:shadow-none"
+                className="whitespace-nowrap px-3 py-1 rounded-full border border-zinc-200 dark:border-white/[0.08] bg-white dark:bg-white/[0.03] text-[11px] text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white hover:border-[#79a7a7]/50 hover:bg-[#79a7a7]/10 transition shrink-0 shadow-sm dark:shadow-none"
               >
                 {prompt}
               </button>
@@ -272,7 +272,7 @@ export function AiAssistant({
                 disabled={loading || !input.trim()}
                 variant="default"
                 size="sm"
-                className="h-10 px-4 shrink-0 bg-[#2563eb] hover:bg-[#1d4ed8] text-white"
+                className="h-10 px-4 shrink-0 bg-gradient-to-r from-[#527c73] to-[#79a7a7] hover:opacity-90 text-white shadow-sm"
               >
                 <Send className="w-4 h-4" />
                 <span className="sr-only">{t("send")}</span>
