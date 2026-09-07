@@ -38,10 +38,10 @@
   },
   "About": {
     "title": "소개",
-    "p1": "한국에 거주하는 시니어 AI 및 풀스택 엔지니어 — 2023년부터 한국에서 거주하며 근무 중인 우즈베키스탄 출신으로, 한국어, 영어, 러시아어를 유창하게 구사합니다.",
-    "p2": "(주)블루네트웍스의 '이채움(E-Chae-Um)' 전기차 충전 관제 시스템(CSMS) 핵심 아키텍처 개발 — Java 17, Spring Boot, MyBatis 및 샤딩된 데이터베이스 환경에서 OCPP 1.6J/2.0.1 프로토콜, 양방향 WebSocket 실시간 텔레메트리, 대규모 OTA 펌웨어 배포, 환경부(KECO) 전국 CPO 로밍 데이터 연동 및 스마트로(Smartro) PG 결제 정산 파이프라인을 성공적으로 구축했습니다.",
-    "p3": "전기차 충전소 AI 전력 수요 예측 & 한전 계약전력 최적화 플랫폼 개발: PyTorch 기반 LSTM, XGBoost 및 극값 이론(EVT - GEV/GPD 분포)을 결합한 8종 AI 앙상블 모델을 구축하여, P50/P90 확률적 분위수로 일별·시간대별 피크 전력을 정밀 예측하고 한전 초과 부가금 및 전기 요금을 대폭 절감했습니다.",
-    "p4": "OpenAI, Anthropic Claude, Google Gemini 등 주요 LLM 연동, TypeScript 생태계(Node.js, NestJS, React, Next.js) 스트리밍 AI 서비스, 음성 인식(STT/TTS) 및 Docker, NGINX, Linux, AWS, GCP 기반 컨테이너 배포를 전문으로 합니다.",
+    "p1": "한국에 거주하는 시니어 풀스택 & AI 아키텍트입니다. 2023년부터 국내 테크 생태계에서 미션 크리티컬 엔터프라이즈 시스템과 AI 플랫폼을 기획부터 프로덕션 배포까지 엔드투엔드로 단독 구축해왔으며, 한국어·영어·러시아어로 원활한 협업이 가능합니다.",
+    "p2": "(주)블루네트웍스의 '이채움(E-Chae-Um)' 전기차 충전 관제 시스템(CSMS) 핵심 아키텍처 개발 — Java 17, Spring Boot, MyBatis 및 샤딩 DB 환경에서 전국 1,600+ 충전기를 관제하는 OCPP 1.6J/2.0.1 프로토콜, 양방향 WebSocket 실시간 텔레메트리, 대규모 OTA 펌웨어 배포, 환경부(KECO) 전국 CPO 로밍 데이터 연동 및 스마트로(Smartro) PG 결제 정산 파이프라인을 구축했습니다.",
+    "p3": "전기차 충전소 AI 전력 수요 예측 & 한전 계약전력 최적화 플랫폼 구축: PyTorch LSTM, XGBoost 및 극값 이론(EVT - GEV/GPD 분포) 8종 앙상블 모델을 기반으로 P50/P90 확률적 분위수로 피크 부하를 정밀 예측하여, 한전 초과 부가금 및 전기 요금을 대폭 절감했습니다.",
+    "p4": "현재 최신 LLM 에이전트(Claude, OpenAI, Gemini), Vercel AI SDK 토큰 스트리밍, 다국어 STT/TTS 및 Next.js 15 / TypeScript 기반 고성능 웹 플랫폼을 Docker, Linux, AWS, GCP 인프라에 독립적이고 빠르게 구축하는 데 집중하고 있습니다.",
     "metrics": {
       "years": "5+",
       "yearsLabel": "프로덕션 시스템 개발 경력",

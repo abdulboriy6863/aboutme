@@ -38,10 +38,10 @@
   },
   "About": {
     "title": "About me",
-    "p1": "Senior AI and Full-Stack engineer residing in South Korea — from Uzbekistan, living and working in Korea since 2023; fluent in Korean, English, and Russian.",
-    "p2": "Engineered core architecture for Blue Networks' E-Chae-Um EV Charging Station Management System (CSMS) using Java 17, Spring Boot, MyBatis, and sharded databases — implementing OCPP 1.6J/2.0.1 protocol, real-time WebSocket telemetry pipelines, bulk OTA firmware distribution, and national KECO (Korea Environment Corp) inter-operator roaming data (로밍 데이터) synchronization & Smartro PG settlement reconciliation.",
-    "p3": "Developed the AI-powered EV Charging Power Demand Forecasting & Contract Power Optimization Platform: utilizing an 8-model ensemble including PyTorch LSTM, XGBoost, and Extreme Value Theory (EVT - GEV/GPD) to forecast peak power loads with P50/P90 probabilistic quantiles, drastically mitigating KEPCO peak surcharge penalties and energy costs.",
-    "p4": "Integrates premier LLM foundation models (OpenAI, Anthropic Claude, Google Gemini), TypeScript ecosystem (Node.js, NestJS, React, Next.js) streaming AI assistants, voice-to-text (STT/TTS), and containerized deployments across Docker, NGINX, Linux, AWS, and GCP.",
+    "p1": "Senior Full-Stack & AI Architect based in South Korea, living and building in the Korean tech ecosystem since 2023. I specialize in taking mission-critical platforms and production AI from zero to scale as an autonomous end-to-end builder — fluent in English, Korean, and Russian.",
+    "p2": "Architected the core backend for Blue Networks' E-Chae-Um EV CSMS across 1,600+ chargers in 500+ locations using Java 17, Spring Boot, MyBatis, and sharded databases — delivering OCPP 1.6J/2.0.1 bidirectional WebSocket telemetry, bulk OTA firmware distribution, and national KECO inter-operator roaming data (로밍 데이터) synchronization with Smartro PG settlements.",
+    "p3": "Engineered the AI-powered EV Power Demand Forecasting & Contract Optimization Platform: combining an 8-model ensemble (PyTorch LSTM, XGBoost, and GEV/GPD Extreme Value Theory) to forecast peak power loads in P50/P90 probabilistic quantiles, significantly reducing KEPCO electricity tariffs and peak surcharge penalties.",
+    "p4": "Today, I specialize in shipping modern AI SaaS platforms, streaming LLM agents (Claude, OpenAI, Gemini), multilingual STT/TTS, and reactive Next.js 15 / TypeScript full-stack architectures containerized across Docker, Linux, AWS, and GCP.",
     "metrics": {
       "years": "5+",
       "yearsLabel": "years building production systems",
