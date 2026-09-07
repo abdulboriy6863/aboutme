@@ -80,32 +80,29 @@ export function AboutMe() {
               <p>{t("p4")}</p>
             </div>
 
-            {/* Metrics Row (2x2 Micro-Cards Grid) */}
-            <div className="grid grid-cols-2 gap-3 sm:gap-3.5 pt-4 border-t border-zinc-200/80 dark:border-zinc-800/80">
+            {/* Metrics Row (2x2 Clean Open Grid with Top Border) */}
+            <div className="grid grid-cols-2 gap-6 pt-5 border-t border-zinc-200/80 dark:border-zinc-800/80">
               {metrics.map((metric, i) => (
-                <div
-                  key={i}
-                  className="p-3.5 sm:p-4 rounded-2xl border border-zinc-200/80 dark:border-white/[0.06] bg-zinc-50/70 dark:bg-white/[0.02] hover:border-[#79a7a7]/40 dark:hover:border-[#79a7a7]/40 transition-all duration-300 shadow-2xs"
-                >
+                <div key={i} className="space-y-1">
                   <div className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-white font-mono">
                     {metric.value}
                   </div>
-                  <div className="text-[11px] sm:text-xs text-zinc-500 dark:text-zinc-400 leading-snug mt-1">
+                  <div className="text-[11px] sm:text-xs text-zinc-500 dark:text-zinc-400 leading-snug">
                     {metric.label}
                   </div>
                 </div>
               ))}
             </div>
 
-            {/* Language Proficiency Badges */}
-            <div className="flex flex-wrap gap-2 pt-1">
+            {/* Language Proficiency Badges (1 Row / 4 Columns) */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2">
               {languages.map((lang, i) => (
-                <span
+                <div
                   key={i}
-                  className="px-3 py-1.5 rounded-xl border border-zinc-200/80 dark:border-white/[0.08] bg-white dark:bg-zinc-900/80 text-xs font-medium text-zinc-700 dark:text-zinc-300 shadow-2xs hover:border-[#79a7a7]/50 transition-colors"
+                  className="px-2.5 py-1.5 rounded-xl border border-zinc-200/80 dark:border-white/[0.08] bg-white/80 dark:bg-zinc-900/70 text-[11px] sm:text-xs font-medium text-zinc-700 dark:text-zinc-300 shadow-2xs hover:border-[#79a7a7]/50 transition-colors text-center truncate backdrop-blur-sm"
                 >
                   {lang}
-                </span>
+                </div>
               ))}
             </div>
           </motion.div>

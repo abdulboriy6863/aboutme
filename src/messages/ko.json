@@ -53,10 +53,10 @@
       "latencyLabel": "P99 실시간 WebSocket 지연 시간"
     },
     "languages": {
-      "uz": "🇺🇿 우즈베크어 · 모국어",
-      "ko": "🇰🇷 한국어 · 능통 (Fluent)",
-      "en": "🇺🇸 영어 · 능통 (Fluent)",
-      "ru": "🇷🇺 러시아어 · 능통 (Fluent)"
+      "uz": "🇺🇿 우즈베크어 (모국어)",
+      "ko": "🇰🇷 한국어 (유창함)",
+      "en": "🇺🇸 English (Fluent)",
+      "ru": "🇷🇺 Русский (Fluent)"
     }
   },
   "Bento": {

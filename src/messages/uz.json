@@ -53,10 +53,10 @@
       "latencyLabel": "P99 real-vaqt WebSocket kechikishi"
     },
     "languages": {
-      "uz": "🇺🇿 O'zbekcha · Ona tili",
-      "ko": "🇰🇷 한국어 · Erkin muloqot (Fluent)",
-      "en": "🇺🇸 English · Fluent",
-      "ru": "🇷🇺 Русский · Свободный (Fluent)"
+      "uz": "🇺🇿 O'zbekcha (Ona tili)",
+      "ko": "🇰🇷 한국어 (Fluent)",
+      "en": "🇺🇸 English (Fluent)",
+      "ru": "🇷🇺 Русский (Fluent)"
     }
   },
   "Bento": {

@@ -53,10 +53,10 @@
       "latencyLabel": "P99 real-time WebSocket latency"
     },
     "languages": {
-      "uz": "🇺🇿 Uzbek · Native",
-      "ko": "🇰🇷 Korean · Fluent",
-      "en": "🇺🇸 English · Fluent",
-      "ru": "🇷🇺 Russian · Fluent"
+      "uz": "🇺🇿 Uzbek (Native)",
+      "ko": "🇰🇷 Korean (Fluent)",
+      "en": "🇺🇸 English (Fluent)",
+      "ru": "🇷🇺 Russian (Fluent)"
     }
   },
   "Bento": {
