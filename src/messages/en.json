@@ -44,11 +44,11 @@
     "p4": "Today, I specialize in shipping modern AI SaaS platforms, streaming LLM agents (Claude, OpenAI, Gemini), multilingual STT/TTS, and reactive Next.js 15 / TypeScript full-stack architectures containerized across Docker, Linux, AWS, and GCP.",
     "metrics": {
       "years": "5+",
-      "yearsLabel": "years building production systems",
+      "yearsLabel": "years building mission-critical production systems",
       "scale": "1,600+",
-      "scaleLabel": "connected EV chargers managed",
+      "scaleLabel": "managed EV charging stations",
       "sla": "99.99%",
-      "slaLabel": "architectural reliability & production SLA",
+      "slaLabel": "production architecture SLA & uptime",
       "latency": "<15ms",
       "latencyLabel": "P99 real-time WebSocket latency"
     },
@@ -60,42 +60,42 @@
     }
   },
   "Skills": {
-    "title": "Core Competencies",
+    "title": "Core Competencies & Stack",
     "categories": {
       "ai": {
-        "title": "AI / LLM Engineering",
+        "title": "AI & LLM Engineering",
         "bullets": [
-          "LLM routing with automated failover across multiple providers — powering the live AI agent on this page.",
-          "Custom enterprise RAG pipelines: vector retrieval, semantic caching, streaming, and cost control.",
-          "Speech-to-text intelligence: production Whisper pipelines integrated into real-world voice accounting applications.",
-          "Image generation & multimodal orchestration across Claude, Gemini, and Vertex Imagen behind task queues.",
-          "EV power forecasting: 8-model ensemble (LSTM, XGBoost, EVT) predicting P50/P90 peak loads."
+          "Intelligent LLM routing with automated failover across multiple providers — powering the live AI agent on this site.",
+          "Custom enterprise RAG systems: vector retrieval, semantic caching, token streaming, and cost control.",
+          "Speech-to-text intelligence: Whisper pipelines integrated into production real-time voice accounting platforms.",
+          "Multimodal image generation & model orchestration across Claude, Gemini, and Vertex Imagen via task queues.",
+          "EV power demand forecasting: PyTorch LSTM, XGBoost, and Extreme Value Theory predicting P50/P90 peak loads."
         ],
         "stack": [
           "OpenAI", "Anthropic Claude", "Google Gemini", "Vertex Imagen", "PyTorch", "XGBoost", "RAG & Retrieval", "LLM Orchestration", "Vercel AI SDK", "Prompt Engineering", "Whisper STT", "LoRA Fine-tuning", "Qwen3 / Ollama", "llama.cpp / GGUF", "MLX (Apple Silicon)", "bge-m3 Embeddings", "SSE Streaming"
         ]
       },
       "backend": {
-        "title": "Backend Systems",
+        "title": "Backend & Systems Architecture",
         "bullets": [
-          "Production-hardened NestJS & Spring Boot APIs: message queues, automated retries, idempotency, state machines.",
-          "Data modeling in PostgreSQL & MySQL, high-throughput caching and real-time pub/sub with Redis & ShardingSphere.",
-          "Payment processing & billing: usage-metered Stripe billing and Korea Smartro PG integrations.",
-          "End-to-end containerized deployments: Docker, NGINX, Linux, AWS, GCP, CI/CD pipelines.",
-          "OCPP 1.6J/2.0.1 charge point protocol, WebSocket telemetry mesh, and national KECO roaming data pipelines."
+          "High-concurrency NestJS & Spring Boot APIs: message queues, automated retries, idempotency, state machines.",
+          "Data modeling across PostgreSQL & MySQL, high-throughput caching and real-time pub/sub with Redis & ShardingSphere.",
+          "Payment processing & billing: Korea Smartro PG and international usage-metered Stripe settlement pipelines.",
+          "End-to-end containerized deployments: Docker, NGINX, Linux, AWS, GCP, and automated CI/CD.",
+          "OCPP 1.6J/2.0.1 charge point protocol, WebSocket telemetry mesh, and national KECO roaming data synchronization."
         ],
         "stack": [
           "Java 17", "Spring Boot", "MyBatis", "OCPP 1.6J/2.0.1", "MySQL", "ShardingSphere", "Python", "FastAPI", "Express", "Node.js", "NestJS", "PostgreSQL", "MongoDB", "Redis", "BullMQ", "GraphQL", "Kotlin", "KECO Roaming", "Smartro PG", "Stripe", "Ktor / WebSocket", "Docker", "NGINX", "AWS", "Linux"
         ]
       },
       "frontend": {
-        "title": "Product Frontend & Mobile",
+        "title": "Frontend & Mobile Engineering",
         "bullets": [
-          "Next.js App Router frontends with server components, streaming SSR, and clean SEO architecture.",
+          "Next.js 15 App Router web platforms with React Server Components, streaming SSR, and pure SEO architecture.",
           "Cross-platform mobile apps deployed to App Store & Google Play from a single React Native & Expo codebase.",
-          "Design system discipline: design tokens, dark/light theming, accessibility — exemplified by this website.",
-          "End-to-end TypeScript — a single cohesive type system across web, mobile, and APIs.",
-          "Native Android development with modern Kotlin & Jetpack Compose."
+          "Design system discipline: design tokens, dark/light theming, accessibility (A11y) — exemplified by this website.",
+          "Strict end-to-end TypeScript — a single cohesive type system across web, mobile, and APIs.",
+          "Native Android development with modern Kotlin and Jetpack Compose architectures."
         ],
         "stack": [
           "Jetpack Compose", "Android", "Shopify (Liquid, Admin API)", "Vite", "Next.js (App Router)", "Tailwind CSS", "React 19", "i18next", "TypeScript", "React Native / Expo", "SCSS Modules", "Framer Motion", "Zustand"

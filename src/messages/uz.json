@@ -44,11 +44,11 @@
     "p4": "Hozirda LLM agentlar (Claude, GPT, Gemini), Vercel AI SDK token streaming, ko'p tilli STT/TTS hamda TypeScript va Next.js 15 App Router ekotizimida yuqori yuklamali veb platformalarni Docker, Linux, AWS va GCP infratuzilmasida sifatli va mustaqil yetkazib berishga ixtisoslashganman.",
     "metrics": {
       "years": "5+",
-      "yearsLabel": "ishlab chiqarish tizimlarini yaratish bo'yicha yillar",
+      "yearsLabel": "production tizimlaridagi amaliy tajriba",
       "scale": "1,600+",
       "scaleLabel": "boshqarilgan EV zaryadlash stansiyalari",
       "sla": "99.99%",
-      "slaLabel": "ishlab chiqarish arxitekturasi SLA & Uptime",
+      "slaLabel": "arxitektura ishonchliligi & SLA Uptime",
       "latency": "<15ms",
       "latencyLabel": "P99 real-vaqt WebSocket kechikishi"
     },
@@ -60,42 +60,42 @@
     }
   },
   "Skills": {
-    "title": "Ko'nikmalar",
+    "title": "Ko'nikmalar va Texnologiyalar",
     "categories": {
       "ai": {
-        "title": "AI / LLM muhandisligi",
+        "title": "AI & LLM Muhandisligi",
         "bullets": [
-          "Bir nechta provayder o'rtasida avtomatik failover bilan LLM marshrutlash — shu sahifadagi chat aynan shunda ishlaydi.",
-          "Shaxsiy ma'lumotlar ustida RAG pipeline'lar: qidiruv, prompt dizayni, streaming, xarajat nazorati.",
-          "Nutqni matnga aylantiruvchi mahsulotlar: Whisper pipeline'lari real ishlayotgan ovozli buxgalteriya ilovasiga aylantirilgan.",
-          "Claude, Gemini va Vertex Imagen o'rtasida rasm generatsiyasi orkestratsiyasi — vazifa navbatlari ortida.",
-          "EV energiya talabi bashorati: PyTorch LSTM, XGBoost va EVT orqali pik yuklamalarni P50/P90 kvantillarida hisoblash."
+          "Bir nechta provayder o'rtasida avtomatik failover bilan ishlovchi LLM marshrutlash — ushbu saytdagi chat aynan shunda ishlaydi.",
+          "Korporativ ma'lumotlar ustida RAG tizimlari: semantik qidiruv, prompt dizayni, streaming va xarajat nazorati.",
+          "Nutqni matnga aylantirish (STT): Whisper pipeline'lari real vaqtda ishlovchi ovozli hisob-kitob ilovasiga aylantirilgan.",
+          "Claude, Gemini va Vertex Imagen o'rtasida vazifa navbatlari (task queues) orqali multimodal generatsiya orkestratsiyasi.",
+          "EV quvvat talabi bashorati: PyTorch LSTM, XGBoost va EVT orqali pik yuklamalarni P50/P90 kvantillarida hisoblash."
         ],
         "stack": [
           "OpenAI", "Anthropic Claude", "Google Gemini", "Vertex Imagen", "PyTorch", "XGBoost", "RAG & Retrieval", "LLM Orchestration", "Vercel AI SDK", "Prompt Engineering", "Whisper STT", "LoRA Fine-tuning", "Qwen3 / Ollama", "llama.cpp / GGUF", "MLX (Apple Silicon)", "bge-m3 Embeddings", "SSE Streaming"
         ]
       },
       "backend": {
-        "title": "Backend tizimlari",
+        "title": "Backend & Tizimlar Arxitekturasi",
         "bullets": [
-          "Productionga bardosh beradigan NestJS & Spring Boot API'lar: navbatlar, qayta urinishlar, idempotentlik, holat mashinalari.",
-          "PostgreSQL va MySQL'da ma'lumotlarni modellashtirish, kesh va real vaqt uchun esa Redis va ShardingSphere.",
-          "To'lovlar va billing: Koreya Smartro PG va xalqaro Stripe kredit hisob-kitobi.",
-          "Deploy boshidan oxirigacha o'z qo'limda: Docker, NGINX, Linux, AWS, CI/CD.",
-          "OCPP 1.6J/2.0.1 zaryadlash protokoli, WebSocket mesh va telemetriya konveyeri."
+          "Yuqori yuklamaga bardoshli NestJS va Spring Boot API'lar: navbatlar, qayta urinishlar, idempotentlik va holat mashinalari.",
+          "PostgreSQL va MySQL'da ma'lumotlarni modellashtirish, kesh va real vaqt uchun esa Redis hamda ShardingSphere.",
+          "To'lovlar va billing: Janubiy Koreya Smartro PG hamda xalqaro Stripe kredit hisob-kitobi.",
+          "Deploy boshidan oxirigacha to'liq mustaqil: Docker, NGINX, Linux, AWS, GCP va CI/CD.",
+          "OCPP 1.6J/2.0.1 zaryadlash protokoli, WebSocket mesh va KECO milliy rouming telemetriyasi."
         ],
         "stack": [
           "Java 17", "Spring Boot", "MyBatis", "OCPP 1.6J/2.0.1", "MySQL", "ShardingSphere", "Python", "FastAPI", "Express", "Node.js", "NestJS", "PostgreSQL", "MongoDB", "Redis", "BullMQ", "GraphQL", "Kotlin", "KECO Roaming", "Smartro PG", "Stripe", "Ktor / WebSocket", "Docker", "NGINX", "AWS", "Linux"
         ]
       },
       "frontend": {
-        "title": "Mahsulot frontend'i",
+        "title": "Frontend & Mobil Ishlanmalar",
         "bullets": [
-          "Next.js App Router asosidagi frontend'lar — server rendering va toza SEO bilan.",
-          "Bitta kod bazasidan ikkala do'konga ham chiqarilgan React Native va Expo ilovalar.",
-          "Dizayn-tizim intizomi: tokenlar, theming, accessibility — namuna sifatida shu saytning o'zi.",
-          "Boshidan oxirigacha TypeScript — web, mobil va API uchun yagona til.",
-          "Native Android: Kotlin va Jetpack Compose arxitekturasi."
+          "Next.js 15 App Router asosidagi veb-platformalar — server komponentlar, streaming SSR va mukammal SEO.",
+          "Bitta kod bazasidan ikkala do'konga (App Store & Google Play) ham chiqarilgan React Native va Expo ilovalari.",
+          "Dizayn-tizim intizomi: dizayn-tokenlar, theming, accessibility (A11y) — namuna sifatida ushbu saytning o'zi.",
+          "Boshidan oxirigacha qat'iy TypeScript — veb, mobil va API uchun yagona tip xavfsizligi.",
+          "Kotlin va Jetpack Compose arxitekturasi asosidagi zamonaviy Native Android ilovalar."
         ],
         "stack": [
           "Jetpack Compose", "Android", "Shopify (Liquid, Admin API)", "Vite", "Next.js (App Router)", "Tailwind CSS", "React 19", "i18next", "TypeScript", "React Native / Expo", "SCSS Modules", "Framer Motion", "Zustand"

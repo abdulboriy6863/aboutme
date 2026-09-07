@@ -44,7 +44,7 @@
     "p4": "현재 최신 LLM 에이전트(Claude, OpenAI, Gemini), Vercel AI SDK 토큰 스트리밍, 다국어 STT/TTS 및 Next.js 15 / TypeScript 기반 고성능 웹 플랫폼을 Docker, Linux, AWS, GCP 인프라에 독립적이고 빠르게 구축하는 데 집중하고 있습니다.",
     "metrics": {
       "years": "5+",
-      "yearsLabel": "프로덕션 시스템 개발 경력",
+      "yearsLabel": "미션 크리티컬 프로덕션 시스템 구축 경력",
       "scale": "1,600+",
       "scaleLabel": "관제 중인 전기차 충전기",
       "sla": "99.99%",
@@ -63,11 +63,11 @@
     "title": "보유 기술 & 전문 역량",
     "categories": {
       "ai": {
-        "title": "AI / LLM 엔지니어링",
+        "title": "AI & LLM 엔지니어링",
         "bullets": [
           "다중 LLM 제공자 간 자동 장애 조치(failover)를 지원하는 지능형 라우팅 — 본 웹사이트 AI 챗봇에 직접 적용.",
-          "엔터프라이즈 데이터 기반 RAG 파이프라인: 벡터 검색, 시맨틱 캐싱, 스트리밍 및 API 비용 최적화.",
-          "음성 인식(STT) 제품화: 프로덕션 Whisper 파이프라인을 구축하여 실제 음성 회계 및 스마트 장부 앱으로 상용화.",
+          "엔터프라이즈 데이터 기반 RAG 시스템: 벡터 검색, 시맨틱 캐싱, 토큰 스트리밍 및 API 비용 최적화.",
+          "음성 인식(STT) 제품화: 프로덕션 Whisper 파이프라인을 구축하여 실제 실시간 음성 회계 앱으로 상용화.",
           "Claude, Gemini, Vertex Imagen 다중 멀티모달 이미지 생성 및 비동기 작업 큐 오케스트레이션.",
           "전기차 충전 전력 수요 예측: PyTorch LSTM, XGBoost, 극값 이론(EVT) 기반 P50/P90 피크 부하 예측."
         ],
@@ -76,9 +76,9 @@
         ]
       },
       "backend": {
-        "title": "백엔드 시스템",
+        "title": "백엔드 & 분산 아키텍처",
         "bullets": [
-          "엔터프라이즈급 NestJS & Spring Boot API 아키텍처: 작업 큐, 자동 재시도, 멱등성 보장, 상태 머신.",
+          "대규모 트래픽을 견디는 NestJS & Spring Boot API 아키텍처: 작업 큐, 자동 재시도, 멱등성 보장, 상태 머신.",
           "PostgreSQL & MySQL 고성능 데이터 모델링, Redis 및 ShardingSphere 기반 대용량 샤딩 & 분산 캐싱.",
           "결제 및 빌링 시스템: 종량제 과금 Stripe 결제 및 국내 스마트로(Smartro) PG사 결제·정산 연동.",
           "엔드투엔드 독립 배포 인프라: Docker, NGINX, Linux, AWS, GCP, CI/CD 자동화 파이프라인.",
@@ -89,12 +89,12 @@
         ]
       },
       "frontend": {
-        "title": "프로덕트 프론트엔드 & 모바일",
+        "title": "프론트엔드 & 모바일 엔지니어링",
         "bullets": [
-          "Next.js App Router 기반 고성능 프론트엔드 — React Server Components, 스트리밍 SSR 및 완벽한 SEO.",
+          "Next.js 15 App Router 기반 고성능 웹 플랫폼 — React Server Components, 스트리밍 SSR 및 완벽한 SEO.",
           "단일 코드베이스로 앱스토어와 구글플레이에 동시 배포된 React Native & Expo 크로스 플랫폼 앱.",
-          "엄격한 디자인 시스템 규격: 디자인 토큰, 다크/라이트 테마, 접근성(A11y) — 본 웹사이트가 대표적 구현체.",
-          "웹, 모바일, API 전반에 걸친 엔드투엔드 TypeScript 단일 타입 안전성 확보.",
+          "엄격한 디자인 시스템 규격: 디자인 토큰, 다크/라이트 테마, 웹 접근성(A11y) — 본 웹사이트가 대표적 구현체.",
+          "웹, 모바일, API 전반에 걸친 엄격한 엔드투엔드 TypeScript 단일 타입 안전성 확보.",
           "Kotlin 및 Jetpack Compose 기반 최신 안드로이드 네이티브 앱 아키텍처."
         ],
         "stack": [
