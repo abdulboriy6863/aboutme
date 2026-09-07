@@ -96,13 +96,13 @@ export function Hero({ onOpenAi }: { onOpenAi?: (prompt?: string) => void }) {
                 key={i}
                 type="button"
                 onClick={() => onOpenAi?.(card.text)}
-                className="group relative rounded-2xl border border-zinc-200/90 dark:border-zinc-800/90 bg-white/70 dark:bg-zinc-950/60 p-4 sm:p-5 flex flex-col justify-between hover:border-zinc-400 dark:hover:border-zinc-600 hover:shadow-md transition-all cursor-pointer text-left h-28 sm:h-32 backdrop-blur-md"
+                className="group relative rounded-2xl border border-zinc-200/90 dark:border-zinc-800/90 bg-white/70 dark:bg-zinc-950/60 p-4 sm:p-5 flex flex-col justify-between hover:border-[#79a7a7] dark:hover:border-[#79a7a7]/70 hover:bg-[#79a7a7]/5 dark:hover:bg-[#79a7a7]/10 hover:shadow-[0_4px_20px_rgba(82,124,115,0.12)] dark:hover:shadow-[0_0_20px_rgba(121,167,167,0.18)] hover:-translate-y-0.5 transition-all duration-200 cursor-pointer text-left h-28 sm:h-32 backdrop-blur-md"
               >
-                <span className="text-xs sm:text-sm font-semibold text-zinc-800 dark:text-zinc-200 group-hover:text-zinc-950 dark:group-hover:text-white transition leading-snug">
+                <span className="text-xs sm:text-sm font-semibold text-zinc-800 dark:text-zinc-200 group-hover:text-[#527c73] dark:group-hover:text-[#79a7a7] transition-colors leading-snug">
                   {card.text}
                 </span>
                 <div className="flex justify-end w-full">
-                  <Icon className="w-4 h-4 text-zinc-400 group-hover:text-zinc-700 dark:group-hover:text-zinc-200 transition-colors" />
+                  <Icon className="w-4 h-4 text-zinc-400 dark:text-zinc-500 group-hover:text-[#527c73] dark:group-hover:text-[#79a7a7] group-hover:scale-110 transition-all duration-200" />
                 </div>
               </button>
             );
@@ -118,7 +118,7 @@ export function Hero({ onOpenAi }: { onOpenAi?: (prompt?: string) => void }) {
         >
           <form
             onSubmit={handleSubmit}
-            className="flex items-center rounded-2xl border border-zinc-200/90 dark:border-zinc-800/90 bg-white/80 dark:bg-zinc-950/70 p-1.5 sm:p-2 shadow-sm hover:border-zinc-300 dark:hover:border-zinc-700 transition backdrop-blur-md"
+            className="flex items-center rounded-2xl border border-zinc-200/90 dark:border-zinc-800/90 bg-white/80 dark:bg-zinc-950/70 p-1.5 sm:p-2 shadow-sm hover:border-[#79a7a7]/60 focus-within:border-[#79a7a7] focus-within:ring-2 focus-within:ring-[#79a7a7]/20 transition-all backdrop-blur-md"
           >
             <input
               type="text"
@@ -130,10 +130,10 @@ export function Hero({ onOpenAi }: { onOpenAi?: (prompt?: string) => void }) {
             <button
               type="submit"
               disabled={!query.trim()}
-              className="flex items-center justify-center h-10 w-10 sm:h-11 sm:w-11 rounded-xl bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 disabled:opacity-40 disabled:cursor-not-allowed transition cursor-pointer shrink-0"
+              className="flex items-center justify-center h-10 w-10 sm:h-11 sm:w-11 rounded-xl bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-gradient-to-r hover:from-[#527c73] hover:to-[#79a7a7] hover:text-white disabled:opacity-40 disabled:cursor-not-allowed transition cursor-pointer shrink-0"
               aria-label="Send message"
             >
-              <Send className="w-4 h-4 sm:w-5 sm:h-5 text-zinc-600 dark:text-zinc-300" />
+              <Send className="w-4 h-4 sm:w-5 sm:h-5 text-zinc-600 dark:text-zinc-300 group-hover:text-white" />
             </button>
           </form>
         </motion.div>
