@@ -3,10 +3,11 @@
 import * as React from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { Server, Compass, Code2, Globe } from "lucide-react";
+import { Server, Compass, Code2, Globe, Send } from "lucide-react";
 
 export function Hero({ onOpenAi }: { onOpenAi?: (prompt?: string) => void }) {
   const t = useTranslations("Hero");
+  const [query, setQuery] = React.useState("");
 
   const promptCards = [
     {
@@ -27,6 +28,14 @@ export function Hero({ onOpenAi }: { onOpenAi?: (prompt?: string) => void }) {
     },
   ];
 
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (query.trim()) {
+      onOpenAi?.(query.trim());
+      setQuery("");
+    }
+  };
+
   return (
     <section id="about" className="relative min-h-[85vh] flex flex-col justify-center pt-32 pb-16 overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center flex flex-col items-center">
@@ -43,7 +52,7 @@ export function Hero({ onOpenAi }: { onOpenAi?: (prompt?: string) => void }) {
           </div>
         </motion.div>
 
-        {/* Main Title: Production AI tizimlarini qurib ishga tushiraman — yakka o'zim, boshidan oxirigacha. */}
+        {/* Main Title */}
         <motion.h1
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -98,6 +107,35 @@ export function Hero({ onOpenAi }: { onOpenAi?: (prompt?: string) => void }) {
               </button>
             );
           })}
+        </motion.div>
+
+        {/* Inline AI Input Bar (Directly below prompt cards) */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="mt-4 w-full"
+        >
+          <form
+            onSubmit={handleSubmit}
+            className="flex items-center rounded-2xl border border-zinc-200/90 dark:border-zinc-800/90 bg-white/80 dark:bg-zinc-950/70 p-1.5 sm:p-2 shadow-sm hover:border-zinc-300 dark:hover:border-zinc-700 transition backdrop-blur-md"
+          >
+            <input
+              type="text"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder={t("inputPlaceholder")}
+              className="flex-1 bg-transparent px-4 py-2.5 text-sm sm:text-base text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none"
+            />
+            <button
+              type="submit"
+              disabled={!query.trim()}
+              className="flex items-center justify-center h-10 w-10 sm:h-11 sm:w-11 rounded-xl bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 disabled:opacity-40 disabled:cursor-not-allowed transition cursor-pointer shrink-0"
+              aria-label="Send message"
+            >
+              <Send className="w-4 h-4 sm:w-5 sm:h-5 text-zinc-600 dark:text-zinc-300" />
+            </button>
+          </form>
         </motion.div>
       </div>
     </section>

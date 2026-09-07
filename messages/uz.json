@@ -16,6 +16,7 @@
     "title": "Production AI tizimlarini qurib ishga tushiraman — yakka o'zim, boshidan oxirigacha.",
     "subtitle": "Koreys mahsulot jamoalari va butun dunyo masofaviy mijozlari uchun AI SaaS platformalar, RAG pipeline'lar va LLM orkestratsiyasi · Upwork'da Top Rated, 100% Job Success.",
     "chatNote": "So'zimga shunchaki ishonib o'tirmang. Chatdan o'zingiz so'rang — u o'zim qurgan RAG pipeline asosida, bir nechta provayder o'rtasida avtomatik failover bilan ishlaydi.",
+    "inputPlaceholder": "Abdulboriy haqida istalgan narsani so'rang...",
     "quickPrompts": [
       {
         "text": "Eng murakkab nima qurgan?",
@@ -74,7 +75,7 @@
     "triggerButton": "AI Copilot bilan bog'lanish",
     "modalTitle": "Portfolio Sun'iy Intellekt Yordamchisi",
     "modalSubtitle": "Abdulboriyning tizim arxitekturasi, tajribasi va loyihalari haqida xohlagan savolingizni bering.",
-    "placeholder": "Masalan: 'Ko'p hududli ma'lumotlar bazasi replikatsiyasini qanday tashkil qilasiz?'...",
+    "placeholder": "Abdulboriy haqida istalgan narsani so'rang...",
     "send": "Yuborish",
     "clear": "Tozalash",
     "greeting": "Assalomu alaykum! Men Abdulboriyning AI raqamli egizagiman. Uning arxitektura tajribasi, texnologik steki yoki yetakchilik imkoniyatlari haqida savollaringizga javob bera olaman.",
@@ -84,7 +85,7 @@
       "Haqiqiy texnologik steki qanday?",
       "Nega uni Seulda yollash kerak?"
     ],
-    "disclaimer": "Vercel AI SDK va Next.js streaming arxitekturasi asosida ishlaydi."
+    "disclaimer": "Google Gemini & Next.js streaming arxitekturasi asosida ishlaydi."
   },
   "Footer": {
     "status": "Tizimlar Barqaror",

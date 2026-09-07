@@ -16,6 +16,7 @@
     "title": "I build and ship Production AI systems — solo, end to end.",
     "subtitle": "AI SaaS platforms, RAG pipelines, and LLM orchestration for Korean product teams and global remote clients · Top Rated on Upwork, 100% Job Success.",
     "chatNote": "Don't just take my word for it. Ask the chat yourself — it runs on a RAG pipeline I built with automated failover across multiple LLM providers.",
+    "inputPlaceholder": "Ask anything about Abdulboriy...",
     "quickPrompts": [
       {
         "text": "What's the most complex thing you've built?",
@@ -74,7 +75,7 @@
     "triggerButton": "Ask AI Copilot",
     "modalTitle": "Portfolio Intelligence Copilot",
     "modalSubtitle": "Ask me anything about Abdulboriy's architecture experience, past projects, or system designs.",
-    "placeholder": "Ask e.g. 'How do you handle multi-region database replication?'...",
+    "placeholder": "Ask anything about Abdulboriy...",
     "send": "Send",
     "clear": "Clear Chat",
     "greeting": "Hello! I am Abdulboriy's AI Digital Twin. I can answer questions regarding his full-stack architectural experience, tech stack, scalability milestones, or availability for leadership roles.",
@@ -84,7 +85,7 @@
       "What's your actual tech stack?",
       "Why hire him in Seoul?"
     ],
-    "disclaimer": "Powered by Vercel AI SDK & Next.js streaming architecture."
+    "disclaimer": "Powered by Google Gemini & Next.js streaming architecture."
   },
   "Footer": {
     "status": "Systems Operational",

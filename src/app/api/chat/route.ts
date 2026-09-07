@@ -2,14 +2,16 @@ import { NextRequest, NextResponse } from "next/server";
 
 export const runtime = "nodejs";
 
-const PORTFOLIO_KNOWLEDGE = `
-You are the AI Digital Twin and Principal Architecture Copilot for Abdulboriy.
-Abdulboriy is a Principal Full-Stack & Distributed Systems Architect with 7+ years of experience leading engineering teams.
-Key Highlights:
-- Specializes in high-throughput distributed systems, microfrontends, Next.js 15, React 19, TypeScript strict mode, Go, PostgreSQL, Redis, and Cloudflare/AWS Edge architectures.
-- Built systems serving 10M+ daily events with sub-45ms P99 global latency and 99.99% production SLA.
-- Deep expertise in AI-native engineering: Vercel AI SDK, autonomous agent orchestration, RAG pipelines with pgvector/Pinecone.
-- Leadership: Mentors senior engineering teams, drives RFC architecture reviews, enforces 100/100 Lighthouse performance budgets and SOC2 zero-trust compliance.
+const SYSTEM_INSTRUCTION = `
+You are the AI Digital Twin and Copilot for Abdulboriy.
+Key Profile & Expertise:
+- Role: Production AI & Systems Architect based in Seoul, South Korea (Seulda · doimiy ish va kontraktga ochiq).
+- Work Scope: Solo builder, shipping end-to-end production AI systems, AI SaaS platforms, RAG pipelines, and LLM orchestration.
+- Upwork: Top Rated, 100% Job Success score.
+- Architecture: High-throughput distributed systems, Next.js 15, Go, PostgreSQL, Redis, Kafka, Kubernetes, and Vercel AI SDK.
+- Latency & Scale: Handled 10M+ daily telemetry events with sub-45ms P99 latency and 99.99% production SLA.
+- Personality: Direct, professional, insightful, developer-first, and helpful.
+Answer the user's questions concisely and smartly in the same language they ask (Uzbek, English, or Korean).
 `;
 
 export async function POST(req: NextRequest) {
@@ -17,43 +19,117 @@ export async function POST(req: NextRequest) {
     const { messages } = await req.json();
     const lastUserMessage = messages?.[messages.length - 1]?.content || "";
 
-    // Simulated high-throughput streaming response
-    let responseText = "";
+    const apiKey = process.env.GEMINI_API_KEY || "AIzaSyDTbwSoO1uV035Z_-134itwFXdHw28pgDw";
 
-    const lower = lastUserMessage.toLowerCase();
-    if (lower.includes("latency") || lower.includes("sub-50ms") || lower.includes("speed")) {
-      responseText = `To achieve sub-45ms global P99 latency, Abdulboriy employs:
-1. **Edge Routing & SSR**: Next.js 15 App Router deployed across multi-region Cloudflare / AWS edge nodes.
-2. **Predictive Caching**: Multi-tiered Redis caching with stale-while-revalidate and deterministic cache invalidation tags.
-3. **Zero Bloat Bundles**: Tree-shaken ESM modules with strict sub-80KB initial JS budgets and critical CSS inlining.
-4. **Optimized DB Connections**: Read-replicas with connection pooling (PgBouncer) and distributed indexes on PostgreSQL.`;
-    } else if (lower.includes("stack") || lower.includes("technolog") || lower.includes("tech")) {
-      responseText = `Abdulboriy's core technology matrix spans:
-- **Frontend Architecture**: Next.js 15 (App Router), TypeScript (Strict Mode), React 19, Tailwind CSS, Framer Motion.
-- **Backend & Distributed Systems**: Go (Golang), Node.js / Bun, PostgreSQL, Redis, Kafka, gRPC.
-- **Cloud & DevOps**: Kubernetes, Docker, AWS, Cloudflare Workers, Terraform, GitHub Actions CI/CD.
-- **AI & ML Integration**: Vercel AI SDK, LangChain, Pinecone / pgvector, OpenAI / Gemini streaming endpoints.`;
-    } else if (lower.includes("ai") || lower.includes("agent") || lower.includes("sdk")) {
-      responseText = `Abdulboriy designs AI-native enterprise solutions using:
-- **Vercel AI SDK & Next.js Streaming**: Real-time token streaming with low time-to-first-byte (TTFB).
-- **Multi-Agent Orchestration**: Specialized subagents with strict tool-calling schemas and fallback error recovery.
-- **Retrieval-Augmented Generation (RAG)**: Hybrid dense/sparse vector search with reranking for high factual accuracy.`;
-    } else {
-      responseText = `Abdulboriy is a Principal Full-Stack & Systems Architect specializing in building mission-critical web platforms, resilient distributed backends (Go/Node.js), and AI-native applications.
+    // Attempt Gemini API streaming
+    if (apiKey) {
+      const models = ["gemini-flash-latest", "gemini-3.6-flash", "gemini-2.5-flash-lite"];
 
-He brings 7+ years of experience leading engineering initiatives, scaling systems to 10M+ daily events, and ensuring 99.99% availability. Feel free to explore the Bento Grid sections or ask specific questions about database architecture, microfrontends, or cloud infrastructure!`;
+      for (const model of models) {
+        try {
+          const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:streamGenerateContent?alt=sse&key=${apiKey}`;
+
+          const geminiContents = [
+            {
+              role: "user",
+              parts: [
+                {
+                  text: `${SYSTEM_INSTRUCTION}\n\nUser Question: ${lastUserMessage}`,
+                },
+              ],
+            },
+          ];
+
+          const geminiRes = await fetch(geminiUrl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ contents: geminiContents }),
+          });
+
+          if (geminiRes.ok && geminiRes.body) {
+            const reader = geminiRes.body.getReader();
+            const decoder = new TextDecoder();
+            const encoder = new TextEncoder();
+
+            const stream = new ReadableStream({
+              async start(controller) {
+                let buffer = "";
+                try {
+                  while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+                    buffer += decoder.decode(value, { stream: true });
+
+                    const lines = buffer.split("\n");
+                    buffer = lines.pop() || "";
+
+                    for (const line of lines) {
+                      if (line.startsWith("data: ")) {
+                        const jsonStr = line.replace("data: ", "").trim();
+                        if (jsonStr) {
+                          try {
+                            const parsed = JSON.parse(jsonStr);
+                            const text =
+                              parsed.candidates?.[0]?.content?.parts?.[0]?.text;
+                            if (text) {
+                              controller.enqueue(encoder.encode(text));
+                            }
+                          } catch {
+                            // ignore parse errors for partial chunks
+                          }
+                        }
+                      }
+                    }
+                  }
+                } catch {
+                  // If stream interrupted, close cleanly
+                } finally {
+                  controller.close();
+                }
+              },
+            });
+
+            return new Response(stream, {
+              headers: {
+                "Content-Type": "text/plain; charset=utf-8",
+                "Transfer-Encoding": "chunked",
+              },
+            });
+          }
+        } catch {
+          // try next model
+        }
+      }
     }
 
-    // Stream the text chunk by chunk for ultra-realistic streaming experience
+    // Fallback Domain-Knowledge Streaming
+    let fallbackText = "";
+    const lower = lastUserMessage.toLowerCase();
+
+    if (lower.includes("murakkab") || lower.includes("complex") || lower.includes("qurgan")) {
+      fallbackText = `Eng murakkab loyihalarimdan biri — kunlik 10M+ telemetriya va energiya yuklamasini bashorat qiluvchi taqsimlangan oqim platformasi. Unda Go (Golang) da yozilgan hodisaviy mikroservislar, multi-region Redis kesh va PostgreSQL klasteri orqali global P99 kechikish 45ms dan pastga tushirilgan.`;
+    } else if (lower.includes("tez") || lower.includes("fast") || lower.includes("yolg'iz") || lower.includes("solo")) {
+      fallbackText = `Yakka o'zim (solo) to'liq arxitektura, backend, frontend va AI integratsiyasini 0 dan production darajasigacha 2-4 hafta ichida mustaqil yetkazib bera olaman. CI/CD, infratuzilma va type-safety boshidan to'g'ri qurilgani sababli ortiqcha kechikishlar bo'lmaydi.`;
+    } else if (lower.includes("stek") || lower.includes("stack") || lower.includes("texnologik")) {
+      fallbackText = `Mening asosiy texnologik stekim:
+- Frontend: Next.js 15 (App Router), TypeScript (Strict), React 19, Tailwind CSS.
+- Backend & Systems: Go (Golang), Node.js / Bun, PostgreSQL, Redis, Kafka, gRPC.
+- AI & RAG: Vercel AI SDK, pgvector, LangChain, Google Gemini / OpenAI streaming.
+- Infra: Docker, Kubernetes, AWS, Cloudflare Edge.`;
+    } else if (lower.includes("seul") || lower.includes("seoul") || lower.includes("yollash") || lower.includes("hire")) {
+      fallbackText = `Seulda yashayman va mahalliy koreys kompaniyalari bilan to'g'ridan-to'g'ri (on-site / hybrid) yoki global masofaviy mijozlar bilan kontrakt asosida ishlashga tayyorman. Upwork'da Top Rated (100% Job Success) darajasidaman va koreys mahsulot jamoalari talablarini yaxshi tushunaman.`;
+    } else {
+      fallbackText = `Men Abdulboriy — Seulda joylashgan Production AI va taqsimlangan tizimlar arxitektoriman. AI SaaS platformalari, RAG konveyerlari va yuqori yuklamali veb arxitekturasini noldan oxirigacha yakka o'zim qura olaman. Menga istalgan arxitektura yoki hamkorlik bo'yicha savolingizni berishingiz mumkin!`;
+    }
+
     const encoder = new TextEncoder();
     const stream = new ReadableStream({
       async start(controller) {
-        const words = responseText.split(" ");
+        const words = fallbackText.split(" ");
         for (let i = 0; i < words.length; i++) {
           const chunk = (i === 0 ? "" : " ") + words[i];
           controller.enqueue(encoder.encode(chunk));
-          // Small delay to simulate streaming token generation
-          await new Promise((resolve) => setTimeout(resolve, 25));
+          await new Promise((resolve) => setTimeout(resolve, 20));
         }
         controller.close();
       },
@@ -65,9 +141,9 @@ He brings 7+ years of experience leading engineering initiatives, scaling system
         "Transfer-Encoding": "chunked",
       },
     });
-  } catch (error) {
+  } catch {
     return NextResponse.json(
-      { error: "Failed to generate AI response" },
+      { error: "Failed to process chat" },
       { status: 500 }
     );
   }
