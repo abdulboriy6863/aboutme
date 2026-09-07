@@ -39,8 +39,8 @@
   "About": {
     "title": "Men haqimda",
     "p1": "Janubiy Koreyada istiqomat qiluvchi katta darajadagi AI va Full-Stack muhandisi — 2023-yildan buyon Koreyada yashab, ishlayotgan o'zbekistonlik; koreys, ingliz va rus tillarini mukammal biladi.",
-    "p2": "Blue Networks kompaniyasining E-Chae-Um elektromobil zaryadlash stansiyalari tizimi (CSMS) uchun Java 17, Spring Boot, MyBatis va sharded MySQL/PostgreSQL arxitekturasida OCPP 1.6J/2.0.1 protokoli, real-vaqt WebSocket telemetriyasi, ommaviy OTA proshivka yangilanishlari hamda KECO/Smartro PG to'lov integratsiyasini to'liq ishlab chiqqan.",
-    "p3": "Kompaniyaning ichki LLM platformasini yaratgan: bu LoRA yordamida sozlangan Qwen/Llama klassifikatori bo'lib, o'z test ma'lumotlarida gpt-4o'dan ustun keladi va har bir so'rov uchun nol xarajat talab qiladi, shuningdek, to'rt tilda ishlovchi striming yordamchisini o'z ichiga oladi.",
+    "p2": "Blue Networks kompaniyasining E-Chae-Um elektromobil zaryadlash stansiyalari tizimi (CSMS) uchun Java 17, Spring Boot, MyBatis va sharded ma'lumotlar bazasi asosida OCPP 1.6J/2.0.1 protokoli, real-vaqt WebSocket telemetriyasi, ommaviy OTA proshivka yangilanishlari hamda Koreya Atrof-muhit vazirligi (KECO) milliy rouming ma'lumotlari (로밍 데이터) almashinuvi va Smartro PG to'lov hisob-kitobini to'liq ishlab chiqqan.",
+    "p3": "Elektromobil zaryadlash stansiyalari uchun Sun'iy Intellektga asoslangan 'Elektr Energiyasi Talabini Bashorat Qilish va Shartnoma Quvvatini Optimallashtirish' (Power Demand Forecasting) platformasini yaratgan: PyTorch LSTM, XGBoost va Ekstremal Qiymatlar Nazariyasi (EVT - GEV/GPD) 8 ta model ansambli asosida pik yuklamalarni P50/P90 kvantillarida bashorat qilib, KEPCO (KEPCO / 한전) jarimalari va energiya xarajatlarini keskin qisqartirgan.",
     "p4": "Yirik til modellarini (OpenAI, Anthropic Claude, Google Gemini) integratsiya qiladi va TypeScript ekotizimi (Node.js, NestJS, React, Next.js) bo'ylab striming AI yordamchilari, ovozni matnga o'girish (STT/TTS), real vaqtda ishlovchi tizimlar hamda Docker, NGINX, Linux, AWS va GCP platformalarida joylashtirish (deployment) bilan shug'ullanadi.",
     "metrics": {
       "years": "5+",
@@ -66,19 +66,19 @@
     "cards": {
       "flagship": {
         "tag": "Asosiy Keys (Flagship)",
-        "title": "Blue Networks EV CSMS: Real-Vaqt OCPP & WebSocket Telemetriya Platformasi",
+        "title": "Blue Networks EV CSMS: OCPP & Milliy Rouming Telemetriya Platformasi",
         "problemLabel": "Muammo va Qiyinchilik",
-        "problem": "Koreya bo'ylab 500+ lokatsiyadagi 1,600+ elektromobil zaryadlash stansiyalaridan keluvchi uzluksiz telemetriya oqimi, masofaviy OTA proshivka yangilanishlari va real-vaqt holat sinxronizatsiyasini 0-uzilish bilan ta'minlash.",
+        "problem": "Koreya bo'ylab 500+ lokatsiyadagi 1,600+ zaryadlash stansiyalari telemetriyasi, operatorlararo KECO rouming ma'lumotlari (로밍 데이터) va ommaviy OTA boshqaruvini 0-kechikish bilan ta'minlash.",
         "solutionLabel": "Muhandislik Yechimi",
-        "solution": "OCPP 1.6-J / 2.0.1 protokoli ustiga qurilgan ikki tomonlama WebSocket shlyuzi, Spring Boot & MyBatis backend, Redis kesh klasteri va KECO rouming hamda Smartro PG to'lov tranzaksiyalari integratsiyasi.",
-        "metricHighlight": "1,600+ Stansiyalar / <50ms",
-        "metricDetail": "OCPP 1.6J & 2.0.1 Real-Time Sync"
+        "solution": "OCPP 1.6-J / 2.0.1 ikki tomonlama WebSocket shlyuzi, Spring Boot & MyBatis backend, Redis kesh klasteri hamda KECO rouming va Smartro PG to'lov hisob-kitob konveyeri qurildi.",
+        "metricHighlight": "1,600+ Stansiyalar / <15ms",
+        "metricDetail": "OCPP & KECO Roaming Sync"
       },
       "aiRag": {
-        "tag": "AI & RAG Dvigateli",
-        "title": "Avtonom Multi-Agent va Vektorli RAG Konveyeri",
-        "desc": "Vercel AI SDK yordamida real vaqtda token streaming, gibrid vektor qidiruvi (pgvector) va o'zini-o'zi tuzatuvchi agentlar arxitekturasi.",
-        "status": "Real Vaqtda Streaming Faol"
+        "tag": "AI Energiya Bashorati & RAG",
+        "title": "PyTorch LSTM & XGBoost Elektr Talabi Bashorat Platformasi",
+        "desc": "EV stansiyalari uchun 8 ta AI modeli ansambli (LSTM, XGBoost, GEV/GPD Ekstremal Qiymatlar) orqali pik quvvatni P50/P90 kvantillarda bashorat qilish va KEPCO shartnoma quvvatini tejash dvigateli.",
+        "status": "AI Ansambl Modeli Faol"
       },
       "systemArch": {
         "tag": "Infratuzilma",

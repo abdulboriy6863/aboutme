@@ -39,8 +39,8 @@
   "About": {
     "title": "About me",
     "p1": "Senior AI and Full-Stack engineer residing in South Korea — from Uzbekistan, living and working in Korea since 2023; fluent in Korean, English, and Russian.",
-    "p2": "Engineered core architecture for Blue Networks' E-Chae-Um EV Charging Station Management System (CSMS) using Java 17, Spring Boot, MyBatis, and sharded MySQL/PostgreSQL — implementing OCPP 1.6J/2.0.1 protocol, real-time WebSocket telemetry pipelines, bulk OTA firmware distribution, and KECO/Smartro PG settlement synchronization.",
-    "p3": "Built custom enterprise LLM platforms: fine-tuned LoRA Qwen/Llama classifiers outperforming gpt-4o on proprietary benchmarks with zero query inference cost, featuring multi-lingual streaming copilot capabilities.",
+    "p2": "Engineered core architecture for Blue Networks' E-Chae-Um EV Charging Station Management System (CSMS) using Java 17, Spring Boot, MyBatis, and sharded databases — implementing OCPP 1.6J/2.0.1 protocol, real-time WebSocket telemetry pipelines, bulk OTA firmware distribution, and national KECO (Korea Environment Corp) inter-operator roaming data (로밍 데이터) synchronization & Smartro PG settlement reconciliation.",
+    "p3": "Developed the AI-powered EV Charging Power Demand Forecasting & Contract Power Optimization Platform: utilizing an 8-model ensemble including PyTorch LSTM, XGBoost, and Extreme Value Theory (EVT - GEV/GPD) to forecast peak power loads with P50/P90 probabilistic quantiles, drastically mitigating KEPCO peak surcharge penalties and energy costs.",
     "p4": "Integrates premier LLM foundation models (OpenAI, Anthropic Claude, Google Gemini), TypeScript ecosystem (Node.js, NestJS, React, Next.js) streaming AI assistants, voice-to-text (STT/TTS), and containerized deployments across Docker, NGINX, Linux, AWS, and GCP.",
     "metrics": {
       "years": "5+",
@@ -66,19 +66,19 @@
     "cards": {
       "flagship": {
         "tag": "Flagship Case Study",
-        "title": "Blue Networks EV CSMS: Real-Time OCPP & WebSocket Telemetry Platform",
+        "title": "Blue Networks EV CSMS: OCPP & National Roaming Telemetry Platform",
         "problemLabel": "Architectural Challenge",
-        "problem": "Achieving zero-downtime bidirectional telemetry, remote OTA firmware dispatch, and live status sync across 1,600+ fast/slow EV charging stations across 500+ locations in Korea.",
+        "problem": "Delivering sub-second bidirectional telemetry, inter-CPO KECO roaming data pipelines, and remote OTA firmware dispatch across 1,600+ EV chargers in 500+ locations across Korea.",
         "solutionLabel": "Engineering Solution",
-        "solution": "Architected high-concurrency WebSocket gateways handling OCPP 1.6-J / 2.0.1 protocols with Spring Boot, MyBatis, Redis caching, and automated KECO/ME roaming & Smartro PG settlement pipelines.",
-        "metricHighlight": "1,600+ Chargers / <50ms",
-        "metricDetail": "OCPP 1.6J & 2.0.1 Live Mesh"
+        "solution": "Built high-concurrency OCPP 1.6-J / 2.0.1 WebSocket gateways with Spring Boot, MyBatis, Redis clustering, and automated KECO national roaming & Smartro PG settlement reconciliation.",
+        "metricHighlight": "1,600+ Chargers / <15ms",
+        "metricDetail": "OCPP & KECO Roaming Sync"
       },
       "aiRag": {
-        "tag": "AI & RAG Engine",
-        "title": "Autonomous Multi-Agent & Vector RAG Pipeline",
-        "desc": "Low-latency token streaming with Vercel AI SDK, hybrid dense/sparse vector retrieval (pgvector), and recursive self-correcting agent workflows.",
-        "status": "Token Streaming Active"
+        "tag": "AI Energy Forecasting & RAG",
+        "title": "PyTorch LSTM & XGBoost Power Demand Prediction Platform",
+        "desc": "8-model AI ensemble (LSTM, XGBoost, GEV/GPD Extreme Value Theory) for probabilistic P50/P90 peak power prediction and KEPCO tariff optimization.",
+        "status": "AI Ensemble Active"
       },
       "systemArch": {
         "tag": "Infrastructure",

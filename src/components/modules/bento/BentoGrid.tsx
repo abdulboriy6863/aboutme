@@ -27,10 +27,17 @@ export function BentoGrid() {
     "WebSockets",
     "Java 17 / Spring Boot",
     "PostgreSQL & Redis",
-    "KECO Roaming",
+    "KECO Roaming (로밍)",
     "Smartro PG",
   ];
-  const aiStack = ["Vercel AI SDK", "pgvector", "LangChain", "Tool Calling"];
+  const aiStack = [
+    "PyTorch (LSTM)",
+    "XGBoost",
+    "EVT (GEV/GPD)",
+    "FastAPI",
+    "Quantile P50/P90",
+    "KEPCO Optimizer",
+  ];
   const infraStack = ["Cloudflare Edge", "Kubernetes", "AWS", "Terraform"];
 
   return (
@@ -160,23 +167,23 @@ export function BentoGrid() {
               </CardHeader>
 
               <CardContent className="space-y-3 pt-0">
-                {/* Visual Vector Pipeline Representation */}
+                {/* Visual Power Forecasting Pipeline Representation */}
                 <div className="space-y-2 rounded-xl border border-indigo-500/20 bg-indigo-50/60 dark:bg-indigo-950/20 p-3 font-mono text-xs">
                   <div className="flex items-center justify-between text-indigo-700 dark:text-indigo-300 font-semibold">
                     <span className="flex items-center gap-1.5">
                       <TerminalSquare className="w-3.5 h-3.5" />
-                      ai.stream({`toolCall`})
+                      ai.forecast(P50/P90 Peak)
                     </span>
                     <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold">
-                      &lt;35ms TTFB
+                      80% Conf. Band
                     </span>
                   </div>
                   <div className="flex items-center gap-1.5 text-[11px] text-zinc-600 dark:text-zinc-400">
-                    <span className="px-1.5 py-0.5 rounded bg-white dark:bg-black/40 border border-indigo-500/20">Query</span>
+                    <span className="px-1.5 py-0.5 rounded bg-white dark:bg-black/40 border border-indigo-500/20">Telemetry</span>
                     <span>→</span>
-                    <span className="px-1.5 py-0.5 rounded bg-white dark:bg-black/40 border border-indigo-500/20">pgvector</span>
+                    <span className="px-1.5 py-0.5 rounded bg-white dark:bg-black/40 border border-indigo-500/20">LSTM+XGB</span>
                     <span>→</span>
-                    <span className="px-1.5 py-0.5 rounded bg-white dark:bg-black/40 border border-indigo-500/20">Streaming LLM</span>
+                    <span className="px-1.5 py-0.5 rounded bg-white dark:bg-black/40 border border-indigo-500/20">KEPCO Save</span>
                   </div>
                 </div>
 
