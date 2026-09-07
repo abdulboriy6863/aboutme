@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Abdulboriy | Principal Full-Stack & Systems Architect",
-    "description": "Production-grade enterprise portfolio showcasing distributed systems, high-scale web architecture, and AI-native applications."
+    "description": "Enterprise portfolio showcasing distributed systems, high-scale web architecture, and AI-native applications."
   },
   "Nav": {
     "about": "About",
@@ -10,58 +10,55 @@
     "stack": "Tech Matrix",
     "aiAssistant": "AI Copilot",
     "contact": "Contact",
-    "available": "Available for Leadership",
+    "available": "Open to High-Impact Projects",
     "talk": "Let's Talk"
   },
   "Hero": {
-    "badge": "Principal Full-Stack & AI Systems Architect",
-    "headlineStart": "Architecting resilient, ultra-fast",
+    "badge": "Open to High-Impact Projects",
+    "headlineStart": "Architecting ultra-fast",
     "headlineGradient": "enterprise platforms & AI systems",
-    "headlineEnd": "at global scale.",
+    "headlineEnd": "at global scale",
     "subtext": "Engineering high-throughput distributed applications, resilient cloud architectures, and next-generation AI agents with sub-millisecond precision and developer-first craftsmanship.",
-    "ctaPrimary": "Explore Architecture",
-    "ctaSecondary": "Consult AI Copilot",
-    "stats": {
-      "scale": "10M+ Daily Events",
-      "scaleLabel": "Throughput Processed",
-      "latency": "< 45ms",
-      "latencyLabel": "P99 Global Latency",
-      "uptime": "99.99%",
-      "uptimeLabel": "Production SLA",
-      "experience": "7+ Years",
-      "experienceLabel": "Engineering Leadership"
+    "ctaPrimary": "Connect with AI Copilot",
+    "ctaSecondary": "Architecture & Case Studies",
+    "metrics": {
+      "uptime": "99.9% Uptime Architecture",
+      "latency": "<100ms Latency Targets",
+      "integration": "Full-Stack + LLM Integration"
     }
   },
   "Bento": {
-    "badge": "Core Competencies & Architecture",
+    "badge": "Featured Case Studies & Architecture",
     "title": "Engineered for Extreme Scalability & Modern Web Standards",
-    "description": "A comprehensive deep dive into system designs, core tech proficiencies, and production case studies.",
+    "description": "A comprehensive deep dive into real-world distributed systems, AI engine pipelines, and production architectures.",
     "cards": {
-      "systems": {
-        "tag": "Distributed Architecture",
-        "title": "High-Throughput Event-Driven Systems",
-        "desc": "Designing zero-downtime micro-frontends, event streaming pipelines, and distributed state coordination across multi-region Kubernetes clusters.",
-        "metric": "Sub-50ms Global P99"
+      "flagship": {
+        "tag": "Flagship Case Study",
+        "title": "High-Throughput Distributed Telemetry & Streaming Platform",
+        "problemLabel": "Architectural Challenge",
+        "problem": "Handling 10M+ daily telemetry events with legacy monolithic bottlenecks and unpredictable spike latency.",
+        "solutionLabel": "Engineering Solution",
+        "solution": "Designed event-driven streaming microservices in Go and Next.js 15 edge routing with multi-tier Redis caching and connection-pooled PostgreSQL.",
+        "metricHighlight": "68% Latency Drop",
+        "metricDetail": "<45ms Global P99"
       },
-      "stack": {
-        "tag": "Modern Stack",
-        "title": "Full-Stack & Cloud Mastery",
-        "desc": "TypeScript, Next.js 15, React 19, Go, Node.js, PostgreSQL, Redis, Docker, and AWS / Cloudflare Edge infrastructure."
+      "aiRag": {
+        "tag": "AI & RAG Engine",
+        "title": "Autonomous Multi-Agent & Vector RAG Pipeline",
+        "desc": "Low-latency token streaming with Vercel AI SDK, hybrid dense/sparse vector retrieval (pgvector), and recursive self-correcting agent workflows.",
+        "status": "Token Streaming Active"
       },
-      "ai": {
-        "tag": "AI-Native Engineering",
-        "title": "Vercel AI SDK & LLM Agent Orchestration",
-        "desc": "Building autonomous multi-agent pipelines, RAG with vector databases (Pinecone / pgvector), and streaming enterprise copilots."
+      "systemArch": {
+        "tag": "Infrastructure",
+        "title": "Edge Cloud & Resilient Multi-Region Mesh",
+        "desc": "Multi-region edge routing, automated failovers, Docker & Kubernetes cluster orchestration, and zero-trust API gateways.",
+        "status": "Multi-Region Live"
       },
-      "performance": {
-        "tag": "Zero Bloat",
-        "title": "100/100 Lighthouse & Core Web Vitals",
-        "desc": "Extreme performance optimization, bundle budget enforcement, edge rendering, and optimal tree-shaking."
-      },
-      "security": {
-        "tag": "Enterprise Grade",
-        "title": "SOC2 & Zero-Trust Security",
-        "desc": "End-to-end type safety, OAuth2/OIDC, mTLS internal service meshes, and defense-in-depth security postures."
+      "trust": {
+        "tag": "Engineering Verification",
+        "title": "Production Reliability & Zero-Downtime Guarantee",
+        "desc": "100/100 Core Web Vitals, automated blue/green canary deployments, SOC2 compliance, and strict end-to-end type safety.",
+        "score": "100/100"
       }
     }
   },

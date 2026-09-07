@@ -10,63 +10,60 @@
     "stack": "Texnologiyalar",
     "aiAssistant": "AI Yordamchi",
     "contact": "Bog'lanish",
-    "available": "Yangi loyihalar uchun ochiq",
+    "available": "Open to High-Impact Projects",
     "talk": "Suhbatlashamiz"
   },
   "Hero": {
-    "badge": "Bosh Full-Stack & AI Tizimlar Arxitektori",
+    "badge": "Open to High-Impact Projects",
     "headlineStart": "Global miqyosdagi ishonchli va",
     "headlineGradient": "tezkor korporativ platformalar",
-    "headlineEnd": "va AI tizimlarini yaratish.",
+    "headlineEnd": "va AI tizimlari",
     "subtext": "Yuqori o'tkazuvchanlikka ega taqsimlangan ilovalar, barqaror bulut infratuzilmasi va millisekundlik aniqlikdagi yangi avlod AI agentlarini loyihalash.",
-    "ctaPrimary": "Arxitekturani ko'rish",
-    "ctaSecondary": "AI bilan maslahat",
-    "stats": {
-      "scale": "10M+ Kunlik Hodisalar",
-      "scaleLabel": "Qayta ishlangan yuklama",
-      "latency": "< 45ms",
-      "latencyLabel": "P99 Global Kechikish",
-      "uptime": "99.99%",
-      "uptimeLabel": "Ishonchlilik SLA",
-      "experience": "7+ Yil",
-      "experienceLabel": "Muhandislik Yetakchiligi"
+    "ctaPrimary": "AI Agent bilan bog'lanish",
+    "ctaSecondary": "Arxitektura va Keyslar",
+    "metrics": {
+      "uptime": "99.9% Uptime Architecture",
+      "latency": "<100ms Latency Targets",
+      "integration": "Full-Stack + LLM Integration"
     }
   },
   "Bento": {
-    "badge": "Asosiy Ko'nikmalar & Arxitektura",
+    "badge": "Asosiy Keyslar & Arxitektura",
     "title": "Yuqori Masshtab va Zamonaviy Veb Standartlari Uchun Yaratilgan",
-    "description": "Tizim arxitekturasi, asosiy texnologiyalar va amaliy keyslar haqida to'liq tahlil.",
+    "description": "Tizim arxitekturasi, AI konveyerlari va amaliy ishlab chiqarish keyslari haqida to'liq tahlil.",
     "cards": {
-      "systems": {
-        "tag": "Taqsimlangan Arxitektura",
-        "title": "Yuqori Yuklamali Event-Driven Tizimlar",
-        "desc": "To'xtovsiz ishlovchi mikro-frontendlarni loyihalash, hodisalar oqimi va multi-region Kubernetes klasterlari bo'yicha holat sinxronizatsiyasi.",
-        "metric": "50ms dan kam Global P99"
+      "flagship": {
+        "tag": "Asosiy Keys (Flagship)",
+        "title": "Yuqori Yuklamali Taqsimlangan Telemetriya va Oqim Platformasi",
+        "problemLabel": "Muammo va Qiyinchilik",
+        "problem": "Kunlik 10M+ telemetriya hodisalarini qayta ishlashda monolitik to'siqlar va kechikish sakrashlarini bartaraf etish.",
+        "solutionLabel": "Muhandislik Yechimi",
+        "solution": "Go tilida hodisalarga asoslangan oqim xizmatlari va Next.js 15 edge marshrutlash, ko'p bosqichli Redis kesh hamda PostgreSQL klasteri arxitekturasi qurildi.",
+        "metricHighlight": "68% Kechikish Kamayishi",
+        "metricDetail": "<45ms Global P99"
       },
-      "stack": {
-        "tag": "Zamonaviy Stack",
-        "title": "Full-Stack va Bulut Mutaxassisligi",
-        "desc": "TypeScript, Next.js 15, React 19, Go, Node.js, PostgreSQL, Redis, Docker va AWS / Cloudflare Edge infratuzilmasi."
+      "aiRag": {
+        "tag": "AI & RAG Dvigateli",
+        "title": "Avtonom Multi-Agent va Vektorli RAG Konveyeri",
+        "desc": "Vercel AI SDK yordamida real vaqtda token streaming, gibrid vektor qidiruvi (pgvector) va o'zini-o'zi tuzatuvchi agentlar arxitekturasi.",
+        "status": "Real Vaqtda Streaming Faol"
       },
-      "ai": {
-        "tag": "AI-Native Dasturlash",
-        "title": "Vercel AI SDK & LLM Agentlar Tizimi",
-        "desc": "Avtonom multi-agent konveyerlari, vektor ma'lumotlar bazalari (Pinecone / pgvector) bilan RAG va real vaqtda streaming yordamchilari."
+      "systemArch": {
+        "tag": "Infratuzilma",
+        "title": "Edge Cloud va Barqaror Multi-Region Mesh",
+        "desc": "Ko'p hududli edge marshrutlash, avtomatik uzilishdan himoya, Docker va Kubernetes klasterlari hamda Zero-Trust shlyuzlari.",
+        "status": "Multi-Region Faol"
       },
-      "performance": {
-        "tag": "Maksimal Tezlik",
-        "title": "100/100 Lighthouse & Core Web Vitals",
-        "desc": "Haddan tashqari optimallashtirish, paket hajmini nazorat qilish, edge renderlash va daraxtsimon silkitish (tree-shaking)."
-      },
-      "security": {
-        "tag": "Korporativ Daraja",
-        "title": "SOC2 & Zero-Trust Xavfsizlik",
-        "desc": "To'liq statik tiplash, OAuth2/OIDC, mTLS ichki xizmat tarmoqlari va ko'p qatlamli himoya tamoyillari."
+      "trust": {
+        "tag": "Muhandislik Ishonchliligi",
+        "title": "Ishlab Chiqarish Barqarorligi va 0-Downtime Kafolati",
+        "desc": "100/100 Core Web Vitals, to'xtovsiz blue/green canary relizlar, SOC2 xavfsizlik va to'liq statik tiplash.",
+        "score": "100/100"
       }
     }
   },
   "AiAgent": {
-    "triggerButton": "AI Yordamchidan So'rang",
+    "triggerButton": "AI Agent bilan bog'lanish",
     "modalTitle": "Portfolio Sun'iy Intellekt Yordamchisi",
     "modalSubtitle": "Abdulboriyning tizim arxitekturasi, tajribasi va loyihalari haqida xohlagan savolingizni bering.",
     "placeholder": "Masalan: 'Ko'p hududli ma'lumotlar bazasi replikatsiyasini qanday tashkil qilasiz?'...",
