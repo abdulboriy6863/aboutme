@@ -1,29 +1,39 @@
 {
   "Metadata": {
-    "title": "Abdulboriy | 수석 풀스택 & 시스템 아키텍트",
-    "description": "분산 시스템, 대규모 웹 아키텍처 및 AI 네이티브 엔지니어링을 위한 엔터프라이즈 포트폴리오."
+    "title": "Abdulboriy | 프로덕션 AI & 시스템 아키텍트",
+    "description": "프로덕션 AI 시스템을 처음부터 끝까지 혼자서 구축하고 배포합니다."
   },
   "Nav": {
     "about": "소개",
     "projects": "프로젝트",
     "experience": "경력",
     "contact": "연락처",
-    "available": "Open to High-Impact Projects",
+    "available": "서울 거주 · 정규직 및 계약직 협의 가능",
     "talk": "대화 시작하기"
   },
   "Hero": {
-    "badge": "Open to High-Impact Projects",
-    "headlineStart": "글로벌 규모의 초고속",
-    "headlineGradient": "엔터프라이즈 플랫폼 및 AI 시스템",
-    "headlineEnd": "아키텍처",
-    "subtext": "밀리초 단위의 정밀도와 개발자 중심 장인 정신으로 고처리량 분산 애플리케이션, 복원력 있는 클라우드 아키텍처 및 차세대 AI 에이전트를 구축합니다.",
-    "ctaPrimary": "AI 에이전트와 대화하기",
-    "ctaSecondary": "아키텍처 및 사례 연구",
-    "metrics": {
-      "uptime": "99.9% Uptime Architecture",
-      "latency": "<100ms Latency Targets",
-      "integration": "Full-Stack + LLM Integration"
-    }
+    "badge": "서울 거주 · 정규직 및 계약직 협의 가능",
+    "title": "Production AI 시스템을 구축하고 배포합니다 — 처음부터 끝까지 혼자서.",
+    "subtitle": "한국 제품 팀 및 글로벌 원격 고객을 위한 AI SaaS 플랫폼, RAG 파이프라인 및 LLM 오케스트레이션 · Upwork Top Rated, 100% Job Success.",
+    "chatNote": "직접 챗봇에게 물어보세요 — 여러 LLM 제공자 간 자동 장애 조치(failover)를 지원하는 자체 구축 RAG 파이프라인으로 작동합니다.",
+    "quickPrompts": [
+      {
+        "text": "가장 복잡한 시스템 구축 경험은?",
+        "icon": "server"
+      },
+      {
+        "text": "혼자서 얼마나 빠르게 출시 가능한가요?",
+        "icon": "target"
+      },
+      {
+        "text": "실제 기술 스택은 어떻게 되나요?",
+        "icon": "code"
+      },
+      {
+        "text": "왜 서울에서 채용해야 하나요?",
+        "icon": "globe"
+      }
+    ]
   },
   "Bento": {
     "badge": "주요 사례 연구 및 아키텍처",
@@ -69,9 +79,10 @@
     "clear": "대화 초기화",
     "greeting": "안녕하세요! 저는 Abdulboriy의 AI 디지털 트윈입니다. 풀스택 아키텍처 경험, 기술 스택, 확장성 달성 사례 또는 협업 가능 여부에 대해 답변해 드릴 수 있습니다.",
     "quickPrompts": [
-      "주요 아키텍처 전문 분야는 무엇인가요?",
-      "50ms 미만의 지연 시간은 어떻게 달성하나요?",
-      "Next.js와 AI 에이전트에 대한 경험을 알려주세요."
+      "가장 복잡한 시스템 구축 경험은?",
+      "혼자서 얼마나 빠르게 출시 가능한가요?",
+      "실제 기술 스택은 어떻게 되나요?",
+      "왜 서울에서 채용해야 하나요?"
     ],
     "disclaimer": "Vercel AI SDK 및 Next.js 스트리밍 아키텍처 기반으로 구동됩니다."
   },

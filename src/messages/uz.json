@@ -1,29 +1,39 @@
 {
   "Metadata": {
-    "title": "Abdulboriy | Bosh Full-Stack & Tizimlar Arxitektori",
-    "description": "Taqsimlangan tizimlar, yuqori yuklamali veb-arxitektura va sun'iy intellekt ilovalariga bag'ishlangan professional portfolio."
+    "title": "Abdulboriy | Production AI & Tizimlar Arxitektori",
+    "description": "Production AI tizimlarini qurib ishga tushiraman — yakka o'zim, boshidan oxirigacha."
   },
   "Nav": {
     "about": "Men haqimda",
     "projects": "Loyihalar",
     "experience": "Tajriba",
     "contact": "Aloqa",
-    "available": "Open to High-Impact Projects",
+    "available": "Seulda · doimiy ish va kontraktga ochiq",
     "talk": "Suhbatlashamiz"
   },
   "Hero": {
-    "badge": "Open to High-Impact Projects",
-    "headlineStart": "Global miqyosdagi ishonchli va",
-    "headlineGradient": "tezkor korporativ platformalar",
-    "headlineEnd": "va AI tizimlari",
-    "subtext": "Yuqori o'tkazuvchanlikka ega taqsimlangan ilovalar, barqaror bulut infratuzilmasi va millisekundlik aniqlikdagi yangi avlod AI agentlarini loyihalash.",
-    "ctaPrimary": "AI Agent bilan bog'lanish",
-    "ctaSecondary": "Arxitektura va Keyslar",
-    "metrics": {
-      "uptime": "99.9% Uptime Architecture",
-      "latency": "<100ms Latency Targets",
-      "integration": "Full-Stack + LLM Integration"
-    }
+    "badge": "Seulda · doimiy ish va kontraktga ochiq",
+    "title": "Production AI tizimlarini qurib ishga tushiraman — yakka o'zim, boshidan oxirigacha.",
+    "subtitle": "Koreys mahsulot jamoalari va butun dunyo masofaviy mijozlari uchun AI SaaS platformalar, RAG pipeline'lar va LLM orkestratsiyasi · Upwork'da Top Rated, 100% Job Success.",
+    "chatNote": "So'zimga shunchaki ishonib o'tirmang. Chatdan o'zingiz so'rang — u o'zim qurgan RAG pipeline asosida, bir nechta provayder o'rtasida avtomatik failover bilan ishlaydi.",
+    "quickPrompts": [
+      {
+        "text": "Eng murakkab nima qurgan?",
+        "icon": "server"
+      },
+      {
+        "text": "Yolg'iz qancha tez chiqara oladi?",
+        "icon": "target"
+      },
+      {
+        "text": "Haqiqiy texnologik steki qanday?",
+        "icon": "code"
+      },
+      {
+        "text": "Nega uni Seulda yollash kerak?",
+        "icon": "globe"
+      }
+    ]
   },
   "Bento": {
     "badge": "Asosiy Keyslar & Arxitektura",
@@ -61,7 +71,7 @@
     }
   },
   "AiAgent": {
-    "triggerButton": "AI Agent bilan bog'lanish",
+    "triggerButton": "AI Copilot bilan bog'lanish",
     "modalTitle": "Portfolio Sun'iy Intellekt Yordamchisi",
     "modalSubtitle": "Abdulboriyning tizim arxitekturasi, tajribasi va loyihalari haqida xohlagan savolingizni bering.",
     "placeholder": "Masalan: 'Ko'p hududli ma'lumotlar bazasi replikatsiyasini qanday tashkil qilasiz?'...",
@@ -69,9 +79,10 @@
     "clear": "Tozalash",
     "greeting": "Assalomu alaykum! Men Abdulboriyning AI raqamli egizagiman. Uning arxitektura tajribasi, texnologik steki yoki yetakchilik imkoniyatlari haqida savollaringizga javob bera olaman.",
     "quickPrompts": [
-      "Sizning asosiy arxitektura tajribangiz qanday?",
-      "50ms dan past kechikishga qanday erishasiz?",
-      "Next.js va AI agentlar bo'yicha tajribangiz haqida so'zlab bering."
+      "Eng murakkab nima qurgan?",
+      "Yolg'iz qancha tez chiqara oladi?",
+      "Haqiqiy texnologik steki qanday?",
+      "Nega uni Seulda yollash kerak?"
     ],
     "disclaimer": "Vercel AI SDK va Next.js streaming arxitekturasi asosida ishlaydi."
   },

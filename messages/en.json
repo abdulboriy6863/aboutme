@@ -1,29 +1,39 @@
 {
   "Metadata": {
-    "title": "Abdulboriy | Principal Full-Stack & Systems Architect",
-    "description": "Enterprise portfolio showcasing distributed systems, high-scale web architecture, and AI-native applications."
+    "title": "Abdulboriy | Production AI & Systems Architect",
+    "description": "I build and ship Production AI systems — solo, end to end."
   },
   "Nav": {
     "about": "About me",
     "projects": "Projects",
     "experience": "Experience",
     "contact": "Contact",
-    "available": "Open to High-Impact Projects",
+    "available": "Seoul-based · Open to full-time & contract",
     "talk": "Let's Talk"
   },
   "Hero": {
-    "badge": "Open to High-Impact Projects",
-    "headlineStart": "Architecting ultra-fast",
-    "headlineGradient": "enterprise platforms & AI systems",
-    "headlineEnd": "at global scale",
-    "subtext": "Engineering high-throughput distributed applications, resilient cloud architectures, and next-generation AI agents with sub-millisecond precision and developer-first craftsmanship.",
-    "ctaPrimary": "Connect with AI Copilot",
-    "ctaSecondary": "Architecture & Case Studies",
-    "metrics": {
-      "uptime": "99.9% Uptime Architecture",
-      "latency": "<100ms Latency Targets",
-      "integration": "Full-Stack + LLM Integration"
-    }
+    "badge": "Seoul-based · Open to full-time & contract",
+    "title": "I build and ship Production AI systems — solo, end to end.",
+    "subtitle": "AI SaaS platforms, RAG pipelines, and LLM orchestration for Korean product teams and global remote clients · Top Rated on Upwork, 100% Job Success.",
+    "chatNote": "Don't just take my word for it. Ask the chat yourself — it runs on a RAG pipeline I built with automated failover across multiple LLM providers.",
+    "quickPrompts": [
+      {
+        "text": "What's the most complex thing you've built?",
+        "icon": "server"
+      },
+      {
+        "text": "How fast can you ship solo?",
+        "icon": "target"
+      },
+      {
+        "text": "What's your actual tech stack?",
+        "icon": "code"
+      },
+      {
+        "text": "Why hire him in Seoul?",
+        "icon": "globe"
+      }
+    ]
   },
   "Bento": {
     "badge": "Featured Case Studies & Architecture",
@@ -69,9 +79,10 @@
     "clear": "Clear Chat",
     "greeting": "Hello! I am Abdulboriy's AI Digital Twin. I can answer questions regarding his full-stack architectural experience, tech stack, scalability milestones, or availability for leadership roles.",
     "quickPrompts": [
-      "What is your primary architectural expertise?",
-      "How do you design for sub-50ms latency?",
-      "Tell me about your experience with Next.js and AI agents."
+      "What's the most complex thing you've built?",
+      "How fast can you ship solo?",
+      "What's your actual tech stack?",
+      "Why hire him in Seoul?"
     ],
     "disclaimer": "Powered by Vercel AI SDK & Next.js streaming architecture."
   },
