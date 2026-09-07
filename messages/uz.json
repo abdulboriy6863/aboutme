@@ -14,7 +14,7 @@
   "Hero": {
     "badge": "Seulda · doimiy ish va kontraktga ochiq",
     "title": "Production AI tizimlarini qurib ishga tushiraman — yakka o'zim, boshidan oxirigacha.",
-    "subtitle": "Koreys mahsulot jamoalari va butun dunyo masofaviy mijozlari uchun AI SaaS platformalar, RAG pipeline'lar va LLM orkestratsiyasi · Upwork'da Top Rated, 100% Job Success.",
+    "subtitle": "Koreys mahsulot jamoalari va global hamkorlar uchun AI SaaS platformalar, RAG pipeline'lar va LLM orkestratsiyasi · 100% Production SLA va Yuqori Natija.",
     "chatNote": "So'zimga shunchaki ishonib o'tirmang. Chatdan o'zingiz so'rang — u o'zim qurgan RAG pipeline asosida, bir nechta provayder o'rtasida avtomatik failover bilan ishlaydi.",
     "inputPlaceholder": "Abdulboriy haqida istalgan narsani so'rang...",
     "quickPrompts": [
@@ -35,6 +35,29 @@
         "icon": "globe"
       }
     ]
+  },
+  "About": {
+    "title": "Men haqimda",
+    "p1": "Janubiy Koreyada istiqomat qiluvchi katta darajadagi AI va Full-Stack muhandisi — 2023-yildan buyon Koreyada yashab, ishlayotgan o'zbekistonlik; koreys, ingliz va rus tillarini mukammal biladi.",
+    "p2": "Kompaniyalarda Java 17, Spring Boot, MyBatis va sharded MySQL/PostgreSQL klasteri (backend), shuningdek, Next.js va TypeScript (frontend) texnologiyalari yordamida funksiyalarni to'liq ishlab chiqqan.",
+    "p3": "Kompaniyaning ichki LLM platformasini yaratgan: bu LoRA yordamida sozlangan Qwen/Llama klassifikatori bo'lib, o'z test ma'lumotlarida gpt-4o'dan ustun keladi va har bir so'rov uchun nol xarajat talab qiladi, shuningdek, to'rt tilda ishlovchi striming yordamchisini o'z ichiga oladi.",
+    "p4": "Yirik til modellarini (OpenAI, Anthropic Claude, Google Gemini) integratsiya qiladi va TypeScript ekotizimi (Node.js, NestJS, React, Next.js) bo'ylab striming AI yordamchilari, ovozni matnga o'girish (STT/TTS), real vaqtda ishlovchi tizimlar hamda Docker, NGINX, Linux, AWS va GCP platformalarida joylashtirish (deployment) bilan shug'ullanadi.",
+    "metrics": {
+      "years": "5+",
+      "yearsLabel": "ishlab chiqarish tizimlarini yaratish bo'yicha yillar",
+      "scale": "10M+",
+      "scaleLabel": "qayta ishlangan oylik hodisalar & so'rovlar",
+      "sla": "99.99%",
+      "slaLabel": "arxitektura ishonchliligi va ishlab chiqarish SLA",
+      "langs": "EN · KO · UZ · RU",
+      "langsLabel": "ishchi tillar"
+    },
+    "languages": {
+      "en": "Ingliz tili: Erkin so'zlashuvchi",
+      "ko": "Koreys tili: Erkin so'zlashuvchi",
+      "uz": "O'zbek tili: Ona tili",
+      "ru": "Rus tili: Erkin so'zlashuvchi"
+    }
   },
   "Bento": {
     "badge": "Asosiy Keyslar & Arxitektura",

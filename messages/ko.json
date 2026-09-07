@@ -14,7 +14,7 @@
   "Hero": {
     "badge": "서울 거주 · 정규직 및 계약직 협의 가능",
     "title": "Production AI 시스템을 구축하고 배포합니다 — 처음부터 끝까지 혼자서.",
-    "subtitle": "한국 제품 팀 및 글로벌 원격 고객을 위한 AI SaaS 플랫폼, RAG 파이프라인 및 LLM 오케스트레이션 · Upwork Top Rated, 100% Job Success.",
+    "subtitle": "한국 제품 팀 및 글로벌 파트너를 위한 AI SaaS 플랫폼, RAG 파이프라인 및 LLM 오케스트레이션 · 100% Production SLA 및 높은 성과.",
     "chatNote": "직접 챗봇에게 물어보세요 — 여러 LLM 제공자 간 자동 장애 조치(failover)를 지원하는 자체 구축 RAG 파이프라인으로 작동합니다.",
     "inputPlaceholder": "Abdulboriy에 대해 무엇이든 물어보세요...",
     "quickPrompts": [
@@ -35,6 +35,29 @@
         "icon": "globe"
       }
     ]
+  },
+  "About": {
+    "title": "소개",
+    "p1": "한국에 거주하는 시니어 AI 및 풀스택 엔지니어 — 2023년부터 한국에서 거주하며 근무 중인 우즈베키스탄 출신으로, 한국어, 영어, 러시아어를 유창하게 구사합니다.",
+    "p2": "Java 17, Spring Boot, MyBatis 및 샤딩된 MySQL/PostgreSQL 클러스터 기반 백엔드와 Next.js, TypeScript 기반 프론트엔드를 풀스택으로 개발했습니다.",
+    "p3": "자체 엔터프라이즈 LLM 플랫폼 구축: LoRA 기반 맞춤형 Qwen/Llama 분류기를 개발하여 자체 벤치마크에서 gpt-4o를 능가하고 쿼리당 추론 비용 0원을 달성했으며, 4개 국어 스트리밍 어시스턴트를 구현했습니다.",
+    "p4": "OpenAI, Anthropic Claude, Google Gemini 등 주요 LLM 연동, TypeScript 생태계(Node.js, NestJS, React, Next.js) 스트리밍 AI 서비스, 음성 인식(STT/TTS) 및 Docker, NGINX, Linux, AWS, GCP 기반 컨테이너 배포를 전문으로 합니다.",
+    "metrics": {
+      "years": "5+",
+      "yearsLabel": "프로덕션 시스템 개발 경력",
+      "scale": "1,000만+",
+      "scaleLabel": "월간 처리된 이벤트 및 트랜잭션",
+      "sla": "99.99%",
+      "slaLabel": "아키텍처 신뢰성 및 프로덕션 SLA",
+      "langs": "EN · KO · UZ · RU",
+      "langsLabel": "업무 가능 언어"
+    },
+    "languages": {
+      "en": "영어: 능통",
+      "ko": "한국어: 능통",
+      "uz": "우즈베크어: 모국어",
+      "ru": "러시아어: 능통"
+    }
   },
   "Bento": {
     "badge": "주요 사례 연구 및 아키텍처",

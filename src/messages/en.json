@@ -14,7 +14,7 @@
   "Hero": {
     "badge": "Seoul-based · Open to full-time & contract",
     "title": "I build and ship Production AI systems — solo, end to end.",
-    "subtitle": "AI SaaS platforms, RAG pipelines, and LLM orchestration for Korean product teams and global remote clients · Top Rated on Upwork, 100% Job Success.",
+    "subtitle": "AI SaaS platforms, RAG pipelines, and LLM orchestration for Korean product teams and global partners · 100% Production SLA & High Impact.",
     "chatNote": "Don't just take my word for it. Ask the chat yourself — it runs on a RAG pipeline I built with automated failover across multiple LLM providers.",
     "inputPlaceholder": "Ask anything about Abdulboriy...",
     "quickPrompts": [
@@ -35,6 +35,29 @@
         "icon": "globe"
       }
     ]
+  },
+  "About": {
+    "title": "About me",
+    "p1": "Senior AI and Full-Stack engineer residing in South Korea — from Uzbekistan, living and working in Korea since 2023; fluent in Korean, English, and Russian.",
+    "p2": "Engineered full-featured platforms utilizing Java 17, Spring Boot, MyBatis, and sharded MySQL/PostgreSQL clusters for backend, paired with Next.js and TypeScript for modern frontends.",
+    "p3": "Built custom enterprise LLM platforms: fine-tuned LoRA Qwen/Llama classifiers outperforming gpt-4o on proprietary benchmarks with zero query inference cost, featuring multi-lingual streaming copilot capabilities.",
+    "p4": "Integrates premier LLM foundation models (OpenAI, Anthropic Claude, Google Gemini), TypeScript ecosystem (Node.js, NestJS, React, Next.js) streaming AI assistants, voice-to-text (STT/TTS), and containerized deployments across Docker, NGINX, Linux, AWS, and GCP.",
+    "metrics": {
+      "years": "5+",
+      "yearsLabel": "years building production systems",
+      "scale": "10M+",
+      "scaleLabel": "monthly events & transactions processed",
+      "sla": "99.99%",
+      "slaLabel": "architectural reliability & production SLA",
+      "langs": "EN · KO · UZ · RU",
+      "langsLabel": "working languages"
+    },
+    "languages": {
+      "en": "English: Fluent",
+      "ko": "Korean: Fluent",
+      "uz": "Uzbek: Native",
+      "ru": "Russian: Fluent"
+    }
   },
   "Bento": {
     "badge": "Featured Case Studies & Architecture",

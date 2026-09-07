@@ -4,6 +4,7 @@ import * as React from "react";
 import { Navbar } from "@/components/shared/Navbar";
 import { Footer } from "@/components/shared/Footer";
 import { Hero } from "@/components/modules/hero/Hero";
+import { AboutMe } from "@/components/modules/about/AboutMe";
 import { BentoGrid } from "@/components/modules/bento/BentoGrid";
 import { AiAssistant } from "@/components/modules/ai-agent/AiAssistant";
 import { Button } from "@/components/ui/button";
@@ -27,6 +28,9 @@ export default function HomePage() {
       <main className="flex-1">
         {/* Hero Section */}
         <Hero onOpenAi={handleOpenAi} />
+
+        {/* About Me Section (Photo, Narrative Bio & Metrics) */}
+        <AboutMe />
 
         {/* Bento Grid: Architecture, Tech Matrix & Case Studies */}
         <BentoGrid />
