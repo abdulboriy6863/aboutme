@@ -59,6 +59,50 @@
       "ru": "🇷🇺 Русский (Fluent)"
     }
   },
+  "Skills": {
+    "title": "Ko'nikmalar",
+    "categories": {
+      "ai": {
+        "title": "AI / LLM muhandisligi",
+        "bullets": [
+          "Bir nechta provayder o'rtasida avtomatik failover bilan LLM marshrutlash — shu sahifadagi chat aynan shunda ishlaydi.",
+          "Shaxsiy ma'lumotlar ustida RAG pipeline'lar: qidiruv, prompt dizayni, streaming, xarajat nazorati.",
+          "Nutqni matnga aylantiruvchi mahsulotlar: Whisper pipeline'lari real ishlayotgan ovozli buxgalteriya ilovasiga aylantirilgan.",
+          "Claude, Gemini va Vertex Imagen o'rtasida rasm generatsiyasi orkestratsiyasi — vazifa navbatlari ortida.",
+          "EV energiya talabi bashorati: PyTorch LSTM, XGBoost va EVT orqali pik yuklamalarni P50/P90 kvantillarida hisoblash."
+        ],
+        "stack": [
+          "OpenAI", "Anthropic Claude", "Google Gemini", "Vertex Imagen", "PyTorch", "XGBoost", "RAG & Retrieval", "LLM Orchestration", "Vercel AI SDK", "Prompt Engineering", "Whisper STT", "LoRA Fine-tuning", "Qwen3 / Ollama", "llama.cpp / GGUF", "MLX (Apple Silicon)", "bge-m3 Embeddings", "SSE Streaming"
+        ]
+      },
+      "backend": {
+        "title": "Backend tizimlari",
+        "bullets": [
+          "Productionga bardosh beradigan NestJS & Spring Boot API'lar: navbatlar, qayta urinishlar, idempotentlik, holat mashinalari.",
+          "PostgreSQL va MySQL'da ma'lumotlarni modellashtirish, kesh va real vaqt uchun esa Redis va ShardingSphere.",
+          "To'lovlar va billing: Koreya Smartro PG va xalqaro Stripe kredit hisob-kitobi.",
+          "Deploy boshidan oxirigacha o'z qo'limda: Docker, NGINX, Linux, AWS, CI/CD.",
+          "OCPP 1.6J/2.0.1 zaryadlash protokoli, WebSocket mesh va telemetriya konveyeri."
+        ],
+        "stack": [
+          "Java 17", "Spring Boot", "MyBatis", "OCPP 1.6J/2.0.1", "MySQL", "ShardingSphere", "Python", "FastAPI", "Express", "Node.js", "NestJS", "PostgreSQL", "MongoDB", "Redis", "BullMQ", "GraphQL", "Kotlin", "KECO Roaming", "Smartro PG", "Stripe", "Ktor / WebSocket", "Docker", "NGINX", "AWS", "Linux"
+        ]
+      },
+      "frontend": {
+        "title": "Mahsulot frontend'i",
+        "bullets": [
+          "Next.js App Router asosidagi frontend'lar — server rendering va toza SEO bilan.",
+          "Bitta kod bazasidan ikkala do'konga ham chiqarilgan React Native va Expo ilovalar.",
+          "Dizayn-tizim intizomi: tokenlar, theming, accessibility — namuna sifatida shu saytning o'zi.",
+          "Boshidan oxirigacha TypeScript — web, mobil va API uchun yagona til.",
+          "Native Android: Kotlin va Jetpack Compose arxitekturasi."
+        ],
+        "stack": [
+          "Jetpack Compose", "Android", "Shopify (Liquid, Admin API)", "Vite", "Next.js (App Router)", "Tailwind CSS", "React 19", "i18next", "TypeScript", "React Native / Expo", "SCSS Modules", "Framer Motion", "Zustand"
+        ]
+      }
+    }
+  },
   "Bento": {
     "badge": "Asosiy Keyslar & Arxitektura",
     "title": "Yuqori Masshtab va Zamonaviy Veb Standartlari Uchun Yaratilgan",

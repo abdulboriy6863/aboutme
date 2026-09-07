@@ -59,6 +59,50 @@
       "ru": "🇷🇺 Russian (Fluent)"
     }
   },
+  "Skills": {
+    "title": "Core Competencies",
+    "categories": {
+      "ai": {
+        "title": "AI / LLM Engineering",
+        "bullets": [
+          "LLM routing with automated failover across multiple providers — powering the live AI agent on this page.",
+          "Custom enterprise RAG pipelines: vector retrieval, semantic caching, streaming, and cost control.",
+          "Speech-to-text intelligence: production Whisper pipelines integrated into real-world voice accounting applications.",
+          "Image generation & multimodal orchestration across Claude, Gemini, and Vertex Imagen behind task queues.",
+          "EV power forecasting: 8-model ensemble (LSTM, XGBoost, EVT) predicting P50/P90 peak loads."
+        ],
+        "stack": [
+          "OpenAI", "Anthropic Claude", "Google Gemini", "Vertex Imagen", "PyTorch", "XGBoost", "RAG & Retrieval", "LLM Orchestration", "Vercel AI SDK", "Prompt Engineering", "Whisper STT", "LoRA Fine-tuning", "Qwen3 / Ollama", "llama.cpp / GGUF", "MLX (Apple Silicon)", "bge-m3 Embeddings", "SSE Streaming"
+        ]
+      },
+      "backend": {
+        "title": "Backend Systems",
+        "bullets": [
+          "Production-hardened NestJS & Spring Boot APIs: message queues, automated retries, idempotency, state machines.",
+          "Data modeling in PostgreSQL & MySQL, high-throughput caching and real-time pub/sub with Redis & ShardingSphere.",
+          "Payment processing & billing: usage-metered Stripe billing and Korea Smartro PG integrations.",
+          "End-to-end containerized deployments: Docker, NGINX, Linux, AWS, GCP, CI/CD pipelines.",
+          "OCPP 1.6J/2.0.1 charge point protocol, WebSocket telemetry mesh, and national KECO roaming data pipelines."
+        ],
+        "stack": [
+          "Java 17", "Spring Boot", "MyBatis", "OCPP 1.6J/2.0.1", "MySQL", "ShardingSphere", "Python", "FastAPI", "Express", "Node.js", "NestJS", "PostgreSQL", "MongoDB", "Redis", "BullMQ", "GraphQL", "Kotlin", "KECO Roaming", "Smartro PG", "Stripe", "Ktor / WebSocket", "Docker", "NGINX", "AWS", "Linux"
+        ]
+      },
+      "frontend": {
+        "title": "Product Frontend & Mobile",
+        "bullets": [
+          "Next.js App Router frontends with server components, streaming SSR, and clean SEO architecture.",
+          "Cross-platform mobile apps deployed to App Store & Google Play from a single React Native & Expo codebase.",
+          "Design system discipline: design tokens, dark/light theming, accessibility — exemplified by this website.",
+          "End-to-end TypeScript — a single cohesive type system across web, mobile, and APIs.",
+          "Native Android development with modern Kotlin & Jetpack Compose."
+        ],
+        "stack": [
+          "Jetpack Compose", "Android", "Shopify (Liquid, Admin API)", "Vite", "Next.js (App Router)", "Tailwind CSS", "React 19", "i18next", "TypeScript", "React Native / Expo", "SCSS Modules", "Framer Motion", "Zustand"
+        ]
+      }
+    }
+  },
   "Bento": {
     "badge": "Featured Case Studies & Architecture",
     "title": "Engineered for Extreme Scalability & Modern Web Standards",

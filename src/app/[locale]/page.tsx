@@ -5,6 +5,7 @@ import { Navbar } from "@/components/shared/Navbar";
 import { Footer } from "@/components/shared/Footer";
 import { Hero } from "@/components/modules/hero/Hero";
 import { AboutMe } from "@/components/modules/about/AboutMe";
+import { Skills } from "@/components/modules/skills/Skills";
 import { BentoGrid } from "@/components/modules/bento/BentoGrid";
 import { AiAssistant } from "@/components/modules/ai-agent/AiAssistant";
 import { Button } from "@/components/ui/button";
@@ -31,6 +32,9 @@ export default function HomePage() {
 
         {/* About Me Section (Photo, Narrative Bio & Metrics) */}
         <AboutMe />
+
+        {/* Skills Section (3-Column Architecture & Stack Matrix) */}
+        <Skills />
 
         {/* Bento Grid: Architecture, Tech Matrix & Case Studies */}
         <BentoGrid />
