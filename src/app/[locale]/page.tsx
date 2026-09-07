@@ -20,7 +20,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen relative selection:bg-[#ff5722]/30 selection:text-[#ff5722]">
+    <div className="flex flex-col min-h-screen relative selection:bg-[#2563eb]/25 selection:text-[#2563eb]">
       {/* Top Floating Navbar */}
       <Navbar onOpenAi={() => handleOpenAi()} />
 
@@ -40,11 +40,11 @@ export default function HomePage() {
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
             <div className="relative rounded-3xl border border-zinc-200/80 dark:border-white/[0.12] bg-gradient-to-b from-zinc-50 via-white to-white dark:from-zinc-900/80 dark:via-zinc-950 dark:to-zinc-950 p-8 sm:p-14 text-center backdrop-blur-2xl overflow-hidden shadow-xl dark:shadow-2xl">
               {/* Subtle top glow line */}
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-[#ff5722] to-transparent" />
-              <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-48 bg-[#ff5722]/10 dark:bg-[#ff5722]/15 blur-[80px] rounded-full pointer-events-none" />
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-[#2563eb] to-transparent" />
+              <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-48 bg-[#2563eb]/10 dark:bg-[#2563eb]/15 blur-[80px] rounded-full pointer-events-none" />
 
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-zinc-200 dark:border-white/10 bg-zinc-100/80 dark:bg-white/[0.04] text-xs font-mono text-zinc-700 dark:text-zinc-300 mb-6">
-                <Terminal className="w-3.5 h-3.5 text-[#ff5722]" />
+                <Terminal className="w-3.5 h-3.5 text-[#2563eb]" />
                 <span>INITIATE ENGAGEMENT</span>
               </div>
 
@@ -58,7 +58,7 @@ export default function HomePage() {
 
               <div className="mt-8 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
                 <a href="mailto:contact@example.com">
-                  <Button size="lg" variant="default" className="gap-2 bg-[#ff5722] hover:bg-[#e64a19] text-white">
+                  <Button size="lg" variant="default" className="gap-2 bg-[#2563eb] hover:bg-[#1d4ed8] text-white shadow-md shadow-blue-500/20">
                     <Mail className="w-4 h-4" />
                     <span>Get in Touch</span>
                   </Button>
@@ -67,9 +67,9 @@ export default function HomePage() {
                   size="lg"
                   variant="outline"
                   onClick={() => handleOpenAi()}
-                  className="gap-2 border-zinc-200 dark:border-zinc-800"
+                  className="gap-2 border-zinc-200 dark:border-zinc-800 hover:border-blue-500/40"
                 >
-                  <Sparkles className="w-4 h-4 text-[#ff5722]" />
+                  <Sparkles className="w-4 h-4 text-[#2563eb]" />
                   <span>Ask AI Assistant</span>
                 </Button>
               </div>

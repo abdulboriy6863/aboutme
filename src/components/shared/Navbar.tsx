@@ -31,9 +31,9 @@ export function Navbar({ onOpenAi }: { onOpenAi?: () => void }) {
         }`}
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-[72px] sm:h-20 flex items-center justify-between">
-          {/* Left: Brand with Orange/Coral Dot */}
+          {/* Left: Brand with Cool Blue Dot */}
           <Link href="/" className="flex items-center gap-2.5 group cursor-pointer">
-            <span className="h-2.5 w-2.5 rounded-full bg-[#ff5722] shrink-0" />
+            <span className="h-2.5 w-2.5 rounded-full bg-[#2563eb] shrink-0" />
             <span className="text-base sm:text-lg font-bold tracking-tight text-zinc-900 dark:text-white group-hover:text-zinc-700 dark:group-hover:text-zinc-200 transition">
               Abdulboriy
             </span>

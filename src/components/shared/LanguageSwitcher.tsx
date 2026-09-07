@@ -61,7 +61,7 @@ export function LanguageSwitcher() {
                 onClick={() => handleSelect(lang.code as any)}
                 className={`flex w-full items-center justify-between px-3 py-2 rounded-xl text-sm font-medium transition cursor-pointer ${
                   lang.code === currentLocale
-                    ? "bg-orange-500/10 text-orange-600 dark:text-orange-400 font-semibold"
+                    ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 font-semibold"
                     : "text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-white/10 hover:text-zinc-950 dark:hover:text-white"
                 }`}
               >
