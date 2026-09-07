@@ -36,8 +36,8 @@ export function AboutMe() {
 
   return (
     <section id="about" className="py-20 relative overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-12 items-start">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-10 items-start">
           {/* Left Column: Photo */}
           <motion.div
             initial={{ opacity: 0, scale: 0.96 }}
