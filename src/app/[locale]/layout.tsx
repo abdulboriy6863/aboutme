@@ -59,7 +59,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} className="dark" suppressHydrationWarning>
       <body className="font-sans bg-background text-foreground min-h-screen flex flex-col antialiased transition-colors duration-300">
         <ThemeProvider
           attribute="class"

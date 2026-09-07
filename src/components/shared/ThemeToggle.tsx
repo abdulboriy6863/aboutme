@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 import { motion, AnimatePresence } from "framer-motion";
 
 export function ThemeToggle() {
-  const { resolvedTheme, setTheme } = useTheme();
+  const { theme, resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
 
   React.useEffect(() => {
@@ -15,21 +15,27 @@ export function ThemeToggle() {
 
   if (!mounted) {
     return (
-      <button
-        className="w-9 h-9 rounded-lg border border-zinc-200 dark:border-white/10 bg-zinc-100/50 dark:bg-white/[0.04] opacity-0"
-        aria-label="Toggle theme"
-      />
+      <div className="w-9 h-9 rounded-lg border border-zinc-200 dark:border-white/10 bg-zinc-100/80 dark:bg-white/[0.04]" />
     );
   }
 
-  const isDark = resolvedTheme === "dark";
+  const currentTheme = resolvedTheme || theme || "dark";
+  const isDark = currentTheme === "dark";
+
+  const toggleTheme = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const nextTheme = isDark ? "light" : "dark";
+    setTheme(nextTheme);
+  };
 
   return (
     <button
-      onClick={() => setTheme(isDark ? "light" : "dark")}
-      className="relative flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-200/80 dark:border-white/10 bg-zinc-100/80 dark:bg-white/[0.04] text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-200/60 dark:hover:bg-white/[0.08] transition-all backdrop-blur-md"
-      aria-label={isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
-      title={isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
+      onClick={toggleTheme}
+      type="button"
+      className="relative flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-200/80 dark:border-white/10 bg-zinc-100/80 dark:bg-white/[0.04] text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-200/60 dark:hover:bg-white/[0.08] transition-all backdrop-blur-md cursor-pointer z-10"
+      aria-label={isDark ? "Switch to Light mode" : "Switch to Dark mode"}
+      title={isDark ? "Switch to Light mode" : "Switch to Dark mode"}
     >
       <AnimatePresence mode="wait" initial={false}>
         {isDark ? (
