@@ -46,7 +46,7 @@ export function AboutMe() {
             transition={{ duration: 0.5 }}
             className="md:col-span-5 flex justify-center md:sticky md:top-28"
           >
-            <div className="relative w-full max-w-sm rounded-3xl overflow-hidden border border-zinc-200/80 dark:border-zinc-800 shadow-lg bg-zinc-100 dark:bg-zinc-900 aspect-[4/5]">
+            <div className="relative w-full max-w-sm rounded-2xl overflow-hidden border border-zinc-200/80 dark:border-zinc-800 shadow-lg bg-zinc-100 dark:bg-zinc-900 aspect-[4/5]">
               <Image
                 src="/profile.jpg"
                 alt="Abdulboriy"
