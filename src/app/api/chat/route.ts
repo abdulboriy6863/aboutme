@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
     const { messages } = await req.json();
     const lastUserMessage = messages?.[messages.length - 1]?.content || "";
 
-    const apiKey = process.env.GEMINI_API_KEY || "AIzaSyDTbwSoO1uV035Z_-134itwFXdHw28pgDw";
+    const apiKey = process.env.GEMINI_API_KEY;
 
     // Attempt Gemini API streaming
     if (apiKey) {
