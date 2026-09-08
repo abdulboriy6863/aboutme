@@ -198,6 +198,7 @@
     "role": "Full-Stack Engineer & Architect — E-Commerce, GraphQL & Real-Time Platform",
     "title": "ViserPet: Pet E-Commerce & Community Platform",
     "summary": "Full-stack pet e-commerce and social platform built with Next.js App Router, Apollo Client, GraphQL, and NestJS + MongoDB (Mongoose). Features real-time WebSocket notifications & messaging, dynamic URL-synchronized multi-parameter filtering, and dedicated portals for sellers and administrators.",
+    "sourceCode": "View Source (GitHub)",
     "metrics": [
       { "value": "100%", "label": "Dynamic URL Filter Sync" },
       { "value": "GraphQL", "label": "Apollo Client & Flexible API" },

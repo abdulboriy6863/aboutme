@@ -198,6 +198,7 @@
     "role": "풀스택 엔지니어 & 아키텍트 — 이커머스, GraphQL & 실시간 플랫폼",
     "title": "ViserPet: 반려동물 이커머스 & 커뮤니티 플랫폼",
     "summary": "Next.js App Router, Apollo Client, GraphQL 및 NestJS + MongoDB (Mongoose) 기반의 현대적인 반려동물 쇼핑 및 소셜 플랫폼. 실시간 WebSocket 알림/채팅 시스템, URL 동기화 동적 다중 필터링 엔진, 판매자 및 관리자 전용 대시보드를 완비했습니다.",
+    "sourceCode": "소스 코드 보기 (GitHub)",
     "metrics": [
       { "value": "100%", "label": "동적 URL 필터 동기화" },
       { "value": "GraphQL", "label": "Apollo Client 유연한 API" },

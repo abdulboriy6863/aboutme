@@ -198,6 +198,7 @@
     "role": "Full-Stack Dasturchi & Arxitektor — E-Commerce, GraphQL & Real-Time Platforma",
     "title": "ViserPet: Zamonaviy Uy Hayvonlari E-Tijorat & Hamjamiyat Platformasi",
     "summary": "Next.js App Router, Apollo Client, GraphQL hamda NestJS + MongoDB (Mongoose) asosida qurilgan zamonaviy e-tijorat va ijtimoiy platforma. Real vaqt rejimida ishlovchi WebSocket bildirishnomalari va chat tizimi, URL bilan sinxronlashgan dinamik ko'p parametrli filtrlar hamda sotuvchilar (Seller) va administratorlar (Admin) uchun alohida boshqaruv panellari bilan jihozlangan.",
+    "sourceCode": "Kodni ko'rish (GitHub)",
     "metrics": [
       { "value": "100%", "label": "dinamik URL filtr sinxronizatsiyasi" },
       { "value": "GraphQL", "label": "Apollo Client & Moslashuvchan API" },
