@@ -3,6 +3,7 @@
 import * as React from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 import { ArrowRight } from "lucide-react";
 
 export function Projects() {
@@ -75,17 +76,15 @@ export function Projects() {
               {t("card.techStack")}
             </div>
 
-            {/* Footer Action Link */}
+            {/* Footer Action Link navigating to project detail page */}
             <div className="pt-2">
-              <a
-                href="http://kblue.co.kr/eng/main.php"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/projects/blue-networks"
                 className="group/btn inline-flex items-center gap-2 text-sm font-semibold text-[#527c73] dark:text-[#79a7a7] hover:text-[#3d5d56] dark:hover:text-[#9bc2c2] hover:scale-105 origin-left transition-all duration-200"
               >
                 <span>{t("card.action")}</span>
                 <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1.5 transition-transform duration-200" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

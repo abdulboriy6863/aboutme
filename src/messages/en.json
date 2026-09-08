@@ -137,8 +137,47 @@
     ],
     "disclaimer": "Powered by Google Gemini & Next.js streaming architecture."
   },
+  "ProjectDetail": {
+    "back": "← All projects",
+    "role": "Senior AI & Full-Stack Architect — EV CSMS, Batch & AI Energy Forecasting",
+    "title": "Blue Networks: E-Chae-Um & AI Power Demand Forecasting Platform",
+    "summary": "Enterprise EV Charging Station Management System (CSMS) managing 1,600+ chargers across Korea and an 8-model AI ensemble platform (PyTorch LSTM, XGBoost, EVT) delivering probabilistic P50/P90 power demand forecasts to optimize KEPCO contracted capacity and eliminate peak surcharge penalties.",
+    "openSite": "Open Website ↗",
+    "metrics": [
+      { "value": "1,600+", "label": "managed EV charging stations" },
+      { "value": "8-model", "label": "AI demand forecasting ensemble" },
+      { "value": "P50 / P90", "label": "probabilistic quantile analytics" },
+      { "value": "<15ms", "label": "telemetry latency & 99.99% SLA" }
+    ],
+    "problemTitle": "Challenge",
+    "problemText": "Delivering sub-second bidirectional telemetry across 1,600+ fast and slow EV chargers in 500+ locations in Korea, executing safe bulk OTA firmware updates without network saturation, synchronizing inter-CPO roaming data with the Ministry of Environment (KECO), and preventing 1.5x peak power penalty surcharges from KEPCO.",
+    "solutionTitle": "Solution",
+    "solutionText": "Engineered high-concurrency OCPP 1.6-J / 2.0.1 bidirectional WebSocket gateways via BNCPOs (Java 17, Spring Boot, MyBatis), automated KECO national roaming and Smartro PG payment reconciliation via BNCPOsBatch, operator monitoring via BNCPOsWebApp, and an 8-model AI ensemble power demand forecasting platform (power-demand-platform-v2) using PyTorch LSTM, XGBoost, and Extreme Value Theory (EVT GEV/GPD).",
+    "overviewTitle": "Overview",
+    "overviewP1": "Blue Networks (kblue.co.kr) is Korea's premier EV charging infrastructure and IoT solution provider, operating over 1,600 charging stations under the E-Chae-Um brand nationwide. As Senior Full-Stack & AI Architect, I designed, implemented, and scaled 4 core production sub-systems: BNCPOs, BNCPOsBatch, BNCPOsWebApp, and power-demand-platform-v2.",
+    "overviewP2": "1. BNCPOs (Core CSMS & Admin Control Server): Built with Java 17, Spring Boot, and MyBatis. Delivers high-throughput bidirectional WebSocket telemetry on OCPP 1.6J and OCPP 2.0.1 protocols. Enables remote station control (RemoteStart, RemoteStop, Reset, UnlockConnector, Diagnostics), modem diagnostics, and time-staggered bulk OTA firmware rollouts to prevent network congestion. Dashboard performance was dramatically enhanced via Redis clustering and 23:50 daily aggregations.",
+    "overviewP3": "2. BNCPOsBatch & BNCPOsWebApp: BNCPOsBatch manages automated inter-operator roaming data pipelines with the Korea Environment Corporation (KECO), reconciles Smartro PG payment transactions, and runs automated daily billing settlements. BNCPOsWebApp serves as the real-time operational dashboard for monitoring charging sessions, charger health, and analytics.",
+    "overviewP4": "3. power-demand-platform-v2 (AI Power Demand Forecasting & KEPCO Cost Optimizer): An AI-driven forecasting platform engineered with FastAPI (Python), PyTorch, XGBoost, and SvelteKit. Combines an 8-model ensemble (PyTorch LSTM, XGBoost, and Extreme Value Theory GEV/GPD) to forecast daily median expected demand (P50) and top-10% critical peak load (P90) with an 80% confidence band. Generates optimal KEPCO contracted power recommendations, eliminating 1.5x peak surcharge penalties.",
+    "capabilitiesTitle": "Key Capabilities",
+    "capabilities": [
+      "Bidirectional WebSocket live telemetry across 1,600+ chargers via OCPP 1.6-J & 2.0.1 protocols",
+      "Network-safe staggered OTA bulk firmware distribution (Bulk Firmware Update)",
+      "National KECO inter-operator roaming data synchronization",
+      "Smartro PG payment reconciliation and automated billing batch pipelines",
+      "8-model AI ensemble (PyTorch LSTM + XGBoost + EVT GEV/GPD) for power demand forecasting",
+      "P50 and P90 quantile probability modeling with KEPCO contract capacity optimization",
+      "High-throughput Redis caching, sharded MySQL/PostgreSQL, and resilient microservice architecture"
+    ],
+    "technologiesTitle": "Technologies",
+    "technologies": [
+      "Java 17", "Spring Boot", "MyBatis", "MySQL", "PostgreSQL", "Redis",
+      "Python", "FastAPI", "PyTorch", "XGBoost", "EVT (GEV/GPD)",
+      "OCPP 1.6J / 2.0.1", "WebSockets", "KECO Roaming", "Smartro PG",
+      "SvelteKit", "Next.js", "React", "TypeScript", "Docker", "NGINX", "Linux"
+    ]
+  },
   "Footer": {
-    "status": "Systems Operational",
+    "status": "All Systems Operational",
     "role": "Principal Full-Stack & AI Architect",
     "rights": "All rights reserved.",
     "builtWith": "Built with Next.js 15, Tailwind CSS, Framer Motion & next-intl."

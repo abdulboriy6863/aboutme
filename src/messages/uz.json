@@ -137,6 +137,45 @@
     ],
     "disclaimer": "Google Gemini & Next.js streaming arxitekturasi asosida ishlaydi."
   },
+  "ProjectDetail": {
+    "back": "← Barcha loyihalar",
+    "role": "Katta AI va Full-Stack muhandisi — EV CSMS, Batch va AI Energiya Platformasi",
+    "title": "Blue Networks: E-Chae-Um & AI Quvvat Bashorat Platformasi",
+    "summary": "Koreya bo'ylab 1,600+ elektr transport vositalarini zaryadlash stansiyalarini boshqaruvchi E-Chae-Um CSMS infratuzilmasi hamda 8 ta AI modeli (PyTorch LSTM, XGBoost, EVT) ansambli orqali elektr quvvatiga bo'lgan talabni P50/P90 ehtimollikda bashorat qiluvchi, KEPCO tariflari va shartnoma quvvatini optimallashtiruvchi enterprise platformalar arxitekturasi.",
+    "openSite": "Saytni ochish ↗",
+    "metrics": [
+      { "value": "1,600+", "label": "boshqarilgan EV stansiyalari" },
+      { "value": "8 ta model", "label": "AI talab bashorat ansambli" },
+      { "value": "P50 / P90", "label": "kvantil ehtimollik tahlili" },
+      { "value": "<15ms", "label": "telemetriya kechikishi & 99.99% SLA" }
+    ],
+    "problemTitle": "Muammo",
+    "problemText": "Koreya bo'ylab 500+ lokatsiyadagi 1,600+ tezkor va sekin zaryadlash stansiyalarining real vaqt telemetriyasini 0-kechikish bilan uzatish, stansiyalarga xavfsiz ommaviy (bulk) OTA proshivka tarqatish, Koreya Atrof-muhit vazirligi (KECO) milliy rouming ma'lumotlari (로밍 데이터) almashinuvi hamda pik yuklamalarda KEPCO (한전) 1.5x ortiqcha quvvat jarimalarini (penalty surcharge) oldini olish zaruriyati mavjud edi.",
+    "solutionTitle": "Yechim",
+    "solutionText": "BNCPOs (Java 17, Spring Boot, MyBatis) orqali OCPP 1.6-J va 2.0.1 ikki tomonlama WebSocket shlyuzlari, BNCPOsBatch orqali KECO milliy rouming va Smartro PG to'lov tranzaksiyalari quvuri, BNCPOsWebApp monitoring portali hamda PyTorch LSTM, XGBoost va Ekstremal Qiymatlar Nazariyasi (EVT GEV/GPD) asosidagi 8-modelli AI quvvat talabi bashorat platformasi (power-demand-platform-v2) ishlab chiqildi.",
+    "overviewTitle": "Umumiy",
+    "overviewP1": "Blue Networks (kblue.co.kr) — Koreyaning yetakchi elektr transport vositalarini zaryadlash infratuzilmasi va IoT yechimlari provayderi bo'lib, uning E-Chae-Um xizmati butun mamlakat bo'ylab 1,600 dan ortiq stansiyalarni qamrab oladi. Men ushbu ekotizimda Senior Full-Stack & AI Arxitektori sifatida 4 ta asosiy mustaqil quyi tizimni (BNCPOs, BNCPOsBatch, BNCPOsWebApp, power-demand-platform-v2) ishlab chiqdim va kengaytirdim.",
+    "overviewP2": "1. BNCPOs (Asosiy CSMS & Boshqaruv Serveri): Java 17, Spring Boot va MyBatis asosida qurilgan. OCPP 1.6J va OCPP 2.0.1 protokollarida ikki tomonlama WebSocket telemetriya shlyuzini ta'minlaydi. 1,600+ stansiyalarni masofadan boshqarish (RemoteStart, RemoteStop, Reset, UnlockConnector, Diagnostics), modem va parametrlar monitoringi hamda tarmoqqa ortiqcha zo'riqish bermaslik uchun vaqt intervallari bilan ommaviy (bulk) OTA proshivka yangilanishlarini amalga oshiradi. Redis klasteri va 23:50 dagi kundalik aggregatsiya orqali boshqaruv paneli (Dashboard) tezligi sezilarli darajada optimallashtirildi.",
+    "overviewP3": "2. BNCPOsBatch & BNCPOsWebApp: BNCPOsBatch orqali Koreya Atrof-muhit vazirligi (KECO - Korea Environment Corporation) milliy zaryadlash tarmog'i bilan operatorlararo rouming ma'lumotlari (로밍 데이터) avtomatik sinxronlashtirildi, Smartro PG to'lov tranzaksiyalari solishtirildi va kunlik billing hisob-kitob konveyeri ishga tushirildi. BNCPOsWebApp esa operatorlar uchun real vaqt rejimida zaryadlash sessiyalari va tahliliy hisobotlarni ko'rsatuvchi portal vazifasini bajaradi.",
+    "overviewP4": "3. power-demand-platform-v2 (AI Elektr Quvvat Talabini Bashorat Qilish & KEPCO Xarajat Optimallashtiruvchisi): Stansiyalarning elektr quvvat sarfini prognozlash uchun yaratilgan AI platforma. FastAPI (Python), PyTorch, XGBoost va SvelteKit asosida ishlaydi. 8 ta model ansambli (PyTorch LSTM, XGBoost va GEV/GPD Ekstremal Qiymatlar Nazariyasi) orqali kutilayotgan talab medianasi (P50) va yuqori 10% kritik pik yuklama (P90) kvantillarini 80% ishonchlilik oralig'i bilan bashorat qiladi. Ushbu ma'lumotlar asosida KEPCO (한전) bilan optimal shartnoma quvvati (contracted power) hisoblab chiqiladi va 1.5x ortiqcha quvvat jarimalari butunlay bartaraf etiladi.",
+    "capabilitiesTitle": "Asosiy imkoniyatlar",
+    "capabilities": [
+      "OCPP 1.6-J va 2.0.1 protokollari orqali 1,600+ stansiyalar bilan ikki tomonlama WebSocket aloqasi va real-vaqt telemetriyasi",
+      "Tarmoqqa zo'riqish bermaydigan OTA ommaviy proshivka yangilash tizimi (Bulk Firmware Update)",
+      "KECO milliy zaryadlash integratsiyasi bo'yicha operatorlararo rouming ma'lumotlari (로밍 데이터) sinxronizatsiyasi",
+      "Smartro PG to'lov va billing tranzaksiyalari avtomatlashtirilgan batch konveyeri",
+      "8-modelli AI ansambli (PyTorch LSTM + XGBoost + EVT GEV/GPD) orqali elektr talabi bashorati",
+      "P50 va P90 ehtimollik kvantillari hamda KEPCO shartnoma quvvati va xarajat optimallashtiruvchi hisoblagich",
+      "Yuqori yuklamaga bardoshli Redis keshlash, sharded MySQL/PostgreSQL va xavfsiz mikroservis arxitekturasi"
+    ],
+    "technologiesTitle": "Texnologiyalar",
+    "technologies": [
+      "Java 17", "Spring Boot", "MyBatis", "MySQL", "PostgreSQL", "Redis",
+      "Python", "FastAPI", "PyTorch", "XGBoost", "EVT (GEV/GPD)",
+      "OCPP 1.6J / 2.0.1", "WebSockets", "KECO Roaming", "Smartro PG",
+      "SvelteKit", "Next.js", "React", "TypeScript", "Docker", "NGINX", "Linux"
+    ]
+  },
   "Footer": {
     "status": "Tizimlar Barqaror",
     "role": "Bosh Full-Stack & AI Arxitektori",
