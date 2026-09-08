@@ -36,6 +36,10 @@
   - G'aliz eshitilgan `"Mahsulot frontend'i"` so'zi **`Frontend & Mobil Ishlanmalar`** (Inglizchada: `Frontend & Mobile Engineering`, Koreyschada: `프론트엔드 & 모바일 엔지니어링`) ga o'zgartirildi.
   - Har bir kartochka ostidagi texnologik steklar (Java 17, OCPP, KECO Roaming, Smartro PG, Next.js 15, React 19, Jetpack Compose va b.) chetdan chiqib ketmaydigan qilib `break-words` bilan to'g'rilandi.
 
+### 4. Xavfsizlik & API Kalitlari (`route.ts` & `.gitignore`)
+- `src/app/api/chat/route.ts` faylidagi fallback sifatida qolib ketgan Gemini API kaliti to'liq olib tashlandi va faqat `process.env.GEMINI_API_KEY` muhit o'zgaruvchisiga ulandi.
+- `.gitignore` faylida barcha `.env*` formatlari qat'iy bloklandi.
+
 ---
 
 ## 🚀 Ertaga davom ettiriladigan rejalar (Next Steps)
