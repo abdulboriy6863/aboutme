@@ -51,8 +51,14 @@ export default function NikeStoreProjectPage() {
 
   const galleryImages = [
     {
+      src: "/images/projects/nikestore/nike_showcase_hero.png",
+      alt: "Nike Store - Presentation Hero Showcase",
+      aspect: "aspect-[2880/1800]",
+    },
+    {
       src: "/images/projects/nikestore/gallery.png",
       alt: "Nike Store - Platform Showcase",
+      aspect: "aspect-[2576/1124]",
     },
   ];
 
@@ -241,7 +247,7 @@ export default function NikeStoreProjectPage() {
                   key={idx}
                   className="rounded-3xl overflow-hidden border border-zinc-200/90 dark:border-zinc-800/90 bg-zinc-50/90 dark:bg-zinc-900/50 shadow-md dark:shadow-xl p-3 sm:p-5 flex items-center justify-center"
                 >
-                  <div className="relative w-full aspect-[2576/1124] rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-950">
+                  <div className={`relative w-full ${img.aspect || "aspect-[16/10]"} rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-950`}>
                     <Image
                       src={img.src}
                       alt={img.alt}
