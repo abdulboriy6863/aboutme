@@ -51,29 +51,16 @@ export default function NikeStoreProjectPage() {
 
   const galleryImages = [
     {
-      src: "/images/nikestore.png",
-      title: "Storefront & Hero Experience",
-      desc: "Interactive sneaker showcase, high-performance product browsing, and seamless cart actions.",
+      src: "/images/projects/nikestore/nike_top_products_screen.png",
+      alt: "Nike Store - Top Selling Products Mockup",
     },
     {
-      src: "/images/projects/nikestore/page_18.png",
-      title: "Platform Overview & Product Specification",
-      desc: "Detailed sneaker information, size selector, dynamic pricing, and full-stack architecture.",
+      src: "/images/projects/nikestore/nike_collection_view.png",
+      alt: "Nike Store - Product Collection & Dynamic Filters",
     },
     {
-      src: "/images/projects/nikestore/page_19.png",
-      title: "Core Features & Stateful Cart Workflow",
-      desc: "Redux Toolkit state management, Local Storage persistence, and user registration flows.",
-    },
-    {
-      src: "/images/projects/nikestore/page_20.png",
-      title: "Architecture, REST API & Linux VPS Deployment",
-      desc: "PM2 process manager, Nginx reverse proxy, DNS and firewall production configuration.",
-    },
-    {
-      src: "/images/projects/nikestore/page_21.png",
-      title: "Store Administration & Order Management Panel",
-      desc: "Full product CRUD operations, customer order lifecycle monitoring, and user role control.",
+      src: "/images/projects/nikestore/nike_sneakers_cards.png",
+      alt: "Nike Store - Interactive Sneaker Cards",
     },
   ];
 
@@ -248,39 +235,28 @@ export default function NikeStoreProjectPage() {
             </div>
           </div>
 
-          {/* Gallery Showcase at the Bottom (as requested) */}
+          {/* Clean Mockup Gallery at the Bottom (no duplicate headers, only clean cropped mockups) */}
           <div className="mt-16 sm:mt-24 space-y-8 border-t border-zinc-200/80 dark:border-zinc-800/80 pt-12">
             <div>
               <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-white">
                 {t("galleryTitle")}
               </h3>
-              <p className="text-sm sm:text-base text-zinc-500 dark:text-zinc-400 mt-2">
-                {t("galleryDescription")}
-              </p>
             </div>
 
-            <div className="space-y-10">
+            <div className="grid grid-cols-1 gap-8">
               {galleryImages.map((img, idx) => (
                 <div
                   key={idx}
-                  className="rounded-3xl overflow-hidden border border-zinc-200/90 dark:border-zinc-800/90 bg-zinc-50 dark:bg-zinc-900/60 shadow-lg dark:shadow-2xl space-y-4 p-4 sm:p-6"
+                  className="rounded-3xl overflow-hidden border border-zinc-200/90 dark:border-zinc-800/90 bg-zinc-50/90 dark:bg-zinc-900/50 shadow-md dark:shadow-xl p-4 sm:p-8 flex items-center justify-center"
                 >
-                  <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-950 border border-zinc-200/70 dark:border-zinc-800/70">
+                  <div className="relative w-full max-w-2xl aspect-[16/10] overflow-hidden flex items-center justify-center">
                     <Image
                       src={img.src}
-                      alt={img.title}
+                      alt={img.alt}
                       fill
-                      className="object-contain object-center"
+                      className="object-contain object-center hover:scale-[1.02] transition-transform duration-300"
                       sizes="(max-width: 1024px) 100vw, 896px"
                     />
-                  </div>
-                  <div className="px-2 space-y-1">
-                    <h4 className="text-base sm:text-lg font-bold text-zinc-900 dark:text-white">
-                      {img.title}
-                    </h4>
-                    <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
-                      {img.desc}
-                    </p>
                   </div>
                 </div>
               ))}
