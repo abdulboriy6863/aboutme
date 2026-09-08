@@ -348,6 +348,44 @@
     "videoTitle": "NoMakler Platformasi Videolavhasi",
     "videoDescription": "NoMakler ko'chmas mulk platformasining interfeysi, qidiruv mexanizmi va amaliy ishlash jarayoni:"
   },
+  "OlovGoDetail": {
+    "back": "Barcha loyihalar",
+    "role": "Yetakchi Backend & Tizim Arxitektori — Enterprise Oziq-Ovqat Yetkazib Berish Ekotizimi",
+    "title": "OlovGo: Ko'p Tomonlama Logistika Ekotizimi & Real-Vaqt Marshrutlash",
+    "summary": "Mijozlar, restoranlar, kuryerlar va ma'murlar o'rtasidagi buyurtmalar oqimini real-vaqt rejimida marshrutlovchi, qat'iy moliyaviy va ma'lumotlar yaxlitligini ta'minlovchi keng qamrovli logistika platformasi. 5 ta mustaqil ilova, 106 ta REST endpoint, 23 ta Prisma modeli, 8 bosqichli holat mashinasi (State Machine) hamda Redis atomar idempotency mexanizmi bilan qurilgan.",
+    "sourceCode": "Kodni ko'rish (GitHub)",
+    "metrics": [
+      { "value": "5 ta", "label": "mijoz ilovalari (1 Veb + 3 Mobil + 1 Admin)" },
+      { "value": "~106 ta", "label": "REST API endpoint & 23 Prisma model" },
+      { "value": "8-bosqich", "label": "State Machine buyurtma aylanishi" },
+      { "value": "100%", "label": "Redis atomar idempotency & Click PG" }
+    ],
+    "problemTitle": "Muammo va Biznes Konteksti",
+    "problemText": "Rivojlanayotgan bozorlarda oziq-ovqat yetkazib berish logistikasi to'rt mustaqil ishtirokchi — mijozlar, restoranlar, kuryerlar va ma'murlar o'rtasida real-vaqt rejimida mukammal sinxronizatsiyani talab qiladi. Eng asosiy muhandislik qiyinchiligi nostabil mobil internet sharoitida to'liq moliyaviy va ma'lumotlar xavfsizligini ta'minlash, takroriy buyurtmalar yoki nohaq to'lovlar hosil bo'lishining oldini olish, hamda ko'p tomonlama komissiyalarni kechikishsiz hisob-kitob qilish edi.",
+    "solutionTitle": "Me'moriy Yechimlar va Texnik Chuqurlik",
+    "solutionText": "Redis asosidagi atomar idempotency interceptori va body-hashing joriy etilib, mijozlarning zaif aloqa paytidagi takroriy urinishlar xavfi butunlay bartaraf etildi. Ruxsatlarga asoslangan 8 bosqichli State Machine orqali buyurtmalar tarixi o'zgarmas audit jurnali sifatida saqlanadi. 30 soniyali heartbeat mexanizmiga ega WebSocket shlyuzi jonli GPS kuryer lokatsiyasini uzatadi. To'lovlar ikki bosqichli Click vebhuklari va haftalik avtomatlashtirilgan kesh-komissiya cron micro-ilovalari orqali xavfsiz boshqariladi.",
+    "overviewTitle": "Me'moriy Arxitektura va Tizim Yechimlari",
+    "overviewP1": "1. Atomar Buyurtma Yaratish & Idempotency: Redis asosidagi idempotency interceptori atomar ball band qilish (reservation) va kanonik body-hashing usulini birlashtiradi. Bu beqaror mobil internetda mijoz tomonidan qayta yuborilgan so'rovlar hech qachon dublikat buyurtma yaratmasligini kafolatlaydi.",
+    "overviewP2": "2. Holat Mashinasi (State Machine) & Ma'lumotlar Yaxlitligi: Rol bilan cheklangan 8 bosqichli state-machine orqali boshqariladi. Buyurtma berilgan lahzada uning to'liq 'snapshot' holati yozib olinadi, shuning uchun keyinchalik restoran narxlari yoki menyu o'zgarishi o'tmishdagi moliyaviy yozuvlarni aslo buzolmaydi.",
+    "overviewP3": "3. Real-Vaqt WebSocket & GPS Shlyuzi: JWT autentifikatsiyali xom WebSocket (ws) shlyuzi ishlab chiqilgan. Maxsus 30 soniyalik heartbeat uzilgan aloqalarni tezda aniqlab uzib qo'yadi hamda kuryerning jonli GPS harakatini mijoz va restoranga uzluksiz uzatadi.",
+    "overviewP4": "4. Moliyaviy Xavfsizlik & To'lovlar: SMS-OTP orqali bcrypt-heshlangan kodlar va Redis cheklovlari (rate-limiting) o'rnatilgan. To'lovlar Click imzolangan vebhuklari va ikki bosqichli protokol orqali amalga oshirilib, haftalik cron mikroxizmatlari naqd buyurtmalar komissiyasini avtomatik hisob-kitob qiladi.",
+    "capabilitiesTitle": "Asosiy Imkoniyatlar & Klient Ekotizimi",
+    "capabilities": [
+      "3 ta qat'iy TypeScript Expo (React Native) mobil ilovasi: Mijoz, Kuryer va Restoran",
+      "OpenAPI / Swagger orqali avtomatik generatsiya qilingan yagona SDK qatlami",
+      "Mapbox optimallashtirilgan marshrutlash va jonli kuryer navigatsiyasi",
+      "Next.js App Router, TanStack Query va Zustand asosidagi boshqaruv Admin paneli",
+      "Sentry xatolar monitoringi va yuqori tezlikdagi Pino JSON loglash tizimi",
+      "Docker va Nginx asosidagi avtomatlashtirilgan CI/CD va AWS S3 bulutli saqlash",
+      "3 tilda to'liq mahalliylashtirish (O'zbekcha / Ruscha / Inglizcha)"
+    ],
+    "technologiesTitle": "Ishlatilgan Texnologiyalar & Stack",
+    "technologies": [
+      "NestJS", "TypeScript", "Prisma ORM", "PostgreSQL", "Redis", "WebSocket (ws)", "Swagger / OpenAPI", "Click Payments", "React Native (Expo)", "Next.js", "TanStack Query", "Zustand", "Mapbox", "Docker", "Nginx", "AWS S3", "Sentry", "Pino"
+    ],
+    "galleryTitle": "Mobil Ilovalar Interfeysi & Ekran Ko'rinishlari",
+    "galleryDescription": "OlovGo mobil ekotizimining mijoz, buyurtmalar, restoran menyusi va jonli yetkazib berish ekranlari:"
+  },
   "AllProjects": {
     "back": "Bosh sahifa",
     "badge": "Muhandislik Portfoliosi",
@@ -386,8 +424,8 @@
         "description": "5 ta mijoz ilovalari (1 veb, 3 ta Expo React Native mobil, 1 admin) va 106 ta REST endpointga ega to'liq oziq-ovqat yetkazib berish ekotizimi — 8 bosqichli state-machine, Redis idempotency, WebSocket jonli GPS va Click to'lovlari.",
         "stack": ["NestJS", "TypeScript", "Prisma", "PostgreSQL", "React Native (Expo)", "Next.js", "WebSocket", "Redis"],
         "image": "/images/olovgo.png",
-        "href": "https://github.com/abdulboriy6863",
-        "isExternal": true
+        "href": "/projects/olovgo",
+        "isExternal": false
       },
       {
         "id": "viserpet",

@@ -348,6 +348,44 @@
     "videoTitle": "NoMakler Platform Video Walkthrough",
     "videoDescription": "Interactive property discovery, side-by-side comparison, and responsive search workflow in action:"
   },
+  "OlovGoDetail": {
+    "back": "All Projects",
+    "role": "Lead Backend & System Architect — Enterprise Food Delivery & Logistics Platform",
+    "title": "OlovGo: Multi-Sided Food Delivery Ecosystem & Real-Time Routing",
+    "summary": "Multi-sided logistics ecosystem handling real-time order routing and data consistency across 4 independent actors: customers, restaurants, couriers, and administrators. Engineered across 5 client applications, ~106 REST endpoints, 23 Prisma models, an 8-state machine order engine, and Redis-backed atomic idempotency.",
+    "sourceCode": "View Code (GitHub)",
+    "metrics": [
+      { "value": "5 Apps", "label": "Client apps (1 Web + 3 Mobile + 1 Admin)" },
+      { "value": "~106", "label": "REST API endpoints & 23 Prisma models" },
+      { "value": "8-State", "label": "State machine order lifecycle engine" },
+      { "value": "100%", "label": "Redis atomic idempotency & Click PG" }
+    ],
+    "problemTitle": "Problem & Business Context",
+    "problemText": "Food delivery logistics in emerging markets require seamless, real-time synchronization across four independent actors: customers, restaurants, couriers, and administrators. The core engineering challenge was ensuring strict financial and data integrity under unstable mobile network conditions — preventing duplicate orders or ghost charges while handling multi-party commission splits without lag.",
+    "solutionTitle": "Architectural Solutions & Technical Depth",
+    "solutionText": "Implemented a Redis-backed idempotency interceptor combining atomic point reservation and canonical body-hashing to eliminate retry risks over flaky networks. Built an explicit, role-gated 8-state machine enforcing immutable audit trails. Deployed a raw WebSocket (ws) gateway with custom 30-second heartbeat for live GPS broadcasts, secured by phone SMS-OTP with bcrypt and two-phase Click payments.",
+    "overviewTitle": "Architectural Solutions & Technical Depth",
+    "overviewP1": "1. Atomic Order Creation & Idempotency: Implemented a Redis-backed idempotency interceptor combining atomic point reservation and canonical body-hashing. This entirely mitigates customer retry risks over unstable connections, ensuring duplicate requests never generate duplicate orders.",
+    "overviewP2": "2. State Machine & Data Integrity: Driven by an explicit, role-gated 8-state machine that enforces immutable status-history audit trails. Order snapshots are captured deterministically at check-out, ensuring subsequent menu or price updates by restaurants never corrupt past financial records.",
+    "overviewP3": "3. Real-Time Synchronization Layer: Developed a lightweight, raw WebSocket (ws) gateway secured with query-token JWT authentication. It features a custom 30-second heartbeat mechanism to instantly drop dead connections, driving live GPS courier broadcasts and real-time push notifications.",
+    "overviewP4": "4. Financial Safety & Rate Limiting: Secured customer onboarding via a phone-based SMS-OTP flow backed by bcrypt-hashed verification codes in Redis with strict rate limiting. Payments utilize signature-verified Click webhooks using a strict two-phase protocol, combined with automated weekly cron micro-apps that idempotently ledger cash commissions directly into restaurant balances.",
+    "capabilitiesTitle": "Key Features & Client Ecosystem",
+    "capabilities": [
+      "3 strict-TypeScript Expo (React Native) apps for Customer, Courier, and Restaurant",
+      "OpenAPI-generated SDK ensuring end-to-end type safety across all services",
+      "Optimized Mapbox routing, live OTA updates, and instant restaurant alert systems",
+      "Next.js web & admin portals with role-based route protection, TanStack Query, and Zustand",
+      "Sentry real-time error tracking and high-performance Pino JSON structured logging",
+      "Automated health-checked Docker/Nginx deployment pipelines and AWS S3 storage",
+      "Full trilingual localization (UZ / RU / EN)"
+    ],
+    "technologiesTitle": "Used Technologies & Tech Stack",
+    "technologies": [
+      "NestJS", "TypeScript", "Prisma ORM", "PostgreSQL", "Redis", "WebSocket (ws)", "Swagger / OpenAPI", "Click Payments", "React Native (Expo)", "Next.js", "TanStack Query", "Zustand", "Mapbox", "Docker", "Nginx", "AWS S3", "Sentry", "Pino"
+    ],
+    "galleryTitle": "Mobile Client Interfaces & Showcase",
+    "galleryDescription": "Key mobile views across customer discovery, menu ordering, real-time tracking, and courier delivery:"
+  },
   "AllProjects": {
     "back": "Home",
     "badge": "Engineering Portfolio",
@@ -386,8 +424,8 @@
         "description": "Comprehensive multi-sided food delivery platform serving 5 client applications across 106 REST endpoints — featuring an 8-state order engine, Redis idempotency, live GPS telemetry, and Click payments.",
         "stack": ["NestJS", "TypeScript", "Prisma", "PostgreSQL", "React Native (Expo)", "Next.js", "WebSocket", "Redis"],
         "image": "/images/olovgo.png",
-        "href": "https://github.com/abdulboriy6863",
-        "isExternal": true
+        "href": "/projects/olovgo",
+        "isExternal": false
       },
       {
         "id": "viserpet",
