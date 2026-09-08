@@ -138,7 +138,7 @@
     "disclaimer": "Google Gemini & Next.js streaming arxitekturasi asosida ishlaydi."
   },
   "ProjectDetail": {
-    "back": "← Barcha loyihalar",
+    "back": "Barcha loyihalar",
     "role": "Katta AI va Full-Stack muhandisi — EV CSMS, Batch va AI Energiya Platformasi",
     "title": "Blue Networks: E-Chae-Um & AI Quvvat Bashorat Platformasi",
     "summary": "Koreya bo'ylab 1,600+ elektr transport vositalarini zaryadlash stansiyalarini boshqaruvchi E-Chae-Um CSMS infratuzilmasi hamda 8 ta AI modeli (PyTorch LSTM, XGBoost, EVT) ansambli orqali elektr quvvatiga bo'lgan talabni P50/P90 ehtimollikda bashorat qiluvchi, KEPCO tariflari va shartnoma quvvatini optimallashtiruvchi enterprise platformalar arxitekturasi.",

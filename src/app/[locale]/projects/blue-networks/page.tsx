@@ -64,9 +64,9 @@ export default function BlueNetworksCaseStudyPage() {
           <div className="mb-8">
             <Link
               href="/#projects"
-              className="inline-flex items-center gap-2 text-sm font-medium text-zinc-500 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-white transition-colors"
+              className="group/back inline-flex items-center gap-2 text-sm font-medium text-zinc-600 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-white transition-colors"
             >
-              <ArrowLeft className="w-4 h-4" />
+              <ArrowLeft className="w-4 h-4 group-hover/back:-translate-x-1 transition-transform duration-200" />
               <span>{t("back")}</span>
             </Link>
           </div>

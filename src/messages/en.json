@@ -138,7 +138,7 @@
     "disclaimer": "Powered by Google Gemini & Next.js streaming architecture."
   },
   "ProjectDetail": {
-    "back": "← All projects",
+    "back": "All projects",
     "role": "Senior AI & Full-Stack Architect — EV CSMS, Batch & AI Energy Forecasting",
     "title": "Blue Networks: E-Chae-Um & AI Power Demand Forecasting Platform",
     "summary": "Enterprise EV Charging Station Management System (CSMS) managing 1,600+ chargers across Korea and an 8-model AI ensemble platform (PyTorch LSTM, XGBoost, EVT) delivering probabilistic P50/P90 power demand forecasts to optimize KEPCO contracted capacity and eliminate peak surcharge penalties.",
