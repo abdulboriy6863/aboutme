@@ -266,6 +266,115 @@
     "videoTitle": "NESTAR Platform Showcase Video",
     "videoDescription": "Walkthrough of property discovery, multi-criteria filtering, and agent management dashboard."
   },
+  "AllProjects": {
+    "back": "Home",
+    "badge": "Engineering Portfolio",
+    "title": "All Projects",
+    "subtitle": "A comprehensive collection of production architectures, AI platforms, distributed backends, and full-stack systems engineered to scale.",
+    "viewProject": "View Case Study",
+    "viewGithub": "View Source (GitHub)",
+    "items": [
+      {
+        "id": "blue-networks",
+        "title": "Blue Networks: E-Chae-Um & AI Energy Platform",
+        "tag": "AI & EV Energy Platform · Flagship",
+        "year": "2025 - 2026",
+        "description": "High-concurrency CSMS managing 1,600+ EV chargers across South Korea paired with an 8-model AI ensemble (PyTorch LSTM, XGBoost, EVT) forecasting P50/P90 power demand and optimizing KEPCO contract capacity.",
+        "stack": ["Java 17", "Spring Boot", "MyBatis", "Python (FastAPI)", "PyTorch", "XGBoost", "Redis", "Docker"],
+        "image": "/images/blue-networks-office.jpg",
+        "href": "/projects/blue-networks",
+        "isExternal": false
+      },
+      {
+        "id": "romimi",
+        "title": "ROMIMI — AI-Driven Ad-Creative & Packshot Studio",
+        "tag": "AI Creative & Vision Studio",
+        "year": "2025 - 2026",
+        "description": "Production NestJS backend turning raw product photos into on-brand ad creatives and packshots — orchestrating Anthropic Claude vision analyst, Google Gemini, and Vertex AI Imagen behind Redis/BullMQ queues.",
+        "stack": ["NestJS", "TypeScript", "BullMQ", "Redis", "Claude", "Gemini", "Vertex Imagen", "Socket.IO", "AWS S3"],
+        "image": "/images/romimi.png",
+        "href": "https://github.com/abdulboriy6863",
+        "isExternal": true
+      },
+      {
+        "id": "olovgo",
+        "title": "OlovGo — Enterprise Food Delivery Ecosystem",
+        "tag": "Multi-Sided Logistics & Real-Time",
+        "year": "2024 - 2025",
+        "description": "Multi-sided logistics ecosystem with 5 client apps (1 Web, 3 Native Expo Mobile, 1 Admin) and ~106 REST endpoints — featuring an 8-state machine, Redis idempotency, live WebSocket GPS tracking, and Click payments.",
+        "stack": ["NestJS", "TypeScript", "Prisma", "PostgreSQL", "React Native (Expo)", "Next.js", "WebSocket", "Redis"],
+        "image": "/images/olovgo.png",
+        "href": "https://github.com/abdulboriy6863",
+        "isExternal": true
+      },
+      {
+        "id": "viserpet",
+        "title": "ViserPet — Pet E-Commerce & Community Platform",
+        "tag": "E-Commerce & GraphQL Platform",
+        "year": "2024 - 2025",
+        "description": "Full-stack pet e-commerce and social platform built with Next.js App Router, Apollo GraphQL, NestJS, and MongoDB — featuring real-time WebSocket messaging, dynamic URL-synchronized filters, and seller/admin dashboards.",
+        "stack": ["Next.js", "React", "TypeScript", "GraphQL (Apollo)", "NestJS", "MongoDB", "WebSocket", "Docker"],
+        "image": "/images/viserpet.png",
+        "href": "/projects/viserpet",
+        "isExternal": false
+      },
+      {
+        "id": "nestar",
+        "title": "NESTAR — Real Estate Discovery Portal",
+        "tag": "Real Estate Marketplace",
+        "year": "2024 - 2025",
+        "description": "South Korea real estate listing & property discovery portal — engineered with dynamic multi-criteria search (location, room count, price range), real-time agent inquiry channels, and Redis-cached queries.",
+        "stack": ["Next.js", "TypeScript", "NestJS", "PostgreSQL", "MongoDB", "Redis", "Tailwind CSS", "Docker"],
+        "image": "/images/nestar.png",
+        "href": "/projects/nestar",
+        "isExternal": false
+      },
+      {
+        "id": "nikestore",
+        "title": "Nike Store — Sneaker E-Commerce Platform",
+        "tag": "E-Commerce Architecture",
+        "year": "2023 - 2024",
+        "description": "Full-stack sneaker e-commerce platform built with React (TypeScript), Express.js REST API, Redux Toolkit cart persistence, and a dedicated store/admin management portal.",
+        "stack": ["React", "TypeScript", "Express.js", "MongoDB", "Redux Toolkit", "Material UI", "PM2", "Nginx"],
+        "image": "/images/nikestore.png",
+        "href": "https://github.com/abdulboriy6863",
+        "isExternal": true
+      },
+      {
+        "id": "cambridge",
+        "title": "Cambridge Online — Educational Platform",
+        "tag": "EdTech & Learning Management",
+        "year": "2023 - 2024",
+        "description": "Digital educational platform delivering interactive study courses, user management, online assessments, and responsive learning interfaces.",
+        "stack": ["React", "Next.js", "TypeScript", "Tailwind CSS", "REST API", "Node.js"],
+        "image": "/images/cambridge.png",
+        "href": "https://github.com/abdulboriy6863",
+        "isExternal": true
+      },
+      {
+        "id": "evos",
+        "title": "Evos Restaurant — Fast-Food Digital Platform",
+        "tag": "Food & Hospitality UI",
+        "year": "2023 - 2024",
+        "description": "Web platform for Uzbekistan's premier fast-food restaurant chain — showcasing product menus, promotions, responsive ordering UX, and high-performance frontend.",
+        "stack": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Responsive UI"],
+        "image": "/images/evos.png",
+        "href": "https://github.com/abdulboriy6863",
+        "isExternal": true
+      },
+      {
+        "id": "craftyramen",
+        "title": "Crafty Ramen — Modern Dining Platform",
+        "tag": "Restaurant Web Platform",
+        "year": "2023 - 2024",
+        "description": "Contemporary restaurant web platform engineered for rich visual menu presentation, intuitive discovery navigation, and online dining experience.",
+        "stack": ["React", "TypeScript", "Next.js", "SCSS", "UI/UX Optimization"],
+        "image": "/images/craftyramen.png",
+        "href": "https://github.com/abdulboriy6863",
+        "isExternal": true
+      }
+    ]
+  },
   "Footer": {
     "firstName": "Abdulboriy",
     "lastName": "Rakhmatullaev",

@@ -266,6 +266,115 @@
     "videoTitle": "NESTAR Platformasi Videolavhasi",
     "videoDescription": "Ko'chmas mulk qidiruvi, ko'p parametrli filtratsiyalar va agentlar boshqaruv paneli amaliy jarayoni."
   },
+  "AllProjects": {
+    "back": "Bosh sahifa",
+    "badge": "Muhandislik Portfoliosi",
+    "title": "Barcha Loyihalar",
+    "subtitle": "Katta hajmli AI, taqsimlangan backend infratuzilmasi, e-tijorat va real-vaqt tizimlari bo'yicha ishlab chiqilgan va amaliyotga joriy etilgan arxitekturalar to'plami.",
+    "viewProject": "Loyihani ko'rish",
+    "viewGithub": "Kodni ko'rish (GitHub)",
+    "items": [
+      {
+        "id": "blue-networks",
+        "title": "Blue Networks: E-Chae-Um & AI Quvvat Platformasi",
+        "tag": "AI & EV Energy Platform · Flagship",
+        "year": "2025 - 2026",
+        "description": "Koreya bo'ylab 1,600+ zaryadlash stansiyalari boshqaruvi (CSMS) hamda 8 ta AI modeli (PyTorch LSTM, XGBoost, EVT) ansambli orqali elektr quvvatiga bo'lgan talabni P50/P90 ehtimollikda bashorat qiluvchi enterprise platforma arxitekturasi.",
+        "stack": ["Java 17", "Spring Boot", "MyBatis", "Python (FastAPI)", "PyTorch", "XGBoost", "Redis", "Docker"],
+        "image": "/images/blue-networks-office.jpg",
+        "href": "/projects/blue-networks",
+        "isExternal": false
+      },
+      {
+        "id": "romimi",
+        "title": "ROMIMI — AI-Driven Ad-Creative & Packshot Studio",
+        "tag": "AI Creative & Vision Studio",
+        "year": "2025 - 2026",
+        "description": "Oddiy mahsulot suratlarini brend ad-kreativlari va studiya packshotlariga aylantiruvchi NestJS backend arxitekturasi — Anthropic Claude (vision tahlil), Google Gemini va Vertex AI Imagen modellarini Redis/BullMQ navbatlari orqali orkestr qiladi.",
+        "stack": ["NestJS", "TypeScript", "BullMQ", "Redis", "Claude", "Gemini", "Vertex Imagen", "Socket.IO", "AWS S3"],
+        "image": "/images/romimi.png",
+        "href": "https://github.com/abdulboriy6863",
+        "isExternal": true
+      },
+      {
+        "id": "olovgo",
+        "title": "OlovGo — Enterprise Food Delivery Ecosystem",
+        "tag": "Multi-Sided Logistics & Real-Time",
+        "year": "2024 - 2025",
+        "description": "5 ta mijoz ilovalari (1 veb, 3 ta Expo React Native mobil, 1 admin) va 106 ta REST endpointga ega to'liq oziq-ovqat yetkazib berish ekotizimi — 8 bosqichli state-machine, Redis idempotency, WebSocket jonli GPS va Click to'lovlari.",
+        "stack": ["NestJS", "TypeScript", "Prisma", "PostgreSQL", "React Native (Expo)", "Next.js", "WebSocket", "Redis"],
+        "image": "/images/olovgo.png",
+        "href": "https://github.com/abdulboriy6863",
+        "isExternal": true
+      },
+      {
+        "id": "viserpet",
+        "title": "ViserPet — Pet E-Commerce & Community Platform",
+        "tag": "E-Commerce & GraphQL Platform",
+        "year": "2024 - 2025",
+        "description": "Next.js App Router, Apollo GraphQL, NestJS va MongoDB asosidagi uy hayvonlari xaridi va hamjamiyati portali — real-vaqt WebSocket xabarlashuv, URL bilan sinxron ko'p parametrli filtrlar va seller/admin panellari.",
+        "stack": ["Next.js", "React", "TypeScript", "GraphQL (Apollo)", "NestJS", "MongoDB", "WebSocket", "Docker"],
+        "image": "/images/viserpet.png",
+        "href": "/projects/viserpet",
+        "isExternal": false
+      },
+      {
+        "id": "nestar",
+        "title": "NESTAR — Real Estate Discovery Portal",
+        "tag": "Real Estate Marketplace",
+        "year": "2024 - 2025",
+        "description": "Janubiy Koreya ko'chmas mulk oldi-sotdi va ijara portali — lokatsiya, xonalar soni va narx bo'yicha ko'p bosqichli parametrli qidiruv, agentlar shaxsiy kabineti va Redis kesh qatlami.",
+        "stack": ["Next.js", "TypeScript", "NestJS", "PostgreSQL", "MongoDB", "Redis", "Tailwind CSS", "Docker"],
+        "image": "/images/nestar.png",
+        "href": "/projects/nestar",
+        "isExternal": false
+      },
+      {
+        "id": "nikestore",
+        "title": "Nike Store — Sneaker E-Commerce Platform",
+        "tag": "E-Commerce Architecture",
+        "year": "2023 - 2024",
+        "description": "Krossovkalar xaridi va boshqaruvi uchun mo'ljallangan full-stack platforma — React (TypeScript), Express.js REST API, Redux Toolkit savatchasi, do'kon va foydalanuvchi rollarini boshqaruvchi admin panel.",
+        "stack": ["React", "TypeScript", "Express.js", "MongoDB", "Redux Toolkit", "Material UI", "PM2", "Nginx"],
+        "image": "/images/nikestore.png",
+        "href": "https://github.com/abdulboriy6863",
+        "isExternal": true
+      },
+      {
+        "id": "cambridge",
+        "title": "Cambridge Online — Educational Platform",
+        "tag": "EdTech & Learning Management",
+        "year": "2023 - 2024",
+        "description": "O'quvchilar va o'qituvchilar uchun onlayn ta'lim platformasi — interaktiv o'quv materiallari, xavfsiz foydalanuvchilar boshqaruvi, onlayn baholash va responsiv UI komponentlar.",
+        "stack": ["React", "Next.js", "TypeScript", "Tailwind CSS", "REST API", "Node.js"],
+        "image": "/images/cambridge.png",
+        "href": "https://github.com/abdulboriy6863",
+        "isExternal": true
+      },
+      {
+        "id": "evos",
+        "title": "Evos Restaurant — Fast-Food Digital Platform",
+        "tag": "Food & Hospitality UI",
+        "year": "2023 - 2024",
+        "description": "O'zbekistonning yetakchi fast-fud tarmog'i uchun raqamli veb-platforma — mahsulotlar menyusini namoyish etish, aksiyalar va foydalanuvchi interfeysini optimallashtirish.",
+        "stack": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Responsive UI"],
+        "image": "/images/evos.png",
+        "href": "https://github.com/abdulboriy6863",
+        "isExternal": true
+      },
+      {
+        "id": "craftyramen",
+        "title": "Crafty Ramen — Modern Dining Platform",
+        "tag": "Restaurant Web Platform",
+        "year": "2023 - 2024",
+        "description": "Zamonaviy restoran veb-platformasi — taomlarni boy vizual tasvirlash, toza navigatsiya, onlayn buyurtma berish va yuqori samaradorlikdagi veb interfeys.",
+        "stack": ["React", "TypeScript", "Next.js", "SCSS", "UI/UX Optimization"],
+        "image": "/images/craftyramen.png",
+        "href": "https://github.com/abdulboriy6863",
+        "isExternal": true
+      }
+    ]
+  },
   "Footer": {
     "firstName": "Abdulboriy",
     "lastName": "Rakhmatullaev",

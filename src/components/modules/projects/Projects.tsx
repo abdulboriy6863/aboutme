@@ -172,15 +172,13 @@ export function Projects() {
 
         {/* Bottom All Projects Link */}
         <div className="pt-4 text-center">
-          <a
-            href="https://github.com/abdulboriy6863"
-            target="_blank"
-            rel="noreferrer"
-            className="group inline-flex items-center gap-2 text-sm font-semibold text-[#527c73] dark:text-[#79a7a7] hover:text-[#3d5d56] dark:hover:text-[#9bc2c2] transition-all duration-200"
+          <Link
+            href="/projects"
+            className="group inline-flex items-center gap-2 text-sm font-semibold text-[#527c73] dark:text-[#79a7a7] hover:text-[#3d5d56] dark:hover:text-[#9bc2c2] hover:scale-105 origin-center transition-all duration-200"
           >
             <span>{t("allProjects")}</span>
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </a>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform duration-200" />
+          </Link>
         </div>
       </div>
     </section>

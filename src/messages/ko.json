@@ -266,6 +266,115 @@
     "videoTitle": "NESTAR 플랫폼 시연 영상",
     "videoDescription": "부동산 매물 검색, 다중 조건 필터링 및 공인중개사 관리 대시보드 시연 영상."
   },
+  "AllProjects": {
+    "back": "홈으로",
+    "badge": "엔지니어링 포트폴리오",
+    "title": "모든 프로젝트",
+    "subtitle": "대규모 AI 시스템, 분산 백엔드 인프라, 이커머스 및 실시간 웹 플랫폼 등 실제 프로덕션에 배포된 엔지니어링 프로젝트 모음.",
+    "viewProject": "프로젝트 보기",
+    "viewGithub": "소스 코드 보기 (GitHub)",
+    "items": [
+      {
+        "id": "blue-networks",
+        "title": "Blue Networks: 이채움 & AI 전력 수요 예측 플랫폼",
+        "tag": "AI & EV 에너지 플랫폼 · 핵심 아키텍처",
+        "year": "2025 - 2026",
+        "description": "전국 1,600기+ 전기차 충전기를 관제하는 CSMS 및 8개 AI 모델 앙상블을 통해 P50/P90 전력 수요를 예측하고 한전 계약 전력을 최적화한 엔터프라이즈 시스템 아키텍처.",
+        "stack": ["Java 17", "Spring Boot", "MyBatis", "Python (FastAPI)", "PyTorch", "XGBoost", "Redis", "Docker"],
+        "image": "/images/blue-networks-office.jpg",
+        "href": "/projects/blue-networks",
+        "isExternal": false
+      },
+      {
+        "id": "romimi",
+        "title": "ROMIMI — AI 광고 크리에이티브 & 팩샷 스튜디오",
+        "tag": "AI 크리에이티브 & 비전 스튜디오",
+        "year": "2025 - 2026",
+        "description": "원시 제품 사진을 브랜드 광고 크리에이티브 및 스튜디오 팩샷으로 변환하는 NestJS 백엔드 — Anthropic Claude 비전 분석, Google Gemini, Vertex AI Imagen을 Redis/BullMQ 대기열로 오케스트레이션.",
+        "stack": ["NestJS", "TypeScript", "BullMQ", "Redis", "Claude", "Gemini", "Vertex Imagen", "Socket.IO", "AWS S3"],
+        "image": "/images/romimi.png",
+        "href": "https://github.com/abdulboriy6863",
+        "isExternal": true
+      },
+      {
+        "id": "olovgo",
+        "title": "OlovGo — 엔터프라이즈 음식 배달 에코시스템",
+        "tag": "물류 & 실시간 플랫폼",
+        "year": "2024 - 2025",
+        "description": "5개 클라이언트 앱(웹 1개, React Native Expo 네이티브 앱 3개, 관리자 1개)과 106개 REST 엔드포인트 — 8단계 상태 머신, Redis 멱등성 인터셉터, 실시간 WebSocket GPS 및 전자 결제.",
+        "stack": ["NestJS", "TypeScript", "Prisma", "PostgreSQL", "React Native (Expo)", "Next.js", "WebSocket", "Redis"],
+        "image": "/images/olovgo.png",
+        "href": "https://github.com/abdulboriy6863",
+        "isExternal": true
+      },
+      {
+        "id": "viserpet",
+        "title": "ViserPet — 반려동물 이커머스 & 커뮤니티 플랫폼",
+        "tag": "이커머스 & GraphQL 플랫폼",
+        "year": "2024 - 2025",
+        "description": "Next.js App Router, GraphQL (Apollo), NestJS 및 MongoDB 기반의 반려동물 이커머스 및 커뮤니티 — 실시간 WebSocket 알림/채팅, URL 동기화 다중 필터링 및 관리자 대시보드.",
+        "stack": ["Next.js", "React", "TypeScript", "GraphQL (Apollo)", "NestJS", "MongoDB", "WebSocket", "Docker"],
+        "image": "/images/viserpet.png",
+        "href": "/projects/viserpet",
+        "isExternal": false
+      },
+      {
+        "id": "nestar",
+        "title": "NESTAR — 부동산 매물 검색 및 거래 포털",
+        "tag": "부동산 마켓플레이스",
+        "year": "2024 - 2025",
+        "description": "대한민국 부동산 매물 검색 및 거래 플랫폼 — 위치, 매물 유형, 방 개수, 가격대별 동적 다중 조건 필터링 엔진, 중개사-고객 실시간 문의 시스템 및 Redis 캐싱 계층.",
+        "stack": ["Next.js", "TypeScript", "NestJS", "PostgreSQL", "MongoDB", "Redis", "Tailwind CSS", "Docker"],
+        "image": "/images/nestar.png",
+        "href": "/projects/nestar",
+        "isExternal": false
+      },
+      {
+        "id": "nikestore",
+        "title": "Nike Store — 스니커즈 이커머스 플랫폼",
+        "tag": "이커머스 아키텍처",
+        "year": "2023 - 2024",
+        "description": "스니커즈 쇼핑 및 주문 관리를 위한 풀스택 플랫폼 — React (TypeScript), Express.js REST API, Redux Toolkit 장바구니 영속성 및 스토어/관리자 역할 전환 관리.",
+        "stack": ["React", "TypeScript", "Express.js", "MongoDB", "Redux Toolkit", "Material UI", "PM2", "Nginx"],
+        "image": "/images/nikestore.png",
+        "href": "https://github.com/abdulboriy6863",
+        "isExternal": true
+      },
+      {
+        "id": "cambridge",
+        "title": "Cambridge Online — 교육 학습 플랫폼",
+        "tag": "에듀테크 & 학습 관리",
+        "year": "2023 - 2024",
+        "description": "학생과 교육자를 위한 인터랙티브 디지털 학습 플랫폼 — 강의 자료 제공, 안전한 회원 관리, 온라인 평가 및 고성능 반응형 UI 컴포넌트.",
+        "stack": ["React", "Next.js", "TypeScript", "Tailwind CSS", "REST API", "Node.js"],
+        "image": "/images/cambridge.png",
+        "href": "https://github.com/abdulboriy6863",
+        "isExternal": true
+      },
+      {
+        "id": "evos",
+        "title": "Evos Restaurant — 패스트푸드 디지털 플랫폼",
+        "tag": "외식 & 서비스 UI",
+        "year": "2023 - 2024",
+        "description": "우즈베키스탄 대표 패스트푸드 브랜드 디지털 웹 플랫폼 — 메뉴 큐레이션, 프로모션 안내 및 최적화된 반응형 프론트엔드 UI.",
+        "stack": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Responsive UI"],
+        "image": "/images/evos.png",
+        "href": "https://github.com/abdulboriy6863",
+        "isExternal": true
+      },
+      {
+        "id": "craftyramen",
+        "title": "Crafty Ramen — 모던 다이닝 플랫폼",
+        "tag": "레스토랑 웹 플랫폼",
+        "year": "2023 - 2024",
+        "description": "현대적인 레스토랑 웹 플랫폼 — 풍부한 시각적 메뉴 소개, 직관적인 탐색 내비게이션, 온라인 주문 연동 및 고성능 웹 인터페이스.",
+        "stack": ["React", "TypeScript", "Next.js", "SCSS", "UI/UX Optimization"],
+        "image": "/images/craftyramen.png",
+        "href": "https://github.com/abdulboriy6863",
+        "isExternal": true
+      }
+    ]
+  },
   "Footer": {
     "firstName": "Abdulboriy",
     "lastName": "Rakhmatullaev",
