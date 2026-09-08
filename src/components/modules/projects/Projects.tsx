@@ -27,12 +27,12 @@ export function Projects() {
         {/* Project Card */}
         <div className="group rounded-3xl border border-zinc-200/90 dark:border-zinc-800/90 bg-white dark:bg-zinc-950/80 shadow-sm hover:shadow-xl dark:shadow-2xl transition-all duration-300 overflow-hidden">
           {/* Top Office / Project Header Image */}
-          <div className="relative w-full aspect-[21/9] sm:aspect-[16/7] md:h-[340px] overflow-hidden bg-zinc-100 dark:bg-zinc-900 border-b border-zinc-200/80 dark:border-zinc-800/80">
+          <div className="relative w-full aspect-[2584/1127] overflow-hidden bg-zinc-100 dark:bg-zinc-900 border-b border-zinc-200/80 dark:border-zinc-800/80">
             <Image
               src="/images/blue-networks-office.jpg"
               alt="Blue Networks E-Chae-Um Office"
               fill
-              className="object-cover object-center group-hover:scale-[1.02] transition-transform duration-500 ease-out"
+              className="object-cover object-center group-hover:scale-[1.01] transition-transform duration-500 ease-out"
               priority
               sizes="(max-width: 1024px) 100vw, 896px"
             />
