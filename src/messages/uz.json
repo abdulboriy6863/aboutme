@@ -310,6 +310,44 @@
     "galleryTitle": "Loyiha Taqdimoti & Rasmlar Galereyasi",
     "galleryDescription": "Nike Store platformasining asosiy interfeysi, mahsulotlar katalogi, me'moriy tuzilishi va admin paneli ko'rinishlari:"
   },
+  "NoMaklerDetail": {
+    "back": "Barcha loyihalar",
+    "role": "Frontend & UI/UX Muhandisi — Ko'chmas Mulk E'lonlari & Taqqoslash Portali",
+    "title": "NoMakler: O'zbekiston Ko'chmas Mulk E'lonlari & Qidiruv Portali",
+    "summary": "NoMakler — O'zbekistonda ko'chmas mulk (uylar, kvartiralar, noturar joylar) oldi-sotdi va ijara xizmatlariga ixtisoslashgan zamonaviy platforma. Foydalanuvchilarga mulklarni narx, joylashuv va parametrlar bo'yicha batafsil ko'rish, qidirish, yonma-yon taqqoslash va tezkor qaror qabul qilish imkonini beruvchi qulay veb-interfeys taqdim etadi.",
+    "openSite": "Saytni ochish (nomakler.uz)",
+    "metrics": [
+      { "value": "100%", "label": "yonma-yon parametrli taqqoslash" },
+      { "value": "Tezkor", "label": "ixcham va optimallashgan listing" },
+      { "value": "UI / UX", "label": "zamonaviy responsiv interfeys" },
+      { "value": "Video", "label": "jonli interfeys namoyishi" }
+    ],
+    "problemTitle": "Muammo va Ehtiyoj",
+    "problemText": "Ko'chmas mulk bozorida foydalanuvchilar e'lonlarni tezkor va qulay ko'rish, narx, maydon va hudud bo'yicha mulklarni bir vaqtning o'zida solishtirish hamda ortiqcha qiyinchiliksiz bevosita sotuvchi yoki agent bilan bog'lanish imkoniyatiga muhtoj edi.",
+    "solutionTitle": "Yechim va Ishlanmalar (Contribution)",
+    "solutionText": "Platformada ko'chmas mulk e'lonlari va qidiruv tizimini takomillashtirish bo'yicha ishlar olib borildi. UI ravshanligi, maket tuzilishi va samarali taqqoslashni ta'minlovchi responsivlikka alohida e'tibor qaratildi. Foydalanuvchilar uchun intuitiv va silliq interfeys yaratish maqsadida umumiy UX yaxshilandi hamda frontend qismi to'liq sayqallandi.",
+    "overviewTitle": "Umumiy Ma'lumot",
+    "overviewP1": "NoMakler — O'zbekistonda mulk xaridorlari, ijarachilar va mulk egalari o'rtasida to'g'ridan-to'g'ri va qulay aloqa o'rnatish uchun ishlab chiqilgan zamonaviy ko'chmas mulk portalidir.",
+    "overviewP2": "1. Ixcham va Samarali E'lonlar Maketi: Foydalanuvchilarga ko'p sonli mulk variantlarini bir zumda ko'zdan kechirish, narxlar va asosiy qulayliklarni tez baholash imkonini beruvchi ixcham listing tizimi.",
+    "overviewP3": "2. Yonma-yon Solishtirish & Yangi E'lonlar: Narxlar, o'lchamlar va joylashuvni parallel ravishda solishtirish, shuningdek eng dolzarb ma'lumotlarga ega bo'lish uchun eng yangi e'lonlar bo'yicha saralash mexanizmi.",
+    "overviewP4": "3. Batafsil Metadata & Tezkor Bog'lanish: Qavat, xonalar soni, ta'mir holati kabi to'liq metama'lumotlar hamda mijozlarni darhol jalb qilish uchun tezkor aloqa (contact action) tugmalari.",
+    "capabilitiesTitle": "Asosiy Imkoniyatlar (Key Features & UX)",
+    "capabilities": [
+      "Compact listing layout optimized for quick scanning (Tez ko'zdan kechirish uchun optimallashgan ixcham listing)",
+      "Side-by-side comparison of prices, sizes, and locations (Narx, maydon va lokatsiyani yonma-yon solishtirish)",
+      "Sorting by newest listings for up-to-date results (Eng yangi e'lonlar bo'yicha saralash)",
+      "Detailed metadata including floor info and property metrics (Qavat va mulk ko'rsatkichlari bo'yicha batafsil ma'lumot)",
+      "Quick contact actions to encourage immediate engagement (Tezkor bog'lanish va mijozlar aloqasi)",
+      "Clean, information-rich interface with action-oriented hierarchy (Aniq iyerarxiyaga ega toza va boy interfeys)",
+      "Fully responsive and mobile-optimized design (Mobil qurilmalar va desktop uchun to'liq moslashuvchanlik)"
+    ],
+    "technologiesTitle": "Ishlatilgan Texnologiyalar & Arxitektura",
+    "technologies": [
+      "React", "Next.js", "TypeScript", "Tailwind CSS", "REST API", "Responsive Web Design", "UI/UX Architecture", "State Management", "Performance Optimization"
+    ],
+    "videoTitle": "NoMakler Platformasi Videolavhasi",
+    "videoDescription": "NoMakler ko'chmas mulk platformasining interfeysi, qidiruv mexanizmi va amaliy ishlash jarayoni:"
+  },
   "AllProjects": {
     "back": "Bosh sahifa",
     "badge": "Muhandislik Portfoliosi",
@@ -382,6 +420,17 @@
         "stack": ["React", "TypeScript", "Express.js", "MongoDB", "Redux Toolkit", "Material UI", "PM2", "Nginx"],
         "image": "/images/nikestore.png",
         "href": "/projects/nikestore",
+        "isExternal": false
+      },
+      {
+        "id": "nomakler",
+        "title": "NoMakler — Real Estate Listing Platform",
+        "tag": "Real Estate & Property Discovery",
+        "year": "2023 - 2024",
+        "description": "O'zbekistonda ko'chmas mulk oldi-sotdi va ijara xizmatlari uchun yaratilgan zamonaviy platforma — qulay filtrlash, mulklarni yonma-yon taqqoslash, toza UI arxitekturasi va responsiv interfeys.",
+        "stack": ["React", "Next.js", "TypeScript", "Tailwind CSS", "REST API", "Responsive UI"],
+        "image": "/images/nomakler.png",
+        "href": "/projects/nomakler",
         "isExternal": false
       },
       {

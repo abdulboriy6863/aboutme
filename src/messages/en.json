@@ -310,6 +310,44 @@
     "galleryTitle": "Project Showcase & Visual Gallery",
     "galleryDescription": "Key storefront interfaces, product catalog, system architecture, and store management console:"
   },
+  "NoMaklerDetail": {
+    "back": "All Projects",
+    "role": "Frontend & UI/UX Engineer — Real Estate Listings & Comparison Portal",
+    "title": "NoMakler: Uzbekistan Real Estate Listing & Discovery Platform",
+    "summary": "NoMakler is a modern real estate listing platform focused on property buying, selling, and rental services in Uzbekistan. The platform allows users to browse, search, and compare property listings with detailed information such as price, location, and property metrics through a fast, user-friendly, and responsive web interface.",
+    "openSite": "Open Live Site (nomakler.uz)",
+    "metrics": [
+      { "value": "100%", "label": "side-by-side parametric comparison" },
+      { "value": "Fast", "label": "compact & optimized listing layout" },
+      { "value": "UI / UX", "label": "modern responsive web interface" },
+      { "value": "Video", "label": "live interactive demo" }
+    ],
+    "problemTitle": "Problem & User Need",
+    "problemText": "Property seekers required a fast and intuitive way to browse listings, compare prices, sizes, and locations side-by-side, and make confident real estate decisions with direct contact actions.",
+    "solutionTitle": "Architecture & Engineering Contribution",
+    "solutionText": "Engineered enhancements for the property listings and search experience. Focused on improving UI clarity, layout structure, and responsiveness for efficient property comparison. Contributed to overall UX polish, visual consistency, and front-end optimization to deliver a smoother browsing experience.",
+    "overviewTitle": "Project Overview",
+    "overviewP1": "NoMakler is a comprehensive real estate listing portal engineered to streamline property discovery for buyers, tenants, and property owners across Uzbekistan.",
+    "overviewP2": "1. Compact & Efficient Listing Layout: Optimized for quick visual scanning, allowing users to assess pricing, location, and key property features at a glance.",
+    "overviewP3": "2. Side-by-Side Comparison & Sorting: Instant multi-criteria comparison of prices, unit sizes, and neighborhood metrics, combined with real-time sorting by newest listings.",
+    "overviewP4": "3. Rich Metadata & Immediate Engagement: Clear floor level, room layout, and metric breakdowns with prominent action-oriented contact channels.",
+    "capabilitiesTitle": "Key Features & UX Architecture",
+    "capabilities": [
+      "Compact listing layout optimized for quick scanning",
+      "Side-by-side comparison of prices, sizes, and locations",
+      "Sorting by newest listings for up-to-date results",
+      "Detailed metadata including floor info and property metrics",
+      "Quick contact actions to encourage immediate engagement",
+      "Clean, information-rich interface with action-oriented hierarchy",
+      "Fully responsive and mobile-optimized design"
+    ],
+    "technologiesTitle": "Used Technologies & Architecture",
+    "technologies": [
+      "React", "Next.js", "TypeScript", "Tailwind CSS", "REST API", "Responsive Web Design", "UI/UX Architecture", "State Management", "Performance Optimization"
+    ],
+    "videoTitle": "NoMakler Platform Video Walkthrough",
+    "videoDescription": "Interactive property discovery, side-by-side comparison, and responsive search workflow in action:"
+  },
   "AllProjects": {
     "back": "Home",
     "badge": "Engineering Portfolio",
@@ -382,6 +420,17 @@
         "stack": ["React", "TypeScript", "Express.js", "MongoDB", "Redux Toolkit", "Material UI", "PM2", "Nginx"],
         "image": "/images/nikestore.png",
         "href": "/projects/nikestore",
+        "isExternal": false
+      },
+      {
+        "id": "nomakler",
+        "title": "NoMakler — Real Estate Listing Platform",
+        "tag": "Real Estate & Property Discovery",
+        "year": "2023 - 2024",
+        "description": "Real estate listing platform focused on property buying, selling, and rental services in Uzbekistan — engineered with compact listings, side-by-side comparisons, and responsive UI.",
+        "stack": ["React", "Next.js", "TypeScript", "Tailwind CSS", "REST API", "Responsive UI"],
+        "image": "/images/nomakler.png",
+        "href": "/projects/nomakler",
         "isExternal": false
       },
       {
