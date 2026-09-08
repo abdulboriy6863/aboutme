@@ -72,7 +72,7 @@ export default function BlueNetworksCaseStudyPage() {
           </div>
 
           {/* Subtitle / Role */}
-          <div className="text-xs sm:text-sm font-mono text-[#c85a32] dark:text-[#e07047] font-medium tracking-wide mb-3">
+          <div className="text-xs sm:text-sm font-mono text-[#527c73] dark:text-[#79a7a7] font-medium tracking-wide mb-3">
             {t("role")}
           </div>
 
