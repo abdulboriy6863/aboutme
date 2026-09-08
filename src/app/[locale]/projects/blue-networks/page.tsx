@@ -212,10 +212,12 @@ export default function BlueNetworksCaseStudyPage() {
 
             <div className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden border border-zinc-200/90 dark:border-zinc-800/90 bg-zinc-950 shadow-xl dark:shadow-2xl">
               <video
-                controls
-                playsInline
-                preload="metadata"
+                autoPlay
+                muted
                 loop
+                playsInline
+                controls
+                preload="auto"
                 poster="/images/blue-networks-office.jpg"
                 className="w-full h-auto aspect-video object-cover"
               >
