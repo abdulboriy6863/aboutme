@@ -37,7 +37,7 @@ export function Hero({ onOpenAi }: { onOpenAi?: (prompt?: string) => void }) {
   };
 
   return (
-    <section id="about" className="relative min-h-[85vh] flex flex-col justify-center pt-32 pb-16 overflow-hidden">
+    <section id="hero" className="relative min-h-[85vh] flex flex-col justify-center pt-32 pb-16 overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center flex flex-col items-center">
         {/* Top Status: • Seulda · doimiy ish va kontraktga ochiq */}
         <motion.div

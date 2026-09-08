@@ -15,10 +15,10 @@ export function Navbar({ onOpenAi }: { onOpenAi?: () => void }) {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
   const navLinks = [
-    { label: t("about"), href: "#about" },
-    { label: t("projects"), href: "#case-studies" },
-    { label: t("experience"), href: "#architecture" },
-    { label: t("contact"), href: "#contact" },
+    { label: t("about"), href: "/#about" },
+    { label: t("projects"), href: "/#projects" },
+    { label: t("experience"), href: "/#skills" },
+    { label: t("contact"), href: "/#contact" },
   ];
 
   return (

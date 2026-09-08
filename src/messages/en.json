@@ -179,9 +179,23 @@
     "videoDescription": "Real-world operational preview of E-Chae-Um EV chargers and live telemetry."
   },
   "Footer": {
+    "role": "Senior Full-Stack & AI Architect",
+    "description": "Engineering high-scale EV charging CSMS infrastructure, real-time telemetry, and AI-driven energy demand forecasting systems.",
     "status": "All Systems Operational",
-    "role": "Principal Full-Stack & AI Architect",
+    "location": "Seoul, South Korea (KST)",
+    "navTitle": "Navigation",
+    "navAbout": "About Me",
+    "navProjects": "Projects & Case Studies",
+    "navSkills": "Tech Stack Matrix",
+    "navContact": "Contact & Consultation",
+    "archTitle": "Architecture & Expertise",
+    "archCsms": "EV CSMS & OCPP 1.6J / 2.0.1",
+    "archAi": "AI Power Demand Forecasting (EVT)",
+    "archRoaming": "KECO National Roaming & PG Batch",
+    "archDistributed": "Distributed Systems & Redis",
+    "connectTitle": "Connect & Social",
+    "backToTop": "Back to Top",
     "rights": "All rights reserved.",
-    "builtWith": "Built with Next.js 15, Tailwind CSS, Framer Motion & next-intl."
+    "builtWith": "Engineered with Next.js 15, Tailwind CSS, TypeScript & next-intl."
   }
 }
