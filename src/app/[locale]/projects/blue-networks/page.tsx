@@ -129,7 +129,7 @@ export default function BlueNetworksCaseStudyPage() {
           </div>
 
           {/* Problem Callout */}
-          <div className="p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950/60 border-l-4 border-l-[#c85a32] my-6 shadow-sm">
+          <div className="p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950/60 border-l-4 border-l-[#79a7a7] dark:border-l-[#527c73] my-6 shadow-sm">
             <h3 className="text-base sm:text-lg font-bold text-zinc-900 dark:text-white mb-2">
               {t("problemTitle")}
             </h3>
