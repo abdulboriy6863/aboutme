@@ -233,6 +233,7 @@
     "role": "Full-Stack Muhandis & Arxitektor — Ko'chmas Mulk & Kesh Platformasi",
     "title": "NESTAR: Janubiy Koreya Ko'chmas Mulk & Qidiruv Portali",
     "summary": "Janubiy Koreya bo'ylab ko'chmas mulk (kvartiralar, uylar, ofislar) oldi-sotdi va ijara e'lonlarini qidirish, taqqoslash va boshqarish platformasi. Murakkab lokatsiya, narx, xonalar soni va maydon bo'yicha kengaytirilgan dinamik qidiruv tizimi, mijozlar va agentlar o'rtasidagi real-vaqt so'rovlar hamda Redis kesh qatlami bilan ta'minlangan.",
+    "sourceCode": "Kodni ko'rish (GitHub)",
     "metrics": [
       { "value": "100%", "label": "lokatsiya & parametrli filtratsiya" },
       { "value": "<20ms", "label": "Redis kesh javob tezligi" },

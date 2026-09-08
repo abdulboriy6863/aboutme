@@ -233,6 +233,7 @@
     "role": "Full-Stack Engineer & Architect — Real Estate & Caching Platform",
     "title": "NESTAR: South Korea Real Estate & Property Discovery Portal",
     "summary": "Real estate marketplace in South Korea for property buying, selling, and leasing. Features multi-criteria dynamic search (location, property type, room count, price range), real-time inquiry channels between agents and customers, and high-performance Redis caching layer.",
+    "sourceCode": "View Source (GitHub)",
     "metrics": [
       { "value": "100%", "label": "Location & Parametric Filter" },
       { "value": "<20ms", "label": "Redis Cache Response" },
