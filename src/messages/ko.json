@@ -386,6 +386,46 @@
     "galleryTitle": "모바일 클라이언트 인터페이스 및 화면 쇼케이스",
     "galleryDescription": "고객 음식 탐색, 메뉴 주문, 실시간 주문 트래킹, 라이더 배달 화면 등 핵심 모바일 인터페이스:"
   },
+  "RomimiDetail": {
+    "back": "모든 프로젝트",
+    "role": "단독 백엔드 엔지니어 — API, AI 오케스트레이션, 비동기 큐, 데이터 모델링 및 배포 (2026)",
+    "title": "ROMIMI — AI 광고 크리에이티브 & 팩샷 스튜디오",
+    "summary": "원시 제품 사진을 브랜드 스타일의 광고 크리에이티브 및 스튜디오 팩샷으로 자동 생성하는 프로덕션급 NestJS 백엔드 — Redis/BullMQ 큐를 통해 Claude, Gemini, Vertex Imagen 모델을 오케스트레이션.",
+    "sourceCode": "소스 코드 보기 (GitHub)",
+    "metrics": [
+      { "value": "107개", "label": "REST 엔드포인트 (15개 컨트롤러)" },
+      { "value": "~32K", "label": "TypeScript 소스 코드 라인" },
+      { "value": "3개 AI", "label": "Claude · Gemini · Imagen" },
+      { "value": "723개", "label": "Git 커밋 & 3개 생성 파이프라인" }
+    ],
+    "problemTitle": "문제 정의 및 배경",
+    "problemText": "브랜드 가이드라인에 부합하는 광고 크리에이티브와 스튜디오 팩샷을 제작하는 것은 사진작가, 모델, 스튜디오 대관, 디자이너 등 막대한 비용과 시간이 소요됩니다. 기존 기성 이미지 생성기는 원본 제품의 디테일을 유지하지 못하고, 브랜드 아트 디렉션을 무시하며, API 쿼터 초과 시 배치 작업을 안정적으로 처리하지 못합니다.",
+    "solutionTitle": "아키텍처 설계 및 해결 방안",
+    "solutionText": "분석과 렌더링을 완전히 분리한 NestJS 백엔드: Claude가 제품 사진을 구조화된 JSON 메타데이터로 추출하고, 대규모 프롬프트 빌더가 이를 아트 디렉션 프리셋, 포즈 및 조명 규칙과 결합하여 고품질 프롬프트를 생성한 후 Gemini 및 Vertex Imagen이 렌더링합니다. 비동기 BullMQ/Redis 대기열을 통해 재시도, 잠금 갱신, Round-robin API 키 풀을 관리하고 Socket.IO로 실시간 진행 상황을 브로드캐스팅합니다.",
+    "overviewTitle": "시스템 아키텍처 및 엔지니어링 개요",
+    "overviewP1": "ROMIMI는 모듈식 TypeScript NestJS 백엔드(15개 컨트롤러, 107개 REST 엔드포인트, 약 32,000줄의 코드)를 기반으로 구축된 AI 기반 광고 크리에이티브 및 팩샷 스튜디오입니다. 원시 제품 사진을 입력받아 3가지 유형의 고품질 결과물을 생성합니다: 온모델 제품 비주얼, 브랜드 플레이북 광고 크리에이티브, 스튜디오 팩샷.",
+    "overviewP2": "생성 비전 프로세스는 명확히 분리되어 있습니다: Anthropic Claude는 사진을 구조화된 JSON 설명으로 변환하는 비주얼 분석기로, Google Gemini 및 Vertex AI Imagen은 렌더링 엔진으로 동작합니다.",
+    "overviewP3": "대용량 이미지 생성은 HTTP 스레드를 차단하지 않습니다: 전용 BullMQ(Redis) 큐가 동시성 제어, 지수 백오프 재시도, 중단된 작업 복구, 타임아웃을 관리합니다. Socket.IO 게이트웨이가 실시간 완료율(%)과 예상 시간을 전송하며, 완성된 번들은 실시간 스트리밍 ZIP 파일로 다운로드됩니다.",
+    "overviewP4": "오케스트레이션 코어에는 약 2,000줄의 프롬프트 빌더와 골드 스탠다드 아트 디렉션 엔진이 포함되어 있습니다. JWT/Passport 인증, class-validator 화이트리스트, TypeORM PostgreSQL(버전 관리 마이그레이션), AWS S3(R2/MinIO 지원) 및 로컬 폴백, Sharp 이미지 최적화, Docker 컨테이너 배포 등 프로덕션 레벨로 견고하게 구축되었습니다.",
+    "capabilitiesTitle": "핵심 기능 및 아키텍처 역량",
+    "capabilities": [
+      "107개 이상의 REST 엔드포인트를 통한 3가지 AI 생성 파이프라인: On-Model 비주얼, Ad Recreation, Studio Packshot.",
+      "멀티 AI 프로바이더 오케스트레이션: 구조적 비전 분석(Claude) + 고품질 렌더링(Gemini, Vertex Imagen).",
+      "BullMQ/Redis 기반의 비동기 큐: 동시성 제어, 지수 백오프 재시도, 중단 작업 복구, 작업별 타임아웃.",
+      "처리량 제한 극복을 위한 Round-robin Gemini API 키 풀 아키텍처.",
+      "2,000줄 규모의 프롬프트 빌더 및 골드 스탠다드 아트 디렉션 프리셋 엔진.",
+      "개인정보(PII) 및 인구통계학적 데이터 필터링, 안전 설정 및 거부 감지 레이어.",
+      "Socket.IO 및 폴링 기반 실시간 진행률 추적 및 온더플라이(On-the-fly) 스트리밍 ZIP 내보내기.",
+      "AWS S3(R2/MinIO 호환) 클라우드 스토리지, 로컬 파일시스템 폴백 및 Sharp 이미지 프로세싱.",
+      "TypeORM PostgreSQL(JSONB 모델, 마이그레이션), JWT 인증, 글로벌 예외 필터 및 Throttler 적용."
+    ],
+    "technologiesTitle": "사용 기술 및 기술 스택",
+    "technologies": [
+      "NestJS", "TypeScript", "BullMQ", "Redis", "PostgreSQL", "TypeORM", "Anthropic Claude", "Google Gemini", "Vertex AI Imagen", "OpenAI", "AWS S3", "Socket.IO", "Sharp", "Passport/JWT", "class-validator", "Docker"
+    ],
+    "galleryTitle": "프로젝트 화면 및 갤러리",
+    "gallerySubtitle": "제품 분석, 다단계 AI 생성 및 최종 생성 비주얼 인터페이스:"
+  },
   "AllProjects": {
     "back": "홈으로",
     "badge": "엔지니어링 포트폴리오",
@@ -413,8 +453,8 @@
         "description": "원시 제품 사진을 브랜드 광고 크리에이티브 및 스튜디오 팩샷으로 변환하는 NestJS 백엔드 — Anthropic Claude 비전 분석, Google Gemini, Vertex AI Imagen을 Redis/BullMQ 대기열로 오케스트레이션.",
         "stack": ["NestJS", "TypeScript", "BullMQ", "Redis", "Claude", "Gemini", "Vertex Imagen", "Socket.IO", "AWS S3"],
         "image": "/images/romimi.png",
-        "href": "https://github.com/abdulboriy6863",
-        "isExternal": true
+        "href": "/projects/romimi",
+        "isExternal": false
       },
       {
         "id": "olovgo",

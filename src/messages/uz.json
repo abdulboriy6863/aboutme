@@ -386,6 +386,46 @@
     "galleryTitle": "Mobil Ilovalar Interfeysi & Ekran Ko'rinishlari",
     "galleryDescription": "OlovGo mobil ekotizimining mijoz, buyurtmalar, restoran menyusi va jonli yetkazib berish ekranlari:"
   },
+  "RomimiDetail": {
+    "back": "Barcha loyihalar",
+    "role": "Yagona backend muhandisi — API, sunʼiy intellekt orkestratsiyasi, navbatlar (queues), maʼlumotlar modeli va joylashtirish (deployment) 2026",
+    "title": "ROMIMI — AI-Driven Ad-Creative & Packshot Studio",
+    "summary": "Mahsulotlarning xom fotosuratlarini brend uslubidagi reklama kreativlari va studiya sifatidagi tasvirlarga aylantiruvchi, Redis asosidagi BullMQ navbatlari orqali Claude, Gemini va Vertex Imagen modellarini boshqaruvchi ishlab chiqarish darajasidagi NestJS backend.",
+    "sourceCode": "Kodni ko'rish (GitHub)",
+    "metrics": [
+      { "value": "107 ta", "label": "REST endpointlar (15 kontroller)" },
+      { "value": "~32K", "label": "manba kod qatorlari (TypeScript)" },
+      { "value": "3 ta AI", "label": "Claude · Gemini · Imagen" },
+      { "value": "723 ta", "label": "Git commitlar & 3 generatsiya quvuri" }
+    ],
+    "problemTitle": "Muammo va Biznes Konteksti",
+    "problemText": "Brendga mos reklama kreativlari va studiya mahsulot suratlarini (packshots) yaratish sekin va qimmat jarayon — bu fotosuratchilar, modellar, studiyalar va dizaynerlarni talab qiladi. Tayyor tasvir generatorlari mahsulotning aniqligini saqlab qolmaydi, brendning badiiy yo‘nalishini inobatga olmaydi, shaxsiy/demografik tavsiflarni promptlarga o‘tkazib yuboradi hamda provayderning limitlariga duch kelmasdan yoki foydalanuvchini bloklamasdan turib, katta hajmdagi vazifalarni ishonchli tarzda bajara olmaydi.",
+    "solutionTitle": "Me'moriy Yechimlar va Texnik Chuqurlik",
+    "solutionText": "Ish jarayonini tahlil va renderlash bosqichlariga ajratuvchi NestJS backend: Claude mahsulot fotosuratlarini tasdiqlangan strukturaviy JSON formatiga o‘tkazadi; katta prompt-builder esa buni qayta foydalanish mumkin bo‘lgan badiiy yo‘nalishdagi sozlamalar, poza/yorug‘lik kutubxonalari va brend marketingi yo‘nalishlari bilan birlashtirib, sifat nazoratidan o‘tgan promptlarni hosil qiladi; so‘ngra Gemini/Vertex Imagen tasvirlarni renderlaydi. Generatsiya jarayoni Redis asosidagi BullMQ navbatlarida asinxron tarzda amalga oshiriladi, bunda qayta urinishlar (retries), to‘xtab qolgan vazifalarni tiklash va round-robin API-kalitlar havzasi mavjud. Socket.IO esa jarayon holatini uzatib boradi va tayyor to‘plamlar ZIP arxiv sifatida yuklab olinadi. PII-sanitizatsiya qatlami va provayderning xavfsizlik sozlamalari promptlarning talablarga muvofiqligini ta’minlaydi.",
+    "overviewTitle": "Tizim Arxitekturasi & Umumiy Ma'lumot",
+    "overviewP1": "ROMIMI — bu TypeScript NestJS backend asosida qurilgan (15 ta kontroller va 107 ta REST endpoint bo‘ylab taxminan 32 ming qator kod) sun’iy intellektga asoslangan reklama kreativlari va packshot studiyasidir. Tizim brend mahsulotlari fotosuratlarini qabul qiladi va ko‘p bosqichli sun’iy intellekt quvuri orqali uch turdagi natijani ishlab chiqaradi: fotorealistik modeldagi mahsulot vizuallari, brend marketing qo‘llanmasiga asoslangan qayta yaratilgan reklama kreativlari va toza studiya packshotlari.",
+    "overviewP2": "Tizim generativ tasvirlashning ikki qismini aniq ajratadi: fotosuratlarni tasdiqlangan JSON mahsulot tavsiflariga aylantiruvchi strukturaviy-vizual tahlilchi sifatida Anthropic Claude’dan, renderlash mexanizmlari sifatida esa Google Gemini va Vertex AI Imagen’dan foydalanadi.",
+    "overviewP3": "Og‘ir tasvir generatsiyasi hech qachon so‘rovlar oqimini (request thread) bloklamaydi: har bir quvur vazifalarni maxsus BullMQ (Redis) navbatlariga yo‘naltiradi. Bunda sozlangan konkurentlik, eksponensial orqaga chekinish (exponential-backoff) bilan qayta urinishlar, to‘xtab qolgan vazifalarni tiklash, qulflarni yangilash va har bir vazifa uchun 15 daqiqagacha bo‘lgan taym-autlar qo‘llaniladi. Socket.IO shlyuzi va so‘rov endpointlari jonli jarayonni (bajarilish foizi, o‘tgan vaqt, taxminiy vaqt) uzatadi, tayyor to‘plamlar esa mijozga on-the-fly ZIP arxivlari sifatida yuboriladi. Har bir kalit uchun belgilangan limitlar doirasida o‘tkazuvchanlikni saqlab qolish uchun Gemini integratsiyasi API kalitlarining round-robin hovuzidan foydalanadi.",
+    "overviewP4": "Orkestrlash qatlami tizimning eng murakkab qismi hisoblanadi: deyarli 2000 qatorli prompt quruvchi va 'Oltin standart' badiiy yo‘nalishdagi preset tizimi tahlil qilingan mahsulot JSON’ini kayfiyatga mos poza kutubxonalari, yoritish/fon/rekvizit konfiguratsiyalari va kadr turi bo‘yicha ko‘rsatmalar bilan birlashtirib, deterministik va aniqligi tekshirilgan promptlarni hosil qiladi. Maxsus PII-sanitizatsiya qatlami promptlar modelga yetib borguniga qadar demografik ma’lumotlarni olib tashlaydi. Operatsion jihatdan tizim ishlab chiqarish darajasida (production-grade): JWT/Passport autentifikatsiyasi, class-validator oq ro‘yxati, global istisno filtri, cheklash (throttling), TypeORM orqali PostgreSQL (versiyali migratsiyalar bilan), AWS S3 (R2/MinIO qo‘llab-quvvatlashi bilan) hamda mahalliy zaxira nusxasi, Sharp ishlovi va Docker orqali joylashtirish imkoniyatlariga ega.",
+    "capabilitiesTitle": "Asosiy Imkoniyatlar & Funksional Modullar",
+    "capabilities": [
+      "Uchta alohida sun'iy intellekt generatsiya quvuri — on-model Product Visuals, brand-playbook Ad Recreation va studio Packshot Studio — 107 dan ortiq REST yakuniy nuqtalari (endpoints) orqali.",
+      "Ko‘p provayderli sun’iy intellekt orkestratsiyasi: tuzilmaviy vizual tahlil uchun Claude, renderlash uchun esa Gemini va Vertex Imagen.",
+      "So‘rovlar oqimidan tashqarida generatsiya jarayonlarini bajarish uchun sozlangan konkurentlik, backoff (orqaga chekinish) bilan qayta urinishlar, to‘xtab qolgan vazifalarni tiklash, blokirovkani yangilash va har bir vazifa uchun taym-autlarga ega Redis asosidagi BullMQ navbatlari.",
+      "Parallel va limitlarga chidamli batch generatsiya uchun Round-robin Gemini API-kalitlar to‘plami.",
+      "Deterministik va sifat nazoratidan o‘tgan promptlar uchun ~2000 qatorli prompt quruvchi hamda 'Oltin standart' badiiy yo‘nalishdagi sozlamalar tizimi (fon, pol, rekvizitlar, yoritish, kayfiyatga mos pozalar kutubxonasi).",
+      "PII/demografik so‘rovlarni tozalash, shuningdek, provayder xavfsizlik sozlamalari va modelning rad etishini aniqlash.",
+      "Socket.IO va so‘rovlar (polling) orqali real vaqt rejimida jarayonni kuzatish (foiz, o‘tgan vaqt, ETA) hamda yakunlangan to‘plamlarni on-the-fly ZIP arxivlari ko‘rinishida uzatish.",
+      "AWS S3 xotirasi (R2/MinIO qo‘llab-quvvatlashi bilan) va mahalliy zaxira (fallback), tasvirlarni qayta ishlash uchun Sharp'dan foydalangan holda.",
+      "JWT autentifikatsiyasi, cheklovlar (throttling) va global istisnolarni filtrlash tizimi bilan himoyalangan, versiyali migratsiyalar va boy JSONB asosidagi entitiy modeliga ega TypeORM orqali PostgreSQL."
+    ],
+    "technologiesTitle": "Ishlatilgan Texnologiyalar & Arxitektura",
+    "technologies": [
+      "NestJS", "TypeScript", "BullMQ", "Redis", "PostgreSQL", "TypeORM", "Anthropic Claude", "Google Gemini", "Vertex AI Imagen", "OpenAI", "AWS S3", "Socket.IO", "Sharp", "Passport/JWT", "class-validator", "Docker"
+    ],
+    "galleryTitle": "Loyiha Taqdimoti & Rasmlar Galereyasi",
+    "gallerySubtitle": "Mahsulot fotosuratlarini avtomatlashtirilgan ko'p parametrli vizuallarga aylantirish jarayoni va generatsiya interfeysi:"
+  },
   "AllProjects": {
     "back": "Bosh sahifa",
     "badge": "Muhandislik Portfoliosi",
@@ -413,8 +453,8 @@
         "description": "Oddiy mahsulot suratlarini brend ad-kreativlari va studiya packshotlariga aylantiruvchi NestJS backend arxitekturasi — Anthropic Claude (vision tahlil), Google Gemini va Vertex AI Imagen modellarini Redis/BullMQ navbatlari orqali orkestr qiladi.",
         "stack": ["NestJS", "TypeScript", "BullMQ", "Redis", "Claude", "Gemini", "Vertex Imagen", "Socket.IO", "AWS S3"],
         "image": "/images/romimi.png",
-        "href": "https://github.com/abdulboriy6863",
-        "isExternal": true
+        "href": "/projects/romimi",
+        "isExternal": false
       },
       {
         "id": "olovgo",

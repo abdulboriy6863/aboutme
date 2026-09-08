@@ -386,6 +386,46 @@
     "galleryTitle": "Mobile Client Interfaces & Showcase",
     "galleryDescription": "Key mobile views across customer discovery, menu ordering, real-time tracking, and courier delivery:"
   },
+  "RomimiDetail": {
+    "back": "All Projects",
+    "role": "Solo Backend Engineer — API, AI Orchestration, Queues, Data Modeling & Deployment (2026)",
+    "title": "ROMIMI — AI-Driven Ad-Creative & Packshot Studio",
+    "summary": "Production-grade NestJS backend converting raw product photos into brand-aligned ad creatives and studio packshots, orchestrating Claude, Gemini, and Vertex Imagen models through Redis-backed BullMQ queues.",
+    "sourceCode": "View Code (GitHub)",
+    "metrics": [
+      { "value": "107", "label": "REST endpoints (15 controllers)" },
+      { "value": "~32K", "label": "Source lines (TypeScript)" },
+      { "value": "3 AI", "label": "Claude · Gemini · Imagen" },
+      { "value": "723", "label": "Git commits & 3 pipelines" }
+    ],
+    "problemTitle": "Problem & Context",
+    "problemText": "Producing brand-aligned ad creatives and studio packshots is slow and expensive — requiring photographers, models, studios, and designers. Off-the-shelf image generators fail to preserve product fidelity, ignore brand art direction, leak demographic biases, and cannot reliably handle batch volumes without provider throttling or blocking users.",
+    "solutionTitle": "Architectural Solution",
+    "solutionText": "A NestJS backend decoupling analysis from rendering: Claude translates raw product photos into validated structural JSON; a comprehensive prompt-builder merges this with reusable art direction presets, mood poses, and lighting rules to generate quality-controlled prompts; Gemini and Vertex Imagen then render the assets. Asynchronous Redis/BullMQ queues handle retries, lock renewals, and round-robin API key pools. Socket.IO streams live progress, and final bundles stream as on-the-fly ZIP archives with strict PII sanitation.",
+    "overviewTitle": "System Architecture & Engineering Overview",
+    "overviewP1": "ROMIMI is an AI-driven ad-creative and packshot studio built on a modular TypeScript NestJS backend (approx. 32K lines across 15 controllers and 107 REST endpoints). The system ingests raw brand product photos and produces three output types through a multi-stage AI pipeline: on-model photorealistic visuals, brand-playbook recreated ad creatives, and clean studio packshots.",
+    "overviewP2": "The architecture strictly bifurcates generative vision: Anthropic Claude serves as the visual analyzer converting imagery into structured JSON product descriptions, while Google Gemini and Vertex AI Imagen serve as rendering engines.",
+    "overviewP3": "Heavy image generation never blocks HTTP threads: dedicated BullMQ (Redis) queues manage concurrency, exponential backoff retries, stall recoveries, and job timeouts. A Socket.IO gateway broadcasts live completion percentages and estimated times, while finished collections stream dynamically as on-the-fly ZIP archives. A round-robin API key pool prevents provider quota throttling.",
+    "overviewP4": "The orchestration core includes a 2,000-line prompt builder and a 'Gold Standard' art direction preset engine that harmonizes analyzed product JSON with mood pose libraries, lighting setups, and framing rules. Production hardening includes JWT/Passport authentication, class-validator sanitization, PostgreSQL via TypeORM with versioned migrations, AWS S3 storage with local fallbacks, Sharp image processing, and Docker containerization.",
+    "capabilitiesTitle": "Key Capabilities & Functional Modules",
+    "capabilities": [
+      "Three distinct AI generation pipelines: on-model Product Visuals, brand-playbook Ad Recreation, and studio Packshot Studio across 107+ REST endpoints.",
+      "Multi-provider AI orchestration: Claude for structural visual analysis, Gemini and Vertex Imagen for high-fidelity rendering.",
+      "Redis-backed BullMQ queues with configured concurrency, backoff retries, stalled job recovery, lock renewals, and per-job timeouts.",
+      "Round-robin Gemini API key pool for rate-limit-resilient parallel batch generation.",
+      "Deterministic, QA-vetted ~2,000-line prompt builder with 'Gold Standard' art direction presets (background, flooring, props, lighting, mood poses).",
+      "PII/demographic sanitization layer and provider safety setting enforcement with refusal detection.",
+      "Real-time Socket.IO and polling progress tracking (percentage, elapsed, ETA) with on-the-fly streaming ZIP exports.",
+      "AWS S3 storage (R2/MinIO compatible) with local filesystem fallback and Sharp image optimization.",
+      "PostgreSQL via TypeORM with versioned migrations, JSONB entity models, JWT auth, throttling, and global exception filters."
+    ],
+    "technologiesTitle": "Technologies & Stack",
+    "technologies": [
+      "NestJS", "TypeScript", "BullMQ", "Redis", "PostgreSQL", "TypeORM", "Anthropic Claude", "Google Gemini", "Vertex AI Imagen", "OpenAI", "AWS S3", "Socket.IO", "Sharp", "Passport/JWT", "class-validator", "Docker"
+    ],
+    "galleryTitle": "Project Showcase & Gallery",
+    "gallerySubtitle": "Interface walkthrough of product analysis, multi-stage generation, and final visual outputs:"
+  },
   "AllProjects": {
     "back": "Home",
     "badge": "Engineering Portfolio",
@@ -413,8 +453,8 @@
         "description": "NestJS backend turning plain product shots into branded ad-creatives via Anthropic Claude (vision analysis), Google Gemini, and Vertex AI Imagen models orchestrated through Redis/BullMQ queues.",
         "stack": ["NestJS", "TypeScript", "BullMQ", "Redis", "Claude", "Gemini", "Vertex Imagen", "Socket.IO", "AWS S3"],
         "image": "/images/romimi.png",
-        "href": "https://github.com/abdulboriy6863",
-        "isExternal": true
+        "href": "/projects/romimi",
+        "isExternal": false
       },
       {
         "id": "olovgo",
