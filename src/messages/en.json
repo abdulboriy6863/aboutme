@@ -363,7 +363,7 @@
         "year": "2025 - 2026",
         "description": "Enterprise CSMS managing 1,600+ EV charging stations across South Korea, combined with an 8-model AI ensemble (PyTorch LSTM, XGBoost, EVT) predicting power demand at P50/P90 quantile intervals.",
         "stack": ["Java 17", "Spring Boot", "MyBatis", "Python (FastAPI)", "PyTorch", "XGBoost", "Redis", "Docker"],
-        "image": "/images/blue-networks-office.jpg",
+        "image": "/images/echaeum_card.png",
         "href": "/projects/blue-networks",
         "isExternal": false
       },

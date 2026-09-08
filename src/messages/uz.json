@@ -363,7 +363,7 @@
         "year": "2025 - 2026",
         "description": "Koreya bo'ylab 1,600+ zaryadlash stansiyalari boshqaruvi (CSMS) hamda 8 ta AI modeli (PyTorch LSTM, XGBoost, EVT) ansambli orqali elektr quvvatiga bo'lgan talabni P50/P90 ehtimollikda bashorat qiluvchi enterprise platforma arxitekturasi.",
         "stack": ["Java 17", "Spring Boot", "MyBatis", "Python (FastAPI)", "PyTorch", "XGBoost", "Redis", "Docker"],
-        "image": "/images/blue-networks-office.jpg",
+        "image": "/images/echaeum_card.png",
         "href": "/projects/blue-networks",
         "isExternal": false
       },

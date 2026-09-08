@@ -363,7 +363,7 @@
         "year": "2025 - 2026",
         "description": "전국 1,600기+ 전기차 충전기를 관제하는 CSMS 및 8개 AI 모델 앙상블을 통해 P50/P90 전력 수요를 예측하고 한전 계약 전력을 최적화한 엔터프라이즈 시스템 아키텍처.",
         "stack": ["Java 17", "Spring Boot", "MyBatis", "Python (FastAPI)", "PyTorch", "XGBoost", "Redis", "Docker"],
-        "image": "/images/blue-networks-office.jpg",
+        "image": "/images/echaeum_card.png",
         "href": "/projects/blue-networks",
         "isExternal": false
       },
