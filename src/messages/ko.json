@@ -226,7 +226,9 @@
     "technologiesTitle": "기술 스택",
     "technologies": [
       "Next.js", "React", "TypeScript", "GraphQL (Apollo)", "NestJS", "MongoDB", "Mongoose", "WebSocket", "SCSS Modules", "Material UI", "Docker", "Nginx", "Linux VPS"
-    ]
+    ],
+    "videoTitle": "ViserPet 플랫폼 시연 영상",
+    "videoDescription": "이커머스 결제 프로세스, 위시리스트 및 GraphQL 기반 동적 필터링 시연."
   },
   "NestarDetail": {
     "back": "모든 프로젝트",

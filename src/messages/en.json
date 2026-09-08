@@ -226,7 +226,9 @@
     "technologiesTitle": "Technologies",
     "technologies": [
       "Next.js", "React", "TypeScript", "GraphQL (Apollo)", "NestJS", "MongoDB", "Mongoose", "WebSocket", "SCSS Modules", "Material UI", "Docker", "Nginx", "Linux VPS"
-    ]
+    ],
+    "videoTitle": "ViserPet Platform Showcase Video",
+    "videoDescription": "Walkthrough of e-commerce checkout, wishlist flows, and dynamic GraphQL filtering."
   },
   "NestarDetail": {
     "back": "All Projects",

@@ -226,7 +226,9 @@
     "technologiesTitle": "Texnologiyalar",
     "technologies": [
       "Next.js", "React", "TypeScript", "GraphQL (Apollo)", "NestJS", "MongoDB", "Mongoose", "WebSocket", "SCSS Modules", "Material UI", "Docker", "Nginx", "Linux VPS"
-    ]
+    ],
+    "videoTitle": "ViserPet Platformasi Videolavhasi",
+    "videoDescription": "E-tijorat xaridlari, savatcha jarayoni va GraphQL orqali jonli filtrlash jarayoni."
   },
   "NestarDetail": {
     "back": "Barcha loyihalar",
