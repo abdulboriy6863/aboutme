@@ -179,23 +179,16 @@
     "videoDescription": "E-Chae-Um zaryadlash stansiyalari va telemetriya tizimining amaliy ishlash jarayoni."
   },
   "Footer": {
-    "role": "Senior Full-Stack & AI Arxitektori",
-    "description": "Keng ko'lamli EV zaryadlash CSMS, real-vaqt telemetriya va AI energiya modellashtirish tizimlarini loyihalash bo'yicha muhandis.",
-    "status": "Barcha tizimlar barqaror",
-    "location": "Seul, Janubiy Koreya (KST)",
-    "navTitle": "Navigatsiya",
-    "navAbout": "Men haqimda",
-    "navProjects": "Loyihalar & Case Study",
-    "navSkills": "Texnologiyalar & Stack",
-    "navContact": "Bog'lanish",
-    "archTitle": "Arxitektura & Yo'nalish",
-    "archCsms": "EV CSMS & OCPP 1.6J / 2.0.1",
-    "archAi": "AI Quvvat Bashorati (EVT)",
-    "archRoaming": "KECO Milliy Rouming & PG Batch",
-    "archDistributed": "Taqsimlangan Tizimlar & Redis",
-    "connectTitle": "Aloqa & Tarmoqlar",
-    "backToTop": "Yuqoriga qaytish",
-    "rights": "Barcha huquqlar himoyalangan.",
-    "builtWith": "Next.js 15, Tailwind CSS, TypeScript & next-intl asosida qurilgan."
+    "firstName": "Abdulboriy",
+    "lastName": "Rakhmatullaev",
+    "links": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "telegram": "Telegram",
+      "email": "Email",
+      "phone": "Aloqa: 010-5763-5111",
+      "privacy": "Maxfiylik"
+    },
+    "builtWith": "Next.js · Tailwind CSS · TypeScript\nbilan qurilgan"
   }
 }

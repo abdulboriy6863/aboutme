@@ -179,23 +179,16 @@
     "videoDescription": "전국 E-Chae-Um 전기차 충전 인프라 및 실시간 텔레메트리 관제 운용 영상."
   },
   "Footer": {
-    "role": "시니어 풀스택 & AI 아키텍트",
-    "description": "대규모 전기차 충전 CSMS 인프라, 실시간 텔레메트리 및 AI 전력 수요 예측 시스템 설계 전문 엔지니어입니다.",
-    "status": "모든 시스템 정상 작동 중",
-    "location": "대한민국 서울 (KST)",
-    "navTitle": "내비게이션",
-    "navAbout": "소개",
-    "navProjects": "프로젝트 & 케이스 스터디",
-    "navSkills": "기술 스택 매트릭스",
-    "navContact": "연락 및 상담",
-    "archTitle": "아키텍처 & 전문 분야",
-    "archCsms": "EV CSMS & OCPP 1.6J / 2.0.1",
-    "archAi": "AI 전력 수요 예측 (EVT)",
-    "archRoaming": "환경부(KECO) 로밍 & PG 배치",
-    "archDistributed": "분산 시스템 & Redis",
-    "connectTitle": "소셜 및 네트워크",
-    "backToTop": "맨 위로 이동",
-    "rights": "모든 권리 보유.",
-    "builtWith": "Next.js 15, Tailwind CSS, TypeScript & next-intl 기반 구축."
+    "firstName": "Abdulboriy",
+    "lastName": "Rakhmatullaev",
+    "links": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "telegram": "Telegram",
+      "email": "이메일",
+      "phone": "연락처: 010-5763-5111",
+      "privacy": "개인정보처리방침"
+    },
+    "builtWith": "Next.js · Tailwind CSS · TypeScript\n기반으로 제작됨"
   }
 }

@@ -61,7 +61,7 @@ export default function HomePage() {
               </p>
 
               <div className="mt-8 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
-                <a href="mailto:contact@example.com">
+                <a href="mailto:abdulboriy6863@gmail.com">
                   <Button size="lg" variant="default" className="gap-2 bg-gradient-to-r from-[#527c73] to-[#79a7a7] hover:opacity-90 text-white shadow-md shadow-[#527c73]/20">
                     <Mail className="w-4 h-4" />
                     <span>Get in Touch</span>
