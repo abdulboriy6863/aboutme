@@ -49,7 +49,7 @@ export default function NestarProjectPage() {
           {/* Back Button */}
           <div className="mb-8">
             <Link
-              href="/#projects"
+              href="/projects"
               className="group inline-flex items-center gap-2 text-sm font-semibold text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white transition-colors"
             >
               <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform duration-200" />
