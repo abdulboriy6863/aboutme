@@ -51,16 +51,8 @@ export default function NikeStoreProjectPage() {
 
   const galleryImages = [
     {
-      src: "/images/projects/nikestore/nike_top_products_screen.png",
-      alt: "Nike Store - Top Selling Products Mockup",
-    },
-    {
-      src: "/images/projects/nikestore/nike_collection_view.png",
-      alt: "Nike Store - Product Collection & Dynamic Filters",
-    },
-    {
-      src: "/images/projects/nikestore/nike_sneakers_cards.png",
-      alt: "Nike Store - Interactive Sneaker Cards",
+      src: "/images/projects/nikestore/gallery.png",
+      alt: "Nike Store - Platform Showcase",
     },
   ];
 
@@ -98,7 +90,7 @@ export default function NikeStoreProjectPage() {
             {/* CTA Button */}
             <div className="pt-2 pb-2">
               <a
-                href="https://github.com/abdulboriy6863"
+                href="https://github.com/abdulboriy6863/nike"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group/btn inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#527c73] to-[#79a7a7] hover:opacity-95 text-white font-medium text-sm shadow-md shadow-[#527c73]/20 transition-all active:scale-95"
@@ -247,14 +239,14 @@ export default function NikeStoreProjectPage() {
               {galleryImages.map((img, idx) => (
                 <div
                   key={idx}
-                  className="rounded-3xl overflow-hidden border border-zinc-200/90 dark:border-zinc-800/90 bg-zinc-50/90 dark:bg-zinc-900/50 shadow-md dark:shadow-xl p-4 sm:p-8 flex items-center justify-center"
+                  className="rounded-3xl overflow-hidden border border-zinc-200/90 dark:border-zinc-800/90 bg-zinc-50/90 dark:bg-zinc-900/50 shadow-md dark:shadow-xl p-3 sm:p-5 flex items-center justify-center"
                 >
-                  <div className="relative w-full max-w-2xl aspect-[16/10] overflow-hidden flex items-center justify-center">
+                  <div className="relative w-full aspect-[2576/1124] rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-950">
                     <Image
                       src={img.src}
                       alt={img.alt}
                       fill
-                      className="object-contain object-center hover:scale-[1.02] transition-transform duration-300"
+                      className="object-contain object-center hover:scale-[1.01] transition-transform duration-300"
                       sizes="(max-width: 1024px) 100vw, 896px"
                     />
                   </div>
