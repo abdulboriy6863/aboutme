@@ -91,13 +91,13 @@ export default function ViserPetProjectPage() {
 
           {/* Project Screenshot Showcase */}
           <div className="mt-10 rounded-3xl overflow-hidden border border-zinc-200/90 dark:border-zinc-800/90 bg-zinc-100 dark:bg-zinc-900 shadow-xl dark:shadow-2xl">
-            <div className="relative w-full aspect-[2880/1626]">
+            <div className="relative w-full aspect-[16/10]">
               <Image
                 src="/images/viserpet.png"
                 alt="ViserPet E-Commerce Platform"
                 fill
                 priority
-                className="object-cover object-top"
+                className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 896px"
               />
             </div>
