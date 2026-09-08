@@ -142,7 +142,7 @@
     "role": "Katta AI va Full-Stack muhandisi — EV CSMS, Batch va AI Energiya Platformasi",
     "title": "Blue Networks: E-Chae-Um & AI Quvvat Bashorat Platformasi",
     "summary": "Koreya bo'ylab 1,600+ elektr transport vositalarini zaryadlash stansiyalarini boshqaruvchi E-Chae-Um CSMS infratuzilmasi hamda 8 ta AI modeli (PyTorch LSTM, XGBoost, EVT) ansambli orqali elektr quvvatiga bo'lgan talabni P50/P90 ehtimollikda bashorat qiluvchi, KEPCO tariflari va shartnoma quvvatini optimallashtiruvchi enterprise platformalar arxitekturasi.",
-    "openSite": "Saytni ochish ↗",
+    "openSite": "Saytni ochish",
     "metrics": [
       { "value": "1,600+", "label": "boshqarilgan EV stansiyalari" },
       { "value": "8 ta model", "label": "AI talab bashorat ansambli" },
