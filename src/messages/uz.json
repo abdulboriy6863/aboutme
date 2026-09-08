@@ -391,7 +391,8 @@
     "role": "Yagona backend muhandisi — API, sunʼiy intellekt orkestratsiyasi, navbatlar (queues), maʼlumotlar modeli va joylashtirish (deployment) 2026",
     "title": "ROMIMI — AI-Driven Ad-Creative & Packshot Studio",
     "summary": "Mahsulotlarning xom fotosuratlarini brend uslubidagi reklama kreativlari va studiya sifatidagi tasvirlarga aylantiruvchi, Redis asosidagi BullMQ navbatlari orqali Claude, Gemini va Vertex Imagen modellarini boshqaruvchi ishlab chiqarish darajasidagi NestJS backend.",
-    "sourceCode": "Kodni ko'rish (GitHub)",
+    "openSite": "Saytni ochish",
+    "sourceCode": "Saytni ochish",
     "metrics": [
       { "value": "107 ta", "label": "REST endpointlar (15 kontroller)" },
       { "value": "~32K", "label": "manba kod qatorlari (TypeScript)" },

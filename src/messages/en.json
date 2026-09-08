@@ -391,7 +391,8 @@
     "role": "Solo Backend Engineer — API, AI Orchestration, Queues, Data Modeling & Deployment (2026)",
     "title": "ROMIMI — AI-Driven Ad-Creative & Packshot Studio",
     "summary": "Production-grade NestJS backend converting raw product photos into brand-aligned ad creatives and studio packshots, orchestrating Claude, Gemini, and Vertex Imagen models through Redis-backed BullMQ queues.",
-    "sourceCode": "View Code (GitHub)",
+    "openSite": "Open Website",
+    "sourceCode": "Open Website",
     "metrics": [
       { "value": "107", "label": "REST endpoints (15 controllers)" },
       { "value": "~32K", "label": "Source lines (TypeScript)" },

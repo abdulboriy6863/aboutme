@@ -391,7 +391,8 @@
     "role": "단독 백엔드 엔지니어 — API, AI 오케스트레이션, 비동기 큐, 데이터 모델링 및 배포 (2026)",
     "title": "ROMIMI — AI 광고 크리에이티브 & 팩샷 스튜디오",
     "summary": "원시 제품 사진을 브랜드 스타일의 광고 크리에이티브 및 스튜디오 팩샷으로 자동 생성하는 프로덕션급 NestJS 백엔드 — Redis/BullMQ 큐를 통해 Claude, Gemini, Vertex Imagen 모델을 오케스트레이션.",
-    "sourceCode": "소스 코드 보기 (GitHub)",
+    "openSite": "사이트 열기",
+    "sourceCode": "사이트 열기",
     "metrics": [
       { "value": "107개", "label": "REST 엔드포인트 (15개 컨트롤러)" },
       { "value": "~32K", "label": "TypeScript 소스 코드 라인" },
