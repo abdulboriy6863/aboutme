@@ -262,7 +262,9 @@
     "technologiesTitle": "기술 스택",
     "technologies": [
       "Next.js", "React", "TypeScript", "NestJS", "PostgreSQL", "MongoDB", "Redis", "Tailwind CSS", "Docker", "Nginx", "Linux VPS"
-    ]
+    ],
+    "videoTitle": "NESTAR 플랫폼 시연 영상",
+    "videoDescription": "부동산 매물 검색, 다중 조건 필터링 및 공인중개사 관리 대시보드 시연 영상."
   },
   "Footer": {
     "firstName": "Abdulboriy",

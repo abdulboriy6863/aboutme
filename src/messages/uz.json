@@ -262,7 +262,9 @@
     "technologiesTitle": "Texnologiyalar",
     "technologies": [
       "Next.js", "React", "TypeScript", "NestJS", "PostgreSQL", "MongoDB", "Redis", "Tailwind CSS", "Docker", "Nginx", "Linux VPS"
-    ]
+    ],
+    "videoTitle": "NESTAR Platformasi Videolavhasi",
+    "videoDescription": "Ko'chmas mulk qidiruvi, ko'p parametrli filtratsiyalar va agentlar boshqaruv paneli amaliy jarayoni."
   },
   "Footer": {
     "firstName": "Abdulboriy",

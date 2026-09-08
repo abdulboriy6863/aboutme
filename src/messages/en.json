@@ -262,7 +262,9 @@
     "technologiesTitle": "Technologies",
     "technologies": [
       "Next.js", "React", "TypeScript", "NestJS", "PostgreSQL", "MongoDB", "Redis", "Tailwind CSS", "Docker", "Nginx", "Linux VPS"
-    ]
+    ],
+    "videoTitle": "NESTAR Platform Showcase Video",
+    "videoDescription": "Walkthrough of property discovery, multi-criteria filtering, and agent management dashboard."
   },
   "Footer": {
     "firstName": "Abdulboriy",
