@@ -105,7 +105,8 @@
   },
   "Projects": {
     "title": "프로젝트",
-    "card": {
+    "allProjects": "모든 프로젝트 보기",
+    "blueNetworks": {
       "tag": "AI & EV 에너지 플랫폼 · 핵심 아키텍처",
       "company": "(주)블루네트웍스 (Blue Networks)",
       "title": "(주)블루네트웍스: 이채움 & AI 전력 수요 예측 플랫폼",
@@ -118,6 +119,20 @@
         { "bold": "KECO", "label": "환경부 로밍 & PG 연동" }
       ],
       "techStack": "Java 17 · Spring Boot · MyBatis · Python (FastAPI) · PyTorch (LSTM) · XGBoost · SvelteKit · PostgreSQL · Redis · Docker",
+      "action": "프로젝트 보기"
+    },
+    "viserpet": {
+      "tag": "이커머스 & GraphQL · 2024 - 2025",
+      "title": "ViserPet",
+      "description": "Next.js App Router, GraphQL (Apollo), NestJS 및 MongoDB 기반의 반려동물 이커머스 및 커뮤니티 플랫폼 — 실시간 WebSocket 알림/채팅, URL 동기화 동적 다중 필터링 및 판매자/관리자 대시보드 구축.",
+      "techStack": "Next.js · TypeScript · NestJS · GraphQL · MongoDB · WebSocket · Docker",
+      "action": "프로젝트 보기"
+    },
+    "nestar": {
+      "tag": "부동산 플랫폼 · 2024 - 2025",
+      "title": "NESTAR",
+      "description": "대한민국 부동산 매물 검색 및 거래 플랫폼 — 위치, 방 개수, 가격대별 동적 다중 조건 필터링 엔진, 중개인-고객 간 실시간 문의 시스템 및 Redis 기반 고성능 캐싱 아키텍처.",
+      "techStack": "Next.js · TypeScript · NestJS · PostgreSQL · Redis · Tailwind CSS",
       "action": "프로젝트 보기"
     }
   },
@@ -177,6 +192,73 @@
     ],
     "videoTitle": "충전 인프라 현장 및 관제 영상",
     "videoDescription": "전국 E-Chae-Um 전기차 충전 인프라 및 실시간 텔레메트리 관제 운용 영상."
+  },
+  "ViserPetDetail": {
+    "back": "모든 프로젝트",
+    "role": "풀스택 엔지니어 & 아키텍트 — 이커머스, GraphQL & 실시간 플랫폼",
+    "title": "ViserPet: 반려동물 이커머스 & 커뮤니티 플랫폼",
+    "summary": "Next.js App Router, Apollo Client, GraphQL 및 NestJS + MongoDB (Mongoose) 기반의 현대적인 반려동물 쇼핑 및 소셜 플랫폼. 실시간 WebSocket 알림/채팅 시스템, URL 동기화 동적 다중 필터링 엔진, 판매자 및 관리자 전용 대시보드를 완비했습니다.",
+    "metrics": [
+      { "value": "100%", "label": "동적 URL 필터 동기화" },
+      { "value": "GraphQL", "label": "Apollo Client 유연한 API" },
+      { "value": "<50ms", "label": "WebSocket 실시간 지연시간" },
+      { "value": "Docker", "label": "VPS 자동화 배포 인프라" }
+    ],
+    "problemTitle": "문제점 및 비즈니스 배경",
+    "problemText": "반려동물 보호자와 판매자가 상품 구매, 주문 추적, 실시간 문의 채팅 및 커뮤니티 소통을 원활하게 수행할 수 있는 통합 플랫폼이 필요했습니다. 특히 공유 가능한 URL 쿼리 상태를 유지하면서 다중 파라미터 필터링을 지연 없이 처리하는 것이 핵심 과제였습니다.",
+    "solutionTitle": "아키텍처 및 엔지니어링 솔루션",
+    "solutionText": "Next.js(App Router), TypeScript, SCSS/MUI 기반 프론트엔드와 NestJS 모노레포, Apollo GraphQL API, WebSocket 게이트웨이 및 MongoDB(Mongoose)를 결합했습니다. 사용자(User), 판매자(Seller), 관리자(Admin) 역할 기반 접근 제어(RBAC)와 JWT 보안을 적용했습니다.",
+    "overviewTitle": "개요",
+    "overviewP1": "ViserPet은 반려동물 시장에 최적화된 엔드투엔드 이커머스 경험을 제공하며, 상품 상세, 위시리스트/장바구니, 입점 판매자 관리 및 커뮤니티 게시판을 포괄합니다.",
+    "overviewP2": "1. 동적 필터링 엔진: URL 쿼리 스트링과 완전 동기화되는 인터랙티브 필터로, 반려동물 카테고리(강아지, 고양이, 물고기, 조류), 할인율, 사이즈, 가격 범위에 대해 GraphQL 기반 초고속 쿼리를 수행합니다.",
+    "overviewP3": "2. 실시간 WebSocket & 소셜 에코시스템: 판매자-구매자 간 1:1 라이브 채팅, 실시간 주문 상태 알림, 팔로워/팔로잉 관계망 및 커뮤니티 후기/좋아요 기능.",
+    "overviewP4": "3. 입점사 및 관리자 대시보드: 판매자의 상품 등록/수정 및 판매 상태(On Sale/Sold) 관리와 최고관리자의 회원 권한, 공지사항, FAQ 관리 시스템.",
+    "capabilitiesTitle": "주요 기능 및 역량",
+    "capabilities": [
+      "고성능 GraphQL 스키마 쿼리 및 실시간 뮤테이션 처리",
+      "역할 기반 접근 제어 (RBAC: User / Seller / Admin) 및 JWT 인증",
+      "URL 쿼리 연동 반응형 다중 파라미터 상품 검색/필터링 엔진",
+      "WebSocket 기반 실시간 채팅 및 라이브 푸시 알림 파이프라인",
+      "커뮤니티 소셜 기능 (팔로워, 댓글, 좋아요)",
+      "Docker Compose, 볼륨 관리 및 Nginx 기반 안정적 VPS 프로덕션 배포"
+    ],
+    "technologiesTitle": "기술 스택",
+    "technologies": [
+      "Next.js", "React", "TypeScript", "GraphQL (Apollo)", "NestJS", "MongoDB", "Mongoose", "WebSocket", "SCSS Modules", "Material UI", "Docker", "Nginx", "Linux VPS"
+    ]
+  },
+  "NestarDetail": {
+    "back": "모든 프로젝트",
+    "role": "풀스택 엔지니어 & 아키텍트 — 부동산 & 캐싱 플랫폼",
+    "title": "NESTAR: 대한민국 부동산 매물 검색 및 거래 포털",
+    "summary": "대한민국 전역의 아파트, 주택, 오피스 매물 검색 및 거래 플랫폼. 위치, 매물 유형, 방 개수, 가격대별 정밀 다중 조건 검색 엔진, 공인중개사-고객 간 실시간 문의 채널 및 고성능 Redis 캐싱 계층 구축.",
+    "metrics": [
+      { "value": "100%", "label": "위치 & 매물 파라미터 필터" },
+      { "value": "<20ms", "label": "Redis 캐시 응답 속도" },
+      { "value": "RBAC", "label": "고객, 중개사, 관리자 권한" },
+      { "value": "Docker", "label": "Nginx & 안전한 VPS 인프라" }
+    ],
+    "problemTitle": "과제 및 요구사항",
+    "problemText": "전국 각 지역의 방대한 부동산 매물을 한눈에 비교하고 층수, 면적, 방 개수, 가격 조건을 즉각 필터링하며 검증된 공인중개사와 안전하게 실시간으로 소통할 수 있는 초고속 플랫폼이 요구되었습니다.",
+    "solutionTitle": "솔루션 및 아키텍처",
+    "solutionText": "Next.js 기반 반응형 UI와 NestJS 백엔드 API, 최적화된 SQL/NoSQL 데이터 인덱싱, 고빈도 쿼리를 위한 Redis 캐싱 레이어 및 공인중개사 자격 검증 관리 파이프라인을 구축했습니다.",
+    "overviewTitle": "개요",
+    "overviewP1": "NESTAR는 매수자, 임차인, 공인중개사를 유기적으로 연결하는 투명하고 신속한 부동산 거래 플랫폼입니다.",
+    "overviewP2": "1. 다차원 검색 & 필터링: 위치(지역), 매물 유형(아파트/빌라/오피스텔), 방 개수 및 가격 범위 조건 실시간 쿼리.",
+    "overviewP3": "2. 중개사-고객 소통: 매물 고화질 사진 갤러리, 상세 스펙, 중개사 프로필 및 원클릭 실시간 문의 시스템.",
+    "overviewP4": "3. 플랫폼 신뢰도 & 보안: 허위 매물 방지 필터링, 중개사 등록 검증, 관리자 모니터링 및 안전한 JWT 인증.",
+    "capabilitiesTitle": "주요 기능 및 역량",
+    "capabilities": [
+      "다중 조건 파라메트릭 부동산 검색 및 매물 비교 엔진",
+      "일반 고객, 공인중개사, 최고관리자 전용 대시보드",
+      "대규모 트래픽 대응 Redis 고속 캐싱 레이어",
+      "모바일 및 데스크톱 완벽 대응 반응형 웹 인터페이스",
+      "관리자 매물 검수 시스템 및 JWT 보안 인증"
+    ],
+    "technologiesTitle": "기술 스택",
+    "technologies": [
+      "Next.js", "React", "TypeScript", "NestJS", "PostgreSQL", "MongoDB", "Redis", "Tailwind CSS", "Docker", "Nginx", "Linux VPS"
+    ]
   },
   "Footer": {
     "firstName": "Abdulboriy",

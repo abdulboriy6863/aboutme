@@ -105,19 +105,34 @@
   },
   "Projects": {
     "title": "Projects",
-    "card": {
+    "allProjects": "All Projects",
+    "blueNetworks": {
       "tag": "AI & EV Energy Platform · Flagship Architecture",
       "company": "(주)블루네트웍스 (Blue Networks)",
-      "title": "Blue Networks: E-Chae-Um & AI Power Demand Forecasting Platform",
-      "description": "Enterprise EV Charging Station Management System (CSMS) managing 1,600+ chargers across Korea and an 8-model AI ensemble platform (PyTorch LSTM, XGBoost, EVT) delivering probabilistic P50/P90 power demand forecasts to optimize KEPCO contracted capacity and reduce peak surcharges.",
+      "title": "Blue Networks: E-Chae-Um & AI Power Demand Platform",
+      "description": "High-concurrency CSMS managing 1,600+ EV chargers across South Korea paired with an 8-model AI ensemble (PyTorch LSTM, XGBoost, EVT) forecasting P50/P90 power demand and optimizing KEPCO contract capacity.",
       "badges": [
-        { "bold": "1,600+", "label": "EV chargers" },
-        { "bold": "8-model", "label": "AI ensemble" },
-        { "bold": "P50 / P90", "label": "quantile forecasts" },
+        { "bold": "1,600+", "label": "EV Chargers" },
+        { "bold": "8 Models", "label": "AI Ensemble" },
+        { "bold": "P50 / P90", "label": "Quantile Forecast" },
         { "bold": "OCPP", "label": "1.6J / 2.0.1" },
-        { "bold": "KECO", "label": "roaming & PG sync" }
+        { "bold": "KECO", "label": "National Roaming" }
       ],
       "techStack": "Java 17 · Spring Boot · MyBatis · Python (FastAPI) · PyTorch (LSTM) · XGBoost · SvelteKit · PostgreSQL · Redis · Docker",
+      "action": "View Project"
+    },
+    "viserpet": {
+      "tag": "E-Commerce & GraphQL · 2024 - 2025",
+      "title": "ViserPet",
+      "description": "Full-stack pet e-commerce and community platform built with Next.js App Router, GraphQL (Apollo), NestJS, and MongoDB — featuring real-time WebSocket messaging, dynamic URL-synchronized filters, and seller/admin dashboards.",
+      "techStack": "Next.js · TypeScript · NestJS · GraphQL · MongoDB · WebSocket · Docker",
+      "action": "View Project"
+    },
+    "nestar": {
+      "tag": "Real Estate Platform · 2024 - 2025",
+      "title": "NESTAR",
+      "description": "Real estate listing & property discovery portal in South Korea — engineered with dynamic multi-criteria search (location, room count, price range), real-time agent inquiry channels, and Redis-cached queries.",
+      "techStack": "Next.js · TypeScript · NestJS · PostgreSQL · Redis · Tailwind CSS",
       "action": "View Project"
     }
   },
@@ -177,6 +192,73 @@
     ],
     "videoTitle": "Infrastructure & Station Showcase Video",
     "videoDescription": "Real-world operational preview of E-Chae-Um EV chargers and live telemetry."
+  },
+  "ViserPetDetail": {
+    "back": "All Projects",
+    "role": "Full-Stack Engineer & Architect — E-Commerce, GraphQL & Real-Time Platform",
+    "title": "ViserPet: Pet E-Commerce & Community Platform",
+    "summary": "Full-stack pet e-commerce and social platform built with Next.js App Router, Apollo Client, GraphQL, and NestJS + MongoDB (Mongoose). Features real-time WebSocket notifications & messaging, dynamic URL-synchronized multi-parameter filtering, and dedicated portals for sellers and administrators.",
+    "metrics": [
+      { "value": "100%", "label": "Dynamic URL Filter Sync" },
+      { "value": "GraphQL", "label": "Apollo Client & Flexible API" },
+      { "value": "<50ms", "label": "WebSocket Real-Time Latency" },
+      { "value": "Docker", "label": "Automated VPS Deployment" }
+    ],
+    "problemTitle": "Problem & Business Context",
+    "problemText": "Pet owners and vendors needed a unified platform for shopping, order tracking, real-time live chat inquiries, and community discussions. A key challenge was delivering instant multi-parameter product discovery with shareable URL query states without performance bottlenecks.",
+    "solutionTitle": "Architecture & Engineering Solution",
+    "solutionText": "Engineered a Next.js (App Router) frontend with TypeScript and SCSS/MUI, backed by a NestJS monorepo, Apollo GraphQL API, WebSocket gateways, and MongoDB (Mongoose). Implemented strict Role-Based Access Control (User, Seller, Admin) and JWT authentication.",
+    "overviewTitle": "Overview",
+    "overviewP1": "ViserPet delivers a complete end-to-end e-commerce experience tailored for the pet market, featuring comprehensive product listings, dynamic wishlist/cart flows, vendor stores, and community discussion boards.",
+    "overviewP2": "1. Dynamic Filtering Engine: Fully interactive filters synchronized with URL query parameters, tightly integrated with GraphQL for lightning-fast queries across pet categories (Dog, Cat, Fish, Bird), discounts, sizes, and price bounds.",
+    "overviewP3": "2. Real-Time WebSockets & Social Ecosystem: Live seller-to-buyer chat, instant order status notifications, follower/following network, and community reviews/likes.",
+    "overviewP4": "3. Vendor & Admin Dashboards: Dedicated management portals enabling vendors to create/edit listings and track sales, while admins manage platform moderation, user roles, notices, and FAQs.",
+    "capabilitiesTitle": "Key Capabilities",
+    "capabilities": [
+      "Flexible, high-performance GraphQL schema querying and live mutations",
+      "Role-Based Access Control (RBAC: User / Seller / Admin) with secure JWT",
+      "Dynamic URL-synchronized multi-parameter filtering and search",
+      "WebSocket-driven live chatting and real-time push notification system",
+      "Community social ecosystem (Followers, Comments, Likes)",
+      "Production deployment via Docker Compose, persistent volumes, and Nginx"
+    ],
+    "technologiesTitle": "Technologies",
+    "technologies": [
+      "Next.js", "React", "TypeScript", "GraphQL (Apollo)", "NestJS", "MongoDB", "Mongoose", "WebSocket", "SCSS Modules", "Material UI", "Docker", "Nginx", "Linux VPS"
+    ]
+  },
+  "NestarDetail": {
+    "back": "All Projects",
+    "role": "Full-Stack Engineer & Architect — Real Estate & Caching Platform",
+    "title": "NESTAR: South Korea Real Estate & Property Discovery Portal",
+    "summary": "Real estate marketplace in South Korea for property buying, selling, and leasing. Features multi-criteria dynamic search (location, property type, room count, price range), real-time inquiry channels between agents and customers, and high-performance Redis caching layer.",
+    "metrics": [
+      { "value": "100%", "label": "Location & Parametric Filter" },
+      { "value": "<20ms", "label": "Redis Cache Response" },
+      { "value": "RBAC", "label": "User, Agent & Admin Roles" },
+      { "value": "Docker", "label": "Nginx & Secure VPS Infra" }
+    ],
+    "problemTitle": "Problem & Requirement",
+    "problemText": "Users required an intuitive, fast platform to compare property listings across Korean districts, inspect floor and room metrics, and instantly contact verified real estate agents with low latency.",
+    "solutionTitle": "Solution & Architecture",
+    "solutionText": "Architected a responsive Next.js frontend paired with NestJS backend APIs, optimized SQL/NoSQL indexing, Redis caching for high-frequency queries, and verified agent moderation pipelines.",
+    "overviewTitle": "Overview",
+    "overviewP1": "NESTAR connects property buyers, tenants, and licensed real estate agencies through a transparent, high-speed discovery platform.",
+    "overviewP2": "1. Multi-Dimensional Search & Filtering: Real-time queries by location (위치), property classification (매물 유형), room configuration (방), and custom price ranges.",
+    "overviewP3": "2. Agent-Customer Interaction: Detailed listing metadata, high-resolution photo galleries, agent profiles, and direct one-click inquiry channels.",
+    "overviewP4": "3. Platform Moderation & Security: Listing authenticity verification, agent licensing validation, admin moderation, and secure JWT-based access.",
+    "capabilitiesTitle": "Key Capabilities",
+    "capabilities": [
+      "Advanced multi-criteria parametric property search engine",
+      "Dedicated portals for buyers, licensed agents, and administrators",
+      "High-throughput Redis caching for instant property listing retrieval",
+      "Fully responsive mobile and desktop user interface",
+      "Admin moderation dashboard and secure JWT authentication"
+    ],
+    "technologiesTitle": "Technologies",
+    "technologies": [
+      "Next.js", "React", "TypeScript", "NestJS", "PostgreSQL", "MongoDB", "Redis", "Tailwind CSS", "Docker", "Nginx", "Linux VPS"
+    ]
   },
   "Footer": {
     "firstName": "Abdulboriy",

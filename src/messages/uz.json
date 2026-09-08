@@ -105,7 +105,8 @@
   },
   "Projects": {
     "title": "Loyihalar",
-    "card": {
+    "allProjects": "Barcha loyihalar",
+    "blueNetworks": {
       "tag": "AI & EV Energy Platform · Flagship Architecture",
       "company": "(주)블루네트웍스 (Blue Networks)",
       "title": "Blue Networks: E-Chae-Um & AI Quvvat Bashorat Platformasi",
@@ -118,6 +119,20 @@
         { "bold": "KECO", "label": "milliy rouming & PG" }
       ],
       "techStack": "Java 17 · Spring Boot · MyBatis · Python (FastAPI) · PyTorch (LSTM) · XGBoost · SvelteKit · PostgreSQL · Redis · Docker",
+      "action": "Loyihani ko'rish"
+    },
+    "viserpet": {
+      "tag": "E-Commerce & GraphQL · 2024 - 2025",
+      "title": "ViserPet",
+      "description": "Next.js App Router, GraphQL (Apollo), NestJS va MongoDB asosidagi uy hayvonlari do'koni va ijtimoiy platformasi — real-vaqt WebSocket xabarlashuvi, URL-sinxron dinamik ko'p parametrli filtrlar va to'liq seller/admin panellari bilan qurilgan.",
+      "techStack": "Next.js · TypeScript · NestJS · GraphQL · MongoDB · WebSocket · Docker",
+      "action": "Loyihani ko'rish"
+    },
+    "nestar": {
+      "tag": "Real Estate Platform · 2024 - 2025",
+      "title": "NESTAR",
+      "description": "Janubiy Koreyadagi ko'chmas mulk oldi-sotdi va ijara portali — lokatsiya, xonalar soni va narxlar bo'yicha dinamik qidiruv va filtrlash, agentlar va mijozlar o'rtasida real-vaqt so'rovlar tizimi hamda yuqori tezlikdagi kesh arxitekturasi.",
+      "techStack": "Next.js · TypeScript · NestJS · PostgreSQL · Redis · Tailwind CSS",
       "action": "Loyihani ko'rish"
     }
   },
@@ -177,6 +192,73 @@
     ],
     "videoTitle": "Platforma va Stansiyalar Videolavhasi",
     "videoDescription": "E-Chae-Um zaryadlash stansiyalari va telemetriya tizimining amaliy ishlash jarayoni."
+  },
+  "ViserPetDetail": {
+    "back": "Barcha loyihalar",
+    "role": "Full-Stack Dasturchi & Arxitektor — E-Commerce, GraphQL & Real-Time Platforma",
+    "title": "ViserPet: Zamonaviy Uy Hayvonlari E-Tijorat & Hamjamiyat Platformasi",
+    "summary": "Next.js App Router, Apollo Client, GraphQL hamda NestJS + MongoDB (Mongoose) asosida qurilgan zamonaviy e-tijorat va ijtimoiy platforma. Real vaqt rejimida ishlovchi WebSocket bildirishnomalari va chat tizimi, URL bilan sinxronlashgan dinamik ko'p parametrli filtrlar hamda sotuvchilar (Seller) va administratorlar (Admin) uchun alohida boshqaruv panellari bilan jihozlangan.",
+    "metrics": [
+      { "value": "100%", "label": "dinamik URL filtr sinxronizatsiyasi" },
+      { "value": "GraphQL", "label": "Apollo Client & Moslashuvchan API" },
+      { "value": "<50ms", "label": "WebSocket real-vaqt xabarlashuv" },
+      { "value": "Docker", "label": "VPS & avtomatlashtirilgan deploy" }
+    ],
+    "problemTitle": "Muammo va Biznes Konteksti",
+    "problemText": "Mijozlar, sotuvchilar va ma'murlar o'rtasida buyurtmalar, tovarlar qoldig'i, chat va bildirishnomalarni real-vaqt rejimida sinxronlashtirish, shuningdek foydalanuvchi filtrlarni to'g'ridan-to'g'ri URL orqali boshqalar bilan ulasha oladigan moslashuvchan qidiruv arxitekturasini yaratish zarur edi.",
+    "solutionTitle": "Arxitektura va Muhandislik Yechimi",
+    "solutionText": "Frontendda Next.js (App Router), TypeScript, SCSS Modules va Material UI; backendda NestJS monorepo, GraphQL (Apollo), WebSocket shlyuzlari hamda Mongoose orqali MongoDB integratsiya qilindi. Foydalanuvchilar (User), Sotuvchilar (Seller) va Adminlar uchun Role-Based Access Control (RBAC) va JWT xavfsizligi joriy etildi.",
+    "overviewTitle": "Umumiy Ma'lumot",
+    "overviewP1": "ViserPet — uy hayvonlari egalari va sotuvchilari uchun to'liq ekotizim yaratuvchi zamonaviy veb-platforma. Platforma tovarlarni ko'rish, batafsil filtratsiyalar, savatcha (Cart), sevimli mahsulotlar (Wishlist) va to'lov jarayonini o'z ichiga oladi.",
+    "overviewP2": "1. Dinamik Filtratsiya Tizimi: Barcha filtrlar to'liq dinamik bo'lib, URL query string bilan avtomatik sinxronlanadi. GraphQL API bilan to'liq integratsiya qilingan bo'lib, kategoriyalar (It, Mushuk, Baliq, Qushlar), chegirmalar, o'lchamlar va narx oralig'i bo'yicha tezkor javob qaytaradi.",
+    "overviewP3": "2. Real-Vaqt WebSocket va Hamjamiyat Tizimi: Foydalanuvchilar o'rtasida jonli chat, obuna bo'lish (Followers/Following), sharhlar va layklar tizimi. Sotuvchilar va xaridorlar o'rtasida tovar bo'yicha onlayn muzokaralar real-vaqt rejimida amalga oshiriladi.",
+    "overviewP4": "3. Seller va Admin Boshqaruv Panellari: Sotuvchilar uchun mahsulot qo'shish, tahrirlash, sotilgan holatini (On Sale / Sold) boshqarish; Adminlar uchun esa foydalanuvchilar rollari, shikoyatlar, e'lonlar va FAQ bo'limlarini boshqaruvchi markazlashgan panel ishlab chiqilgan.",
+    "capabilitiesTitle": "Asosiy Imkoniyatlar",
+    "capabilities": [
+      "GraphQL API orqali yuqori unumdorlikdagi ma'lumotlar so'rovi va yangilanishi",
+      "Role-Based Access Control (User / Seller / Admin) va JWT avtorizatsiyasi",
+      "URL Query bilan sinxronlashgan ko'p parametrli mahsulot filtrlash tizimi",
+      "WebSocket asosidagi jonli bildirishnomalar va sotuvchi-xaridor chat tizimi",
+      "Follower/Following va jamoaviy muhokamalar (Community Board)",
+      "Docker Compose va Linux VPS orqali barqaror avtomatlashtirilgan hosting"
+    ],
+    "technologiesTitle": "Texnologiyalar",
+    "technologies": [
+      "Next.js", "React", "TypeScript", "GraphQL (Apollo)", "NestJS", "MongoDB", "Mongoose", "WebSocket", "SCSS Modules", "Material UI", "Docker", "Nginx", "Linux VPS"
+    ]
+  },
+  "NestarDetail": {
+    "back": "Barcha loyihalar",
+    "role": "Full-Stack Muhandis & Arxitektor — Ko'chmas Mulk & Kesh Platformasi",
+    "title": "NESTAR: Janubiy Koreya Ko'chmas Mulk & Qidiruv Portali",
+    "summary": "Janubiy Koreya bo'ylab ko'chmas mulk (kvartiralar, uylar, ofislar) oldi-sotdi va ijara e'lonlarini qidirish, taqqoslash va boshqarish platformasi. Murakkab lokatsiya, narx, xonalar soni va maydon bo'yicha kengaytirilgan dinamik qidiruv tizimi, mijozlar va agentlar o'rtasidagi real-vaqt so'rovlar hamda Redis kesh qatlami bilan ta'minlangan.",
+    "metrics": [
+      { "value": "100%", "label": "lokatsiya & parametrli filtratsiya" },
+      { "value": "<20ms", "label": "Redis kesh javob tezligi" },
+      { "value": "RBAC", "label": "Foydalanuvchi, Agent & Admin" },
+      { "value": "Docker", "label": "Nginx & xavfsiz VPS infratuzilma" }
+    ],
+    "problemTitle": "Muammo va Ehtiyoj",
+    "problemText": "Ko'chmas mulk bozorida minglab e'lonlarni tezkorlik bilan solishtirish, har bir mulkning qavat, maydon, xona va narx parametrlarini bir zumda filtrlash, shuningdek mijozlar uchun to'g'ridan-to'g'ri mulk egasi yoki agent bilan xavfsiz bog'lanish tizimini yo'lga qo'yish zaruriyati bor edi.",
+    "solutionTitle": "Yechim va Arxitektura",
+    "solutionText": "Next.js va TypeScript yordamida tez yuklanuvchi interfeys, NestJS backendida optimallashtirilgan SQL/NoSQL ma'lumotlar tuzilmasi, tez-tez qidiriladigan hududlar uchun Redis keshlash tizimi hamda agentlar uchun qulay e'lonlar boshqaruv kabineti qurildi.",
+    "overviewTitle": "Umumiy Ma'lumot",
+    "overviewP1": "NESTAR — Janubiy Koreya ko'chmas mulk bozorida xaridorlar, ijarachilar va rieltorlik agentliklari o'rtasida shaffof hamda qulay aloqani ta'minlovchi marketplace.",
+    "overviewP2": "1. Kengaytirilgan Qidiruv & Geografik Filtr: Hududlar (위치), mulk turi (매물 유형), xonalar soni (방) va narx chegaralari bo'yicha ko'p bosqichli real-vaqt filtri ishlab chiqilgan.",
+    "overviewP3": "2. Agent va Mijoz Aloqasi: Mulk haqida batafsil ma'lumot, rasmlar galereyasi, agent profili va bir martalik tezkor aloqa (inquiry) kanallari.",
+    "overviewP4": "3. Boshqaruv va Xavfsizlik: E'lonlarning haqqoniyligini tekshirish, admin moderatsiyasi, agentlarni verifikatsiya qilish va xavfsiz autentifikatsiya.",
+    "capabilitiesTitle": "Asosiy Imkoniyatlar",
+    "capabilities": [
+      "Ko'p bosqichli parametrli dinamik qidiruv va solishtirish tizimi",
+      "Agentlar va foydalanuvchilar uchun mustaqil shaxsiy kabinetlar",
+      "Redis kesh orqali yuqori yuklamalarda tezkor qidiruv javoblari",
+      "To'liq moslashuvchan mobil va desktop responsiv dizayn",
+      "Admin moderatsiya va xavfsiz JWT autentifikatsiya tizimi"
+    ],
+    "technologiesTitle": "Texnologiyalar",
+    "technologies": [
+      "Next.js", "React", "TypeScript", "NestJS", "PostgreSQL", "MongoDB", "Redis", "Tailwind CSS", "Docker", "Nginx", "Linux VPS"
+    ]
   },
   "Footer": {
     "firstName": "Abdulboriy",
