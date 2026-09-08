@@ -106,7 +106,7 @@
   "Projects": {
     "title": "Projects",
     "card": {
-      "tag": "AI & EV Energy Platform · 2024–2026",
+      "tag": "AI & EV Energy Platform · Flagship Architecture",
       "company": "(주)블루네트웍스 (Blue Networks)",
       "title": "Blue Networks: E-Chae-Um & AI Power Demand Forecasting Platform",
       "description": "Enterprise EV Charging Station Management System (CSMS) managing 1,600+ chargers across Korea and an 8-model AI ensemble platform (PyTorch LSTM, XGBoost, EVT) delivering probabilistic P50/P90 power demand forecasts to optimize KEPCO contracted capacity and reduce peak surcharges.",

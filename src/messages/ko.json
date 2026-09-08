@@ -106,7 +106,7 @@
   "Projects": {
     "title": "프로젝트",
     "card": {
-      "tag": "AI & EV Energy Platform · 2024–2026",
+      "tag": "AI & EV 에너지 플랫폼 · 핵심 아키텍처",
       "company": "(주)블루네트웍스 (Blue Networks)",
       "title": "(주)블루네트웍스: 이채움 & AI 전력 수요 예측 플랫폼",
       "description": "전국 1,600기+ 전기차 충전기를 관제하는 E-Chae-Um CSMS 및 8개 AI 모델(PyTorch LSTM, XGBoost, 극값 이론 EVT) 앙상블 기반 전력 수요 예측·한전(KEPCO) 계약전력 최적화 엔터프라이즈 플랫폼.",

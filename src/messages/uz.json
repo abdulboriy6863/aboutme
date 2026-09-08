@@ -106,7 +106,7 @@
   "Projects": {
     "title": "Loyihalar",
     "card": {
-      "tag": "AI & EV Energy Platform · 2024–2026",
+      "tag": "AI & EV Energy Platform · Flagship Architecture",
       "company": "(주)블루네트웍스 (Blue Networks)",
       "title": "Blue Networks: E-Chae-Um & AI Quvvat Bashorat Platformasi",
       "description": "Koreya bo'ylab 1,600+ zaryadlash stansiyalarini boshqaruvchi CSMS va 8 ta AI modeli (PyTorch LSTM, XGBoost, EVT) ansambli orqali elektr quvvatiga bo'lgan talabni P50/P90 ehtimollikda bashorat qiluvchi, KEPCO tariflari va shartnoma quvvatini optimallashtiruvchi enterprise platforma arxitekturasi.",
