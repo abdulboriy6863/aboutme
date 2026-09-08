@@ -84,7 +84,7 @@ export default function RomimiProjectPage() {
             {/* CTA Button */}
             <div className="pt-2 pb-2">
               <a
-                href="https://github.com/gayratjon-02/AD.git"
+                href="https://romimi-gemini-front-production.up.railway.app/signup?redirect=%2F"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group/btn inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#527c73] to-[#79a7a7] hover:opacity-95 text-white font-medium text-sm shadow-md shadow-[#527c73]/20 transition-all active:scale-95"
