@@ -174,7 +174,9 @@
       "Python", "FastAPI", "PyTorch", "XGBoost", "EVT (GEV/GPD)",
       "OCPP 1.6J / 2.0.1", "WebSockets", "KECO Roaming", "Smartro PG",
       "SvelteKit", "Next.js", "React", "TypeScript", "Docker", "NGINX", "Linux"
-    ]
+    ],
+    "videoTitle": "충전 인프라 현장 및 관제 영상",
+    "videoDescription": "전국 E-Chae-Um 전기차 충전 인프라 및 실시간 텔레메트리 관제 운용 영상."
   },
   "Footer": {
     "status": "모든 시스템 정상 가동 중",

@@ -174,7 +174,9 @@
       "Python", "FastAPI", "PyTorch", "XGBoost", "EVT (GEV/GPD)",
       "OCPP 1.6J / 2.0.1", "WebSockets", "KECO Roaming", "Smartro PG",
       "SvelteKit", "Next.js", "React", "TypeScript", "Docker", "NGINX", "Linux"
-    ]
+    ],
+    "videoTitle": "Infrastructure & Station Showcase Video",
+    "videoDescription": "Real-world operational preview of E-Chae-Um EV chargers and live telemetry."
   },
   "Footer": {
     "status": "All Systems Operational",

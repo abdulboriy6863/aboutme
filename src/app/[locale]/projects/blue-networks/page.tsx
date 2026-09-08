@@ -198,6 +198,32 @@ export default function BlueNetworksCaseStudyPage() {
               ))}
             </div>
           </div>
+
+          {/* Video Showcase Section */}
+          <div className="mt-16 sm:mt-20">
+            <div className="mb-6">
+              <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-white">
+                {t("videoTitle")}
+              </h3>
+              <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">
+                {t("videoDescription")}
+              </p>
+            </div>
+
+            <div className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden border border-zinc-200/90 dark:border-zinc-800/90 bg-zinc-950 shadow-xl dark:shadow-2xl">
+              <video
+                controls
+                playsInline
+                preload="metadata"
+                loop
+                poster="/images/blue-networks-office.jpg"
+                className="w-full h-auto aspect-video object-cover"
+              >
+                <source src="/videos/blue-networks-visual.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
         </div>
       </main>
 
