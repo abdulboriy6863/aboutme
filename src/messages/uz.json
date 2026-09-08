@@ -266,6 +266,50 @@
     "videoTitle": "NESTAR Platformasi Videolavhasi",
     "videoDescription": "Ko'chmas mulk qidiruvi, ko'p parametrli filtratsiyalar va agentlar boshqaruv paneli amaliy jarayoni."
   },
+  "NikeStoreDetail": {
+    "back": "Barcha loyihalar",
+    "role": "Full-Stack Dasturchi & Arxitektor — E-Commerce, REST API & Do'kon Boshqaruvi",
+    "title": "Nike Store: Sneaker E-Commerce Platform & Admin Panel",
+    "summary": "React (TypeScript) va Express.js REST API asosida sport poyabzallari ixlosmandlari uchun qurilgan zamonaviy full-stack e-commerce platformasi. Mahsulotlar katalogi, Redux Toolkit savatchasi, xavfsiz JWT autentifikatsiyasi, to'liq do'kon admin paneli hamda Linux VPS arxitekturasini o'z ichiga oladi.",
+    "sourceCode": "Kodni ko'rish (GitHub)",
+    "metrics": [
+      { "value": "Full-Stack", "label": "React (TS) + Express API" },
+      { "value": "100%", "label": "Redux Toolkit & Cart State" },
+      { "value": "RBAC", "label": "Foydalanuvchi va Admin Rollari" },
+      { "value": "Linux VPS", "label": "PM2 & Nginx Reverse Proxy" }
+    ],
+    "problemTitle": "Muammo va Ehtiyoj",
+    "problemText": "Krossovkalar savdosida mijozlar uchun tezkor, intuitiv interfeys va dinamik savatcha qulayligi zarur edi. Shu bilan birga, do'kon ma'muriyati uchun mahsulotlar inventari, buyurtmalar oqimi va foydalanuvchi faolligini to'liq nazorat qiluvchi alohida, xavfsiz boshqaruv paneli talab etilar edi.",
+    "solutionTitle": "Yechim va Arxitektura",
+    "solutionText": "Frontend qismida React, TypeScript, Material UI va Redux Toolkit yordamida tezkor, state-persist bo'lgan mijozlar interfeysi yaratildi. Backendda esa Express.js va MongoDB (Mongoose) asosida xavfsiz REST API, JWT autentifikatsiyasi va rollarga asoslangan ruxsatlar tizimi (RBAC) o'rnatildi. Do'kon boshqaruvi uchun esa alohida keng qamrovli Admin Panel ishlab chiqildi.",
+    "overviewTitle": "Umumiy Ma'lumot",
+    "overviewP1": "Nike Store — sport poyabzallari ixlosmandlariga qulay va zamonaviy onlayn xarid tajribasini taqdim etish uchun maxsus ishlab chiqilgan to'liq tizimli (full-stack) e-commerce platformasidir. Foydalanuvchilar platformada eng so'nggi krossovkalar kolleksiyalarini ko'rishlari, har bir mahsulotning batafsil parametrlarini o'rganishlari, o'lcham va modellarni tanlab, mahsulotlarni interaktiv savatchaga qo'shishlari hamda bir zumda buyurtma rasmiylashtirishlari mumkin.",
+    "overviewP2": "1. Dinamik Savatcha va State Boshqaruvi: Redux Toolkit yordamida dinamik savatcha tizimi ishlab chiqilgan. Local Storage integratsiyasi tufayli foydalanuvchi sahifani yangilaganda yoki keyinroq qaytganda ham savatchadagi mahsulotlar holati to'liq saqlanib qoladi.",
+    "overviewP3": "2. Xavfsiz Autentifikatsiya va RBAC: Foydalanuvchilar va do'kon administratorlari uchun JWT asosidagi autentifikatsiya tizimi o'rnatilgan. Rolga asoslangan ruxsatlar (RBAC) orqali faqat vakolatli xodimlargina maxsus boshqaruv imkoniyatlariga ega bo'ladi.",
+    "overviewP4": "3. Ishonchli VPS Deployment: Loyiha Linux VPS serverida PM2 jarayon boshqaruvchisi va Nginx reverse proxy yordamida deploy qilingan. Tizim to'liq DNS, xavfsizlik devori (firewall) va domen konfiguratsiyasiga ega bo'lib, real ishlab chiqarish muhitida barqaror ishlaydi.",
+    "adminSectionTitle": "Admin Panel & Do'kon Boshqaruvi",
+    "adminSectionDesc": "Nike Store Admin Paneli do'kon egalariga mahsulotlar nomenklaturasini qo'shish, tahrirlash va o'chirish, mijozlar tomonidan yuborilgan barcha buyurtmalar oqimini real vaqtda qayta ishlash hamda foydalanuvchilar faolligini nazorat qilish imkoniyatini beradi.",
+    "adminFrontend": "Frontend: HTML5, Bootstrap, CSS3, Axios, EJS, jQuery",
+    "adminBackend": "Backend: Node.js, Express.js, MongoDB, Mongoose, express-session, bcryptjs, JWT, Assert, cookie-parser, socket.io, Dotenv, multer",
+    "capabilitiesTitle": "Asosiy Imkoniyatlar (Main Features)",
+    "capabilities": [
+      "Role-based User Authentication (Foydalanuvchi va admin rollari bo'yicha xavfsiz autentifikatsiya)",
+      "Store Registration and Profile Management (Do'kon ro'yxatdan o'tishi va profil boshqaruvi)",
+      "Product Add, Edit, and Delete (Mahsulotlar katalogi bo'yicha to'liq CRUD amallari)",
+      "Order Management System (Mijozlar buyurtmalarini qabul qilish va holatini monitoring qilish)",
+      "Admin Panel (Do'kon, tovarlar va foydalanuvchilar faolligini nazorat qiluvchi markazlashgan panel)",
+      "Dynamic Product Listings (Krossovkalar katalogi va dinamik filtrlash imkoniyati)",
+      "REST API Integration with MongoDB (Express.js va MongoDB o'rtasidagi optimallashgan REST API)",
+      "Dynamic shopping cart using Redux Toolkit (Redux Toolkit orqali boshqariluvchi savatcha)",
+      "Cart Persistence via Local Storage (Brauzer xotirasida savatchani saqlash mexanizmi)"
+    ],
+    "technologiesTitle": "Ishlatilgan Texnologiyalar",
+    "technologies": [
+      "React", "TypeScript", "Material UI", "Redux Toolkit", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT Auth", "REST API", "PM2", "Nginx", "Linux VPS", "Socket.io", "Multer", "Bootstrap", "EJS"
+    ],
+    "galleryTitle": "Loyiha Taqdimoti & Rasmlar Galereyasi",
+    "galleryDescription": "Nike Store platformasining asosiy interfeysi, mahsulotlar katalogi, me'moriy tuzilishi va admin paneli ko'rinishlari:"
+  },
   "AllProjects": {
     "back": "Bosh sahifa",
     "badge": "Muhandislik Portfoliosi",
@@ -337,8 +381,8 @@
         "description": "Krossovkalar xaridi va boshqaruvi uchun mo'ljallangan full-stack platforma — React (TypeScript), Express.js REST API, Redux Toolkit savatchasi, do'kon va foydalanuvchi rollarini boshqaruvchi admin panel.",
         "stack": ["React", "TypeScript", "Express.js", "MongoDB", "Redux Toolkit", "Material UI", "PM2", "Nginx"],
         "image": "/images/nikestore.png",
-        "href": "https://github.com/abdulboriy6863",
-        "isExternal": true
+        "href": "/projects/nikestore",
+        "isExternal": false
       },
       {
         "id": "cambridge",

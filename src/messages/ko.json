@@ -231,13 +231,13 @@
     "videoDescription": "이커머스 결제 프로세스, 위시리스트 및 GraphQL 기반 동적 필터링 시연."
   },
   "NestarDetail": {
-    "back": "모든 프로젝트",
-    "role": "풀스택 엔지니어 & 아키텍트 — 부동산 & 캐싱 플랫폼",
-    "title": "NESTAR: 대한민국 부동산 매물 검색 및 거래 포털",
-    "summary": "대한민국 전역의 아파트, 주택, 오피스 매물 검색 및 거래 플랫폼. 위치, 매물 유형, 방 개수, 가격대별 정밀 다중 조건 검색 엔진, 공인중개사-고객 간 실시간 문의 채널 및 고성능 Redis 캐싱 계층 구축.",
-    "sourceCode": "소스 코드 보기 (GitHub)",
+    "back": "전체 프로젝트",
+    "role": "풀스택 엔지니어 & 아키텍트 — 부동산 포털 & 캐싱 플랫폼",
+    "title": "NESTAR: 대한민국 부동산 매물 검색 & 거래 포털",
+    "summary": "대한민국 전역의 아파트, 빌라, 상가 매물 검색 및 거래를 위한 플랫폼. 위치, 가격, 방 개수, 면적별 고성능 다중 조건 검색 엔진, 공인중개사와 고객 간 실시간 문의 채널 및 Redis 캐싱 레이어로 무중단 서비스를 제공합니다.",
+    "sourceCode": "코드 보기 (GitHub)",
     "metrics": [
-      { "value": "100%", "label": "위치 & 매물 파라미터 필터" },
+      { "value": "100%", "label": "위치 & 다중 필터 검색" },
       { "value": "<20ms", "label": "Redis 캐시 응답 속도" },
       { "value": "RBAC", "label": "고객, 중개사, 관리자 권한" },
       { "value": "Docker", "label": "Nginx & 안전한 VPS 인프라" }
@@ -265,6 +265,50 @@
     ],
     "videoTitle": "NESTAR 플랫폼 시연 영상",
     "videoDescription": "부동산 매물 검색, 다중 조건 필터링 및 공인중개사 관리 대시보드 시연 영상."
+  },
+  "NikeStoreDetail": {
+    "back": "전체 프로젝트",
+    "role": "풀스택 엔지니어 & 아키텍트 — 이커머스, REST API & 스토어 관리",
+    "title": "Nike Store: 스니커즈 이커머스 플랫폼 & 관리자 패널",
+    "summary": "React (TypeScript)와 Express.js REST API를 기반으로 제작된 스니커즈 매니아들을 위한 현대적인 풀스택 이커머스 플랫폼. 제품 카탈로그, Redux Toolkit 장바구니 영속성, 역할 기반 JWT 인증, 전용 스토어 관리자 패널 및 Linux VPS 프로덕션 배포 아키텍처를 갖추고 있습니다.",
+    "sourceCode": "코드 보기 (GitHub)",
+    "metrics": [
+      { "value": "Full-Stack", "label": "React (TS) + Express REST API" },
+      { "value": "100%", "label": "Redux Toolkit & 장바구니 상태" },
+      { "value": "RBAC", "label": "사용자 및 스토어 관리자 역할" },
+      { "value": "Linux VPS", "label": "PM2 & Nginx 리버스 프록시" }
+    ],
+    "problemTitle": "문제 정의 및 요구사항",
+    "problemText": "스니커즈 쇼핑에 있어 사용자를 위한 초고속 인터페이스와 세션 간 장바구니 상태 유지가 필수적이었습니다. 동시에 스토어 운영자를 위한 재고 관리, 실시간 주문 처리 및 사용자 모니터링을 담당하는 안전한 백오피스 관리자 패널이 요구되었습니다.",
+    "solutionTitle": "해결 방안 및 아키텍처",
+    "solutionText": "React, TypeScript, Material UI 및 Redux Toolkit을 활용하여 반응성이 뛰어난 상태 영속 장바구니 클라이언트를 구축했습니다. 백엔드는 Express.js와 MongoDB (Mongoose)를 기반으로 REST API를 구축하고, JWT 인증과 역할 기반 접근 제어(RBAC), 독립적인 Admin Panel을 완성했습니다.",
+    "overviewTitle": "프로젝트 개요",
+    "overviewP1": "Nike Store는 스니커즈 애호가들에게 원활하고 현대적인 온라인 쇼핑 경험을 제공하기 위해 개발된 풀스택 이커머스 플랫폼입니다. 사용자는 최신 신발 라인업을 둘러보고, 상세 사양을 확인하며, 장바구니에 담아 즉시 주문할 수 있습니다.",
+    "overviewP2": "1. 동적 장바구니 및 상태 관리: Redux Toolkit과 Local Storage를 연동하여 페이지 새로고침이나 재방문 시에도 장바구니 상태가 완벽하게 보존됩니다.",
+    "overviewP3": "2. 역할 기반 인증 및 보안: JWT 인증 프로토콜을 통해 일반 고객과 스토어 관리자의 권한을 분리하여 안전한 제품 관리 및 주문 승인을 보장합니다.",
+    "overviewP4": "3. Linux VPS 프로덕션 배포: PM2 프로세스 매니저와 Nginx 리버스 프록시를 통해 Linux VPS 환경에 배포되었으며, DNS 및 방화벽 보안 구성을 완료했습니다.",
+    "adminSectionTitle": "관리자 패널 & 스토어 운영",
+    "adminSectionDesc": "Nike Store Admin Panel은 매장 관리자가 제품을 추가/수정/삭제하고, 실시간 고객 주문을 접수 및 처리하며, 플랫폼 전체 활동을 안전하게 모니터링할 수 있도록 지원합니다.",
+    "adminFrontend": "Frontend: HTML5, Bootstrap, CSS3, Axios, EJS, jQuery",
+    "adminBackend": "Backend: Node.js, Express.js, MongoDB, Mongoose, express-session, bcryptjs, JWT, Assert, cookie-parser, Socket.io, Dotenv, Multer",
+    "capabilitiesTitle": "주요 기능 (Main Features)",
+    "capabilities": [
+      "Role-based User Authentication (사용자 및 관리자 역할 분리 인증)",
+      "Store Registration and Profile Management (스토어 입점 및 프로필 관리)",
+      "Product Add, Edit, and Delete (제품 카탈로그 완전한 CRUD 기능)",
+      "Order Management System (주문 접수, 상태 변경 및 배송 관리)",
+      "Admin Panel (스토어 운영 및 플랫폼 통합 모니터링 콘솔)",
+      "Dynamic Product Listings (인터랙티브 스니커즈 카탈로그 및 필터링)",
+      "REST API Integration with MongoDB (Express.js 및 Mongoose RESTful API)",
+      "Dynamic shopping cart using Redux Toolkit (상태 기반 실시간 장바구니)",
+      "Cart Persistence via Local Storage (브라우저 로컬 저장소 장바구니 유지)"
+    ],
+    "technologiesTitle": "사용 기술",
+    "technologies": [
+      "React", "TypeScript", "Material UI", "Redux Toolkit", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT Auth", "REST API", "PM2", "Nginx", "Linux VPS", "Socket.io", "Multer", "Bootstrap", "EJS"
+    ],
+    "galleryTitle": "프로젝트 갤러리 & 인터페이스 쇼케이스",
+    "galleryDescription": "Nike Store 플랫폼의 메인 스토어 프론트, 제품 카탈로그, 시스템 아키텍처 및 관리자 패널 화면:"
   },
   "AllProjects": {
     "back": "홈으로",
@@ -337,8 +381,8 @@
         "description": "스니커즈 쇼핑 및 주문 관리를 위한 풀스택 플랫폼 — React (TypeScript), Express.js REST API, Redux Toolkit 장바구니 영속성 및 스토어/관리자 역할 전환 관리.",
         "stack": ["React", "TypeScript", "Express.js", "MongoDB", "Redux Toolkit", "Material UI", "PM2", "Nginx"],
         "image": "/images/nikestore.png",
-        "href": "https://github.com/abdulboriy6863",
-        "isExternal": true
+        "href": "/projects/nikestore",
+        "isExternal": false
       },
       {
         "id": "cambridge",
