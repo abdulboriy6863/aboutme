@@ -103,39 +103,22 @@
       }
     }
   },
-  "Bento": {
-    "badge": "Featured Case Studies & Architecture",
-    "title": "Engineered for Extreme Scalability & Modern Web Standards",
-    "description": "A comprehensive deep dive into real-world distributed systems, AI engine pipelines, and production architectures.",
-    "cards": {
-      "flagship": {
-        "tag": "Flagship Case Study",
-        "title": "Blue Networks EV CSMS: OCPP & National Roaming Telemetry Platform",
-        "problemLabel": "Architectural Challenge",
-        "problem": "Delivering sub-second bidirectional telemetry, inter-CPO KECO roaming data pipelines, and remote OTA firmware dispatch across 1,600+ EV chargers in 500+ locations across Korea.",
-        "solutionLabel": "Engineering Solution",
-        "solution": "Built high-concurrency OCPP 1.6-J / 2.0.1 WebSocket gateways with Spring Boot, MyBatis, Redis clustering, and automated KECO national roaming & Smartro PG settlement reconciliation.",
-        "metricHighlight": "1,600+ Chargers / <15ms",
-        "metricDetail": "OCPP & KECO Roaming Sync"
-      },
-      "aiRag": {
-        "tag": "AI Energy Forecasting & RAG",
-        "title": "PyTorch LSTM & XGBoost Power Demand Prediction Platform",
-        "desc": "8-model AI ensemble (LSTM, XGBoost, GEV/GPD Extreme Value Theory) for probabilistic P50/P90 peak power prediction and KEPCO tariff optimization.",
-        "status": "AI Ensemble Active"
-      },
-      "systemArch": {
-        "tag": "Infrastructure",
-        "title": "Edge Cloud & Resilient Multi-Region Mesh",
-        "desc": "Multi-region edge routing, automated failovers, Docker & Kubernetes cluster orchestration, and zero-trust API gateways.",
-        "status": "Multi-Region Live"
-      },
-      "trust": {
-        "tag": "Engineering Verification",
-        "title": "Production Reliability & Zero-Downtime Guarantee",
-        "desc": "100/100 Core Web Vitals, automated blue/green canary deployments, SOC2 compliance, and strict end-to-end type safety.",
-        "score": "100/100"
-      }
+  "Projects": {
+    "title": "Projects",
+    "card": {
+      "tag": "AI & EV Energy Platform · 2024–2026",
+      "company": "(주)블루네트웍스 (Blue Networks)",
+      "title": "Blue Networks: E-Chae-Um & AI Power Demand Forecasting Platform",
+      "description": "Enterprise EV Charging Station Management System (CSMS) managing 1,600+ chargers across Korea and an 8-model AI ensemble platform (PyTorch LSTM, XGBoost, EVT) delivering probabilistic P50/P90 power demand forecasts to optimize KEPCO contracted capacity and reduce peak surcharges.",
+      "badges": [
+        { "bold": "1,600+", "label": "EV chargers" },
+        { "bold": "8-model", "label": "AI ensemble" },
+        { "bold": "P50 / P90", "label": "quantile forecasts" },
+        { "bold": "OCPP", "label": "1.6J / 2.0.1" },
+        { "bold": "KECO", "label": "roaming & PG sync" }
+      ],
+      "techStack": "Java 17 · Spring Boot · MyBatis · Python (FastAPI) · PyTorch (LSTM) · XGBoost · SvelteKit · PostgreSQL · Redis · Docker",
+      "action": "View Project →"
     }
   },
   "AiAgent": {

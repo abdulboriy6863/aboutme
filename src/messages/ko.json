@@ -103,39 +103,22 @@
       }
     }
   },
-  "Bento": {
-    "badge": "주요 사례 연구 및 아키텍처",
-    "title": "극한의 확장성과 최신 웹 표준을 위해 설계됨",
-    "description": "실제 분산 시스템, AI 파이프라인 및 프로덕션 아키텍처에 대한 심층 분석.",
-    "cards": {
-      "flagship": {
-        "tag": "주요 사례 연구 (Flagship)",
-        "title": "블루네트웍스 EV CSMS: 실시간 OCPP & 전국 로밍 데이터 플랫폼",
-        "problemLabel": "아키텍처 과제",
-        "problem": "전국 500+ 거점 1,600+ 급속/완속 충전기에서 유입되는 방대한 실시간 텔레메트리, 환경부(KECO) CPO 간 로밍 데이터 교환 및 원격 OTA 펌웨어 일괄 배포의 0-초 지연 처리.",
-        "solutionLabel": "엔지니어링 솔루션",
-        "solution": "OCPP 1.6-J / 2.0.1 기반 대용량 양방향 WebSocket 게이트웨이, Spring Boot & MyBatis 백엔드, Redis 캐시 클러스터 및 환경부 로밍/스마트로 PG 결제 정산 배치 시스템 구축.",
-        "metricHighlight": "1,600+ 충전기 / <15ms",
-        "metricDetail": "OCPP & KECO 로밍 동기화"
-      },
-      "aiRag": {
-        "tag": "AI 전력 예측 & RAG",
-        "title": "PyTorch LSTM & XGBoost 전력 수요 예측 플랫폼",
-        "desc": "8종 AI 앙상블 모델(PyTorch LSTM, XGBoost, GEV/GPD 극값 분석)을 통한 P50/P90 피크 전력 확률 예측 및 한전 기본요금·초과 부가금 최적화 엔진.",
-        "status": "AI 앙상블 가동 중"
-      },
-      "systemArch": {
-        "tag": "인프라스트럭처",
-        "title": "에지 클라우드 & 멀티 리전 복원 메시",
-        "desc": "멀티 리전 에지 라우팅, 자동 장애 조치, Docker & Kubernetes 클러스터 오케스트레이션 및 제로 트러스트 게이트웨이.",
-        "status": "멀티 리전 가동 중"
-      },
-      "trust": {
-        "tag": "엔지니어링 신뢰성",
-        "title": "프로덕션 신뢰성 및 무중단 배포 보장",
-        "desc": "100/100 Core Web Vitals, 무중단 블루/그린 카나리 배포, SOC2 보안 및 엄격한 엔드투엔드 타입 안전성.",
-        "score": "100/100"
-      }
+  "Projects": {
+    "title": "프로젝트",
+    "card": {
+      "tag": "AI & EV Energy Platform · 2024–2026",
+      "company": "(주)블루네트웍스 (Blue Networks)",
+      "title": "(주)블루네트웍스: 이채움 & AI 전력 수요 예측 플랫폼",
+      "description": "전국 1,600기+ 전기차 충전기를 관제하는 E-Chae-Um CSMS 및 8개 AI 모델(PyTorch LSTM, XGBoost, 극값 이론 EVT) 앙상블 기반 전력 수요 예측·한전(KEPCO) 계약전력 최적화 엔터프라이즈 플랫폼.",
+      "badges": [
+        { "bold": "1,600+기", "label": "충전기 관제" },
+        { "bold": "8종", "label": "AI 모델 앙상블" },
+        { "bold": "P50 / P90", "label": "확률 예측" },
+        { "bold": "OCPP", "label": "1.6J / 2.0.1" },
+        { "bold": "KECO", "label": "환경부 로밍 & PG 연동" }
+      ],
+      "techStack": "Java 17 · Spring Boot · MyBatis · Python (FastAPI) · PyTorch (LSTM) · XGBoost · SvelteKit · PostgreSQL · Redis · Docker",
+      "action": "프로젝트 보기 →"
     }
   },
   "AiAgent": {

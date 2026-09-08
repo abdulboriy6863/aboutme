@@ -103,39 +103,22 @@
       }
     }
   },
-  "Bento": {
-    "badge": "Asosiy Keyslar & Arxitektura",
-    "title": "Yuqori Masshtab va Zamonaviy Veb Standartlari Uchun Yaratilgan",
-    "description": "Tizim arxitekturasi, AI konveyerlari va amaliy ishlab chiqarish keyslari haqida to'liq tahlil.",
-    "cards": {
-      "flagship": {
-        "tag": "Asosiy Keys (Flagship)",
-        "title": "Blue Networks EV CSMS: OCPP & Milliy Rouming Telemetriya Platformasi",
-        "problemLabel": "Muammo va Qiyinchilik",
-        "problem": "Koreya bo'ylab 500+ lokatsiyadagi 1,600+ zaryadlash stansiyalari telemetriyasi, operatorlararo KECO rouming ma'lumotlari (로밍 데이터) va ommaviy OTA boshqaruvini 0-kechikish bilan ta'minlash.",
-        "solutionLabel": "Muhandislik Yechimi",
-        "solution": "OCPP 1.6-J / 2.0.1 ikki tomonlama WebSocket shlyuzi, Spring Boot & MyBatis backend, Redis kesh klasteri hamda KECO rouming va Smartro PG to'lov hisob-kitob konveyeri qurildi.",
-        "metricHighlight": "1,600+ Stansiyalar / <15ms",
-        "metricDetail": "OCPP & KECO Roaming Sync"
-      },
-      "aiRag": {
-        "tag": "AI Energiya Bashorati & RAG",
-        "title": "PyTorch LSTM & XGBoost Elektr Talabi Bashorat Platformasi",
-        "desc": "EV stansiyalari uchun 8 ta AI modeli ansambli (LSTM, XGBoost, GEV/GPD Ekstremal Qiymatlar) orqali pik quvvatni P50/P90 kvantillarda bashorat qilish va KEPCO shartnoma quvvatini tejash dvigateli.",
-        "status": "AI Ansambl Modeli Faol"
-      },
-      "systemArch": {
-        "tag": "Infratuzilma",
-        "title": "Edge Cloud va Barqaror Multi-Region Mesh",
-        "desc": "Ko'p hududli edge marshrutlash, avtomatik uzilishdan himoya, Docker va Kubernetes klasterlari hamda Zero-Trust shlyuzlari.",
-        "status": "Multi-Region Faol"
-      },
-      "trust": {
-        "tag": "Muhandislik Ishonchliligi",
-        "title": "Ishlab Chiqarish Barqarorligi va 0-Downtime Kafolati",
-        "desc": "100/100 Core Web Vitals, to'xtovsiz blue/green canary relizlar, SOC2 xavfsizlik va to'liq statik tiplash.",
-        "score": "100/100"
-      }
+  "Projects": {
+    "title": "Loyihalar",
+    "card": {
+      "tag": "AI & EV Energy Platform · 2024–2026",
+      "company": "(주)블루네트웍스 (Blue Networks)",
+      "title": "Blue Networks: E-Chae-Um & AI Quvvat Bashorat Platformasi",
+      "description": "Koreya bo'ylab 1,600+ zaryadlash stansiyalarini boshqaruvchi CSMS va 8 ta AI modeli (PyTorch LSTM, XGBoost, EVT) ansambli orqali elektr quvvatiga bo'lgan talabni P50/P90 ehtimollikda bashorat qiluvchi, KEPCO tariflari va shartnoma quvvatini optimallashtiruvchi enterprise platforma arxitekturasi.",
+      "badges": [
+        { "bold": "1,600+", "label": "EV stansiyalar" },
+        { "bold": "8 ta", "label": "AI model ansambli" },
+        { "bold": "P50 / P90", "label": "kvantil bashorat" },
+        { "bold": "OCPP", "label": "1.6J / 2.0.1" },
+        { "bold": "KECO", "label": "milliy rouming & PG" }
+      ],
+      "techStack": "Java 17 · Spring Boot · MyBatis · Python (FastAPI) · PyTorch (LSTM) · XGBoost · SvelteKit · PostgreSQL · Redis · Docker",
+      "action": "Loyihani ko'rish →"
     }
   },
   "AiAgent": {
