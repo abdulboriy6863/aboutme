@@ -59,39 +59,22 @@
       "ru": "Russian: Fluent"
     }
   },
-  "Bento": {
-    "badge": "Featured Case Studies & Architecture",
-    "title": "Engineered for Extreme Scalability & Modern Web Standards",
-    "description": "A comprehensive deep dive into real-world distributed systems, AI engine pipelines, and production architectures.",
-    "cards": {
-      "flagship": {
-        "tag": "Flagship Case Study",
-        "title": "High-Throughput Distributed Telemetry & Streaming Platform",
-        "problemLabel": "Architectural Challenge",
-        "problem": "Handling 10M+ daily telemetry events with legacy monolithic bottlenecks and unpredictable spike latency.",
-        "solutionLabel": "Engineering Solution",
-        "solution": "Designed event-driven streaming microservices in Go and Next.js 15 edge routing with multi-tier Redis caching and connection-pooled PostgreSQL.",
-        "metricHighlight": "68% Latency Drop",
-        "metricDetail": "<45ms Global P99"
-      },
-      "aiRag": {
-        "tag": "AI & RAG Engine",
-        "title": "Autonomous Multi-Agent & Vector RAG Pipeline",
-        "desc": "Low-latency token streaming with Vercel AI SDK, hybrid dense/sparse vector retrieval (pgvector), and recursive self-correcting agent workflows.",
-        "status": "Token Streaming Active"
-      },
-      "systemArch": {
-        "tag": "Infrastructure",
-        "title": "Edge Cloud & Resilient Multi-Region Mesh",
-        "desc": "Multi-region edge routing, automated failovers, Docker & Kubernetes cluster orchestration, and zero-trust API gateways.",
-        "status": "Multi-Region Live"
-      },
-      "trust": {
-        "tag": "Engineering Verification",
-        "title": "Production Reliability & Zero-Downtime Guarantee",
-        "desc": "100/100 Core Web Vitals, automated blue/green canary deployments, SOC2 compliance, and strict end-to-end type safety.",
-        "score": "100/100"
-      }
+  "Projects": {
+    "title": "Projects",
+    "card": {
+      "tag": "AI & EV Energy Platform · 2024–2026",
+      "company": "(주)블루네트웍스 (Blue Networks)",
+      "title": "Blue Networks: E-Chae-Um & AI Power Demand Forecasting Platform",
+      "description": "Enterprise EV Charging Station Management System (CSMS) managing 1,600+ chargers across Korea and an 8-model AI ensemble platform (PyTorch LSTM, XGBoost, EVT) delivering probabilistic P50/P90 power demand forecasts to optimize KEPCO contracted capacity and reduce peak surcharges.",
+      "badges": [
+        { "bold": "1,600+", "label": "EV chargers" },
+        { "bold": "8-model", "label": "AI ensemble" },
+        { "bold": "P50 / P90", "label": "quantile forecasts" },
+        { "bold": "OCPP", "label": "1.6J / 2.0.1" },
+        { "bold": "KECO", "label": "roaming & PG sync" }
+      ],
+      "techStack": "Java 17 · Spring Boot · MyBatis · Python (FastAPI) · PyTorch (LSTM) · XGBoost · SvelteKit · PostgreSQL · Redis · Docker",
+      "action": "View Project →"
     }
   },
   "AiAgent": {

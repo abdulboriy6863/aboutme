@@ -6,7 +6,7 @@ import { Footer } from "@/components/shared/Footer";
 import { Hero } from "@/components/modules/hero/Hero";
 import { AboutMe } from "@/components/modules/about/AboutMe";
 import { Skills } from "@/components/modules/skills/Skills";
-import { BentoGrid } from "@/components/modules/bento/BentoGrid";
+import { Projects } from "@/components/modules/projects/Projects";
 import { AiAssistant } from "@/components/modules/ai-agent/AiAssistant";
 import { Button } from "@/components/ui/button";
 import { Mail, Sparkles, Terminal } from "lucide-react";
@@ -36,8 +36,8 @@ export default function HomePage() {
         {/* Skills Section (3-Column Architecture & Stack Matrix) */}
         <Skills />
 
-        {/* Bento Grid: Architecture, Tech Matrix & Case Studies */}
-        <BentoGrid />
+        {/* Projects Section (Flagship Case Study & Architecture) */}
+        <Projects />
 
         {/* Contact / Consultation CTA Section */}
         <section id="contact" className="py-24 relative overflow-hidden">
