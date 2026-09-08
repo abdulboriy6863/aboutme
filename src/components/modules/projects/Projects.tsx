@@ -81,10 +81,10 @@ export function Projects() {
                 href="http://kblue.co.kr/eng/main.php"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#c85a32] dark:text-[#e07047] hover:underline transition-colors"
+                className="group/btn inline-flex items-center gap-2 text-sm font-semibold text-[#527c73] dark:text-[#79a7a7] hover:text-[#3d5d56] dark:hover:text-[#9bc2c2] hover:underline transition-colors"
               >
                 <span>{t("card.action")}</span>
-                <ArrowRight className="w-4 h-4 ml-0.5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1.5 transition-transform duration-200" />
               </a>
             </div>
           </div>

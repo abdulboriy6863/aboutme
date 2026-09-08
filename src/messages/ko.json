@@ -118,7 +118,7 @@
         { "bold": "KECO", "label": "환경부 로밍 & PG 연동" }
       ],
       "techStack": "Java 17 · Spring Boot · MyBatis · Python (FastAPI) · PyTorch (LSTM) · XGBoost · SvelteKit · PostgreSQL · Redis · Docker",
-      "action": "프로젝트 보기 →"
+      "action": "프로젝트 보기"
     }
   },
   "AiAgent": {

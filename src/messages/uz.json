@@ -118,7 +118,7 @@
         { "bold": "KECO", "label": "milliy rouming & PG" }
       ],
       "techStack": "Java 17 · Spring Boot · MyBatis · Python (FastAPI) · PyTorch (LSTM) · XGBoost · SvelteKit · PostgreSQL · Redis · Docker",
-      "action": "Loyihani ko'rish →"
+      "action": "Loyihani ko'rish"
     }
   },
   "AiAgent": {

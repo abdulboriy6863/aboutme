@@ -118,7 +118,7 @@
         { "bold": "KECO", "label": "roaming & PG sync" }
       ],
       "techStack": "Java 17 · Spring Boot · MyBatis · Python (FastAPI) · PyTorch (LSTM) · XGBoost · SvelteKit · PostgreSQL · Redis · Docker",
-      "action": "View Project →"
+      "action": "View Project"
     }
   },
   "AiAgent": {
